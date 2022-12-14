@@ -1,0 +1,1417 @@
+15:30:43.589 [RMI TCP Connection(3)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:40:25.505 [RMI TCP Connection(3)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:25:46.196 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:27:04.364 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:29:07.387 [RMI TCP Connection(5)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:30:52.667 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:32:27.345 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:32:53.125 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 21
+19:32:53.129 [http-nio-8080-exec-1] DEBUG - dishes were sorted
+19:32:53.130 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 21
+19:33:08.587 [http-nio-8080-exec-9] DEBUG - dishes size before sorting == 21
+19:33:08.587 [http-nio-8080-exec-9] DEBUG - dishes were sorted
+19:33:08.588 [http-nio-8080-exec-9] DEBUG - dishes size before getDishOnPage == 21
+19:33:20.973 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 4
+19:33:20.974 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+19:33:20.974 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 4
+19:33:29.070 [http-nio-8080-exec-8] DEBUG - dishes size before sorting == 4
+19:33:29.071 [http-nio-8080-exec-8] DEBUG - dishes were sorted
+19:33:29.071 [http-nio-8080-exec-8] DEBUG - dishes size before getDishOnPage == 4
+19:33:34.025 [http-nio-8080-exec-5] DEBUG - dishes size before sorting == 21
+19:33:34.026 [http-nio-8080-exec-5] DEBUG - dishes were sorted
+19:33:34.026 [http-nio-8080-exec-5] DEBUG - dishes size before getDishOnPage == 21
+19:33:39.429 [http-nio-8080-exec-5] DEBUG - dishes size before sorting == 21
+19:33:39.430 [http-nio-8080-exec-5] DEBUG - dishes were sorted
+19:33:39.431 [http-nio-8080-exec-5] DEBUG - dishes size before getDishOnPage == 21
+19:33:40.636 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+19:33:40.637 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+19:33:40.638 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+19:33:41.610 [http-nio-8080-exec-6] DEBUG - dishes size before sorting == 21
+19:33:41.611 [http-nio-8080-exec-6] DEBUG - dishes were sorted
+19:33:41.611 [http-nio-8080-exec-6] DEBUG - dishes size before getDishOnPage == 21
+19:33:54.143 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+19:33:54.144 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+19:33:54.144 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+19:34:55.480 [http-nio-8080-exec-2] DEBUG - dishes size before sorting == 21
+19:34:55.481 [http-nio-8080-exec-2] DEBUG - dishes were sorted
+19:34:55.481 [http-nio-8080-exec-2] DEBUG - dishes size before getDishOnPage == 21
+19:34:58.159 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 21
+19:34:58.159 [http-nio-8080-exec-1] DEBUG - dishes were sorted
+19:34:58.160 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 21
+19:35:01.513 [http-nio-8080-exec-5] DEBUG - dishes size before sorting == 21
+19:35:01.513 [http-nio-8080-exec-5] DEBUG - dishes were sorted
+19:35:01.513 [http-nio-8080-exec-5] DEBUG - dishes size before getDishOnPage == 21
+19:35:06.711 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 21
+19:35:06.711 [http-nio-8080-exec-1] DEBUG - dishes were sorted
+19:35:06.711 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 21
+19:35:10.113 [http-nio-8080-exec-2] DEBUG - dishes size before sorting == 21
+19:35:10.114 [http-nio-8080-exec-2] DEBUG - dishes were sorted
+19:35:10.114 [http-nio-8080-exec-2] DEBUG - dishes size before getDishOnPage == 21
+19:35:19.362 [http-nio-8080-exec-5] DEBUG - dishes size before sorting == 21
+19:35:19.364 [http-nio-8080-exec-5] DEBUG - dishes were sorted
+19:35:19.364 [http-nio-8080-exec-5] DEBUG - dishes size before getDishOnPage == 21
+19:35:29.232 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 21
+19:35:29.232 [http-nio-8080-exec-1] DEBUG - dishes were sorted
+19:35:29.233 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 21
+19:36:40.099 [http-nio-8080-exec-8] DEBUG - dishes size before sorting == 21
+19:36:40.099 [http-nio-8080-exec-8] DEBUG - dishes were sorted
+19:36:40.099 [http-nio-8080-exec-8] DEBUG - dishes size before getDishOnPage == 21
+19:36:59.068 [http-nio-8080-exec-9] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:127) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: оператор не существует: integer ~~ integer
+  Подсказка: Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+  Позиция: 32
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.5.1.jar:42.5.1]
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:123) ~[classes/:?]
+	... 29 more
+19:37:11.812 [http-nio-8080-exec-2] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:127) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: оператор не существует: integer ~~ integer
+  Подсказка: Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+  Позиция: 32
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.5.1.jar:42.5.1]
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:123) ~[classes/:?]
+	... 29 more
+19:38:34.209 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+19:39:03.030 [http-nio-8080-exec-6] DEBUG - dishes size before sorting == 21
+19:39:03.040 [http-nio-8080-exec-6] DEBUG - dishes were sorted
+19:39:03.041 [http-nio-8080-exec-6] DEBUG - dishes size before getDishOnPage == 21
+19:39:19.601 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 21
+19:39:19.602 [http-nio-8080-exec-1] DEBUG - dishes were sorted
+19:39:19.602 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 21
+19:39:45.134 [http-nio-8080-exec-3] DEBUG - dishes size before sorting == 21
+19:39:45.135 [http-nio-8080-exec-3] DEBUG - dishes were sorted
+19:39:45.135 [http-nio-8080-exec-3] DEBUG - dishes size before getDishOnPage == 21
+19:39:45.984 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+19:39:45.985 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+19:39:45.985 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+19:39:46.672 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 21
+19:39:46.673 [http-nio-8080-exec-1] DEBUG - dishes were sorted
+19:39:46.673 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 21
+19:39:52.937 [http-nio-8080-exec-9] DEBUG - dishes size before sorting == 21
+19:39:52.938 [http-nio-8080-exec-9] DEBUG - dishes were sorted
+19:39:52.938 [http-nio-8080-exec-9] DEBUG - dishes size before getDishOnPage == 21
+19:40:02.187 [http-nio-8080-exec-9] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+19:40:10.833 [http-nio-8080-exec-2] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+19:40:55.114 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+19:40:55.115 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+19:40:55.115 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+19:41:01.792 [http-nio-8080-exec-6] DEBUG - dishes size before sorting == 21
+19:41:01.792 [http-nio-8080-exec-6] DEBUG - dishes were sorted
+19:41:01.792 [http-nio-8080-exec-6] DEBUG - dishes size before getDishOnPage == 21
+19:43:10.354 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+19:43:10.354 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+19:43:10.355 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+19:49:04.759 [http-nio-8080-exec-9] DEBUG - dishes size before sorting == 21
+19:49:04.760 [http-nio-8080-exec-9] DEBUG - dishes were sorted
+19:49:04.760 [http-nio-8080-exec-9] DEBUG - dishes size before getDishOnPage == 21
+13:28:12.147 [RMI TCP Connection(4)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:10:10.686 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:18:15.763 [RMI TCP Connection(5)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:18:35.346 [http-nio-8080-exec-8] DEBUG - dishes size before sorting == 21
+13:18:35.353 [http-nio-8080-exec-8] DEBUG - dishes were sorted
+13:18:35.354 [http-nio-8080-exec-8] DEBUG - dishes size before getDishOnPage == 21
+13:18:42.930 [http-nio-8080-exec-12] DEBUG - dishes size before sorting == 21
+13:18:42.930 [http-nio-8080-exec-12] DEBUG - dishes were sorted
+13:18:42.930 [http-nio-8080-exec-12] DEBUG - dishes size before getDishOnPage == 21
+13:18:52.351 [http-nio-8080-exec-13] DEBUG - dishes size before sorting == 21
+13:18:52.352 [http-nio-8080-exec-13] DEBUG - dishes were sorted
+13:18:52.352 [http-nio-8080-exec-13] DEBUG - dishes size before getDishOnPage == 21
+13:18:53.267 [http-nio-8080-exec-12] DEBUG - dishes size before sorting == 21
+13:18:53.267 [http-nio-8080-exec-12] DEBUG - dishes were sorted
+13:18:53.267 [http-nio-8080-exec-12] DEBUG - dishes size before getDishOnPage == 21
+13:18:53.497 [http-nio-8080-exec-6] DEBUG - dishes size before sorting == 21
+13:18:53.498 [http-nio-8080-exec-6] DEBUG - dishes were sorted
+13:18:53.498 [http-nio-8080-exec-6] DEBUG - dishes size before getDishOnPage == 21
+13:18:53.867 [http-nio-8080-exec-13] DEBUG - dishes size before sorting == 21
+13:18:53.868 [http-nio-8080-exec-13] DEBUG - dishes were sorted
+13:18:53.868 [http-nio-8080-exec-13] DEBUG - dishes size before getDishOnPage == 21
+13:18:54.230 [http-nio-8080-exec-15] DEBUG - dishes size before sorting == 21
+13:18:54.230 [http-nio-8080-exec-15] DEBUG - dishes were sorted
+13:18:54.230 [http-nio-8080-exec-15] DEBUG - dishes size before getDishOnPage == 21
+13:18:54.426 [http-nio-8080-exec-14] DEBUG - dishes size before sorting == 21
+13:18:54.427 [http-nio-8080-exec-14] DEBUG - dishes were sorted
+13:18:54.427 [http-nio-8080-exec-14] DEBUG - dishes size before getDishOnPage == 21
+13:18:54.788 [http-nio-8080-exec-15] DEBUG - dishes size before sorting == 21
+13:18:54.788 [http-nio-8080-exec-15] DEBUG - dishes were sorted
+13:18:54.788 [http-nio-8080-exec-15] DEBUG - dishes size before getDishOnPage == 21
+13:20:55.926 [http-nio-8080-exec-19] DEBUG - dishes size before sorting == 21
+13:20:55.928 [http-nio-8080-exec-19] DEBUG - dishes were sorted
+13:20:55.929 [http-nio-8080-exec-19] DEBUG - dishes size before getDishOnPage == 21
+13:20:59.810 [http-nio-8080-exec-11] DEBUG - dishes size before sorting == 21
+13:20:59.812 [http-nio-8080-exec-11] DEBUG - dishes were sorted
+13:20:59.812 [http-nio-8080-exec-11] DEBUG - dishes size before getDishOnPage == 21
+13:23:34.823 [http-nio-8080-exec-20] DEBUG - dishes size before sorting == 21
+13:23:34.824 [http-nio-8080-exec-20] DEBUG - dishes were sorted
+13:23:34.824 [http-nio-8080-exec-20] DEBUG - dishes size before getDishOnPage == 21
+13:25:21.784 [RMI TCP Connection(8)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:25:34.297 [http-nio-8080-exec-17] DEBUG - dishes size before sorting == 21
+13:25:34.299 [http-nio-8080-exec-17] DEBUG - dishes were sorted
+13:25:34.301 [http-nio-8080-exec-17] DEBUG - dishes size before getDishOnPage == 21
+13:27:05.587 [RMI TCP Connection(12)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:27:15.614 [http-nio-8080-exec-15] DEBUG - dishes size before sorting == 21
+13:27:15.616 [http-nio-8080-exec-15] DEBUG - dishes were sorted
+13:27:15.617 [http-nio-8080-exec-15] DEBUG - dishes size before getDishOnPage == 21
+13:27:21.469 [http-nio-8080-exec-21] DEBUG - dishes size before sorting == 21
+13:27:21.469 [http-nio-8080-exec-21] DEBUG - dishes were sorted
+13:27:21.470 [http-nio-8080-exec-21] DEBUG - dishes size before getDishOnPage == 21
+13:27:27.356 [http-nio-8080-exec-22] DEBUG - dishes size before sorting == 21
+13:27:27.356 [http-nio-8080-exec-22] DEBUG - dishes were sorted
+13:27:27.356 [http-nio-8080-exec-22] DEBUG - dishes size before getDishOnPage == 21
+13:27:34.235 [http-nio-8080-exec-27] DEBUG - dishes size before sorting == 21
+13:27:34.235 [http-nio-8080-exec-27] DEBUG - dishes were sorted
+13:27:34.237 [http-nio-8080-exec-27] DEBUG - dishes size before getDishOnPage == 21
+13:27:37.546 [http-nio-8080-exec-32] DEBUG - dishes size before sorting == 21
+13:27:37.547 [http-nio-8080-exec-32] DEBUG - dishes were sorted
+13:27:37.547 [http-nio-8080-exec-32] DEBUG - dishes size before getDishOnPage == 21
+13:31:29.207 [http-nio-8080-exec-27] DEBUG - dishes size before sorting == 21
+13:31:29.208 [http-nio-8080-exec-27] DEBUG - dishes were sorted
+13:31:29.208 [http-nio-8080-exec-27] DEBUG - dishes size before getDishOnPage == 21
+13:31:33.020 [RMI TCP Connection(15)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:31:41.925 [http-nio-8080-exec-28] DEBUG - dishes size before sorting == 21
+13:31:41.927 [http-nio-8080-exec-28] DEBUG - dishes were sorted
+13:31:41.928 [http-nio-8080-exec-28] DEBUG - dishes size before getDishOnPage == 21
+13:31:49.916 [http-nio-8080-exec-30] DEBUG - dishes size before sorting == 21
+13:31:49.916 [http-nio-8080-exec-30] DEBUG - dishes were sorted
+13:31:49.916 [http-nio-8080-exec-30] DEBUG - dishes size before getDishOnPage == 21
+13:31:52.063 [http-nio-8080-exec-39] DEBUG - dishes size before sorting == 21
+13:31:52.064 [http-nio-8080-exec-39] DEBUG - dishes were sorted
+13:31:52.064 [http-nio-8080-exec-39] DEBUG - dishes size before getDishOnPage == 21
+13:31:54.361 [http-nio-8080-exec-39] DEBUG - dishes size before sorting == 21
+13:31:54.361 [http-nio-8080-exec-39] DEBUG - dishes were sorted
+13:31:54.361 [http-nio-8080-exec-39] DEBUG - dishes size before getDishOnPage == 21
+13:33:11.637 [http-nio-8080-exec-40] DEBUG - dishes size before sorting == 21
+13:33:11.637 [http-nio-8080-exec-40] DEBUG - dishes were sorted
+13:33:11.637 [http-nio-8080-exec-40] DEBUG - dishes size before getDishOnPage == 21
+13:33:15.228 [http-nio-8080-exec-38] DEBUG - dishes size before sorting == 4
+13:33:15.228 [http-nio-8080-exec-38] DEBUG - dishes were sorted
+13:33:15.228 [http-nio-8080-exec-38] DEBUG - dishes size before getDishOnPage == 4
+13:33:20.958 [http-nio-8080-exec-39] DEBUG - dishes size before sorting == 4
+13:33:20.958 [http-nio-8080-exec-39] DEBUG - dishes were sorted
+13:33:20.958 [http-nio-8080-exec-39] DEBUG - dishes size before getDishOnPage == 4
+13:34:30.448 [http-nio-8080-exec-38] DEBUG - dishes size before sorting == 21
+13:34:30.448 [http-nio-8080-exec-38] DEBUG - dishes were sorted
+13:34:30.448 [http-nio-8080-exec-38] DEBUG - dishes size before getDishOnPage == 21
+13:34:35.691 [http-nio-8080-exec-40] DEBUG - dishes size before sorting == 21
+13:34:35.691 [http-nio-8080-exec-40] DEBUG - dishes were sorted
+13:34:35.691 [http-nio-8080-exec-40] DEBUG - dishes size before getDishOnPage == 21
+13:34:37.733 [http-nio-8080-exec-42] DEBUG - dishes size before sorting == 21
+13:34:37.734 [http-nio-8080-exec-42] DEBUG - dishes were sorted
+13:34:37.734 [http-nio-8080-exec-42] DEBUG - dishes size before getDishOnPage == 21
+13:34:40.336 [http-nio-8080-exec-38] DEBUG - dishes size before sorting == 21
+13:34:40.336 [http-nio-8080-exec-38] DEBUG - dishes were sorted
+13:34:40.336 [http-nio-8080-exec-38] DEBUG - dishes size before getDishOnPage == 21
+13:35:27.017 [http-nio-8080-exec-42] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Deleting failed
+	at com.epam.donetc.restaurant.database.CartManager.deleteDishFromCart(CartManager.java:66) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:57) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:35:30.390 [http-nio-8080-exec-38] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Deleting failed
+	at com.epam.donetc.restaurant.database.CartManager.deleteDishFromCart(CartManager.java:66) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:57) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:35:35.722 [http-nio-8080-exec-39] DEBUG - dishes size before sorting == 21
+13:35:35.722 [http-nio-8080-exec-39] DEBUG - dishes were sorted
+13:35:35.722 [http-nio-8080-exec-39] DEBUG - dishes size before getDishOnPage == 21
+13:35:37.950 [http-nio-8080-exec-37] DEBUG - dishes size before sorting == 21
+13:35:37.950 [http-nio-8080-exec-37] DEBUG - dishes were sorted
+13:35:37.950 [http-nio-8080-exec-37] DEBUG - dishes size before getDishOnPage == 21
+13:35:46.797 [http-nio-8080-exec-45] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:36:00.346 [http-nio-8080-exec-39] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:127) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: java.sql.SQLException: Cleaning cart error
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:124) ~[classes/:?]
+	... 29 more
+13:36:02.844 [http-nio-8080-exec-40] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Deleting failed
+	at com.epam.donetc.restaurant.database.CartManager.deleteDishFromCart(CartManager.java:66) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:57) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:36:09.499 [http-nio-8080-exec-46] DEBUG - dishes size before sorting == 21
+13:36:09.500 [http-nio-8080-exec-46] DEBUG - dishes were sorted
+13:36:09.500 [http-nio-8080-exec-46] DEBUG - dishes size before getDishOnPage == 21
+13:36:19.594 [http-nio-8080-exec-46] DEBUG - dishes size before sorting == 21
+13:36:19.594 [http-nio-8080-exec-46] DEBUG - dishes were sorted
+13:36:19.594 [http-nio-8080-exec-46] DEBUG - dishes size before getDishOnPage == 21
+13:36:28.197 [http-nio-8080-exec-38] DEBUG - dishes size before sorting == 21
+13:36:28.197 [http-nio-8080-exec-38] DEBUG - dishes were sorted
+13:36:28.197 [http-nio-8080-exec-38] DEBUG - dishes size before getDishOnPage == 21
+13:36:32.857 [http-nio-8080-exec-37] DEBUG - dishes size before sorting == 21
+13:36:32.857 [http-nio-8080-exec-37] DEBUG - dishes were sorted
+13:36:32.857 [http-nio-8080-exec-37] DEBUG - dishes size before getDishOnPage == 21
+13:36:35.141 [http-nio-8080-exec-44] DEBUG - dishes size before sorting == 21
+13:36:35.141 [http-nio-8080-exec-44] DEBUG - dishes were sorted
+13:36:35.141 [http-nio-8080-exec-44] DEBUG - dishes size before getDishOnPage == 21
+13:36:42.063 [http-nio-8080-exec-46] DEBUG - dishes size before sorting == 21
+13:36:42.063 [http-nio-8080-exec-46] DEBUG - dishes were sorted
+13:36:42.063 [http-nio-8080-exec-46] DEBUG - dishes size before getDishOnPage == 21
+13:36:42.553 [http-nio-8080-exec-38] DEBUG - dishes size before sorting == 21
+13:36:42.553 [http-nio-8080-exec-38] DEBUG - dishes were sorted
+13:36:42.553 [http-nio-8080-exec-38] DEBUG - dishes size before getDishOnPage == 21
+13:36:42.897 [http-nio-8080-exec-38] DEBUG - dishes size before sorting == 21
+13:36:42.898 [http-nio-8080-exec-38] DEBUG - dishes were sorted
+13:36:42.898 [http-nio-8080-exec-38] DEBUG - dishes size before getDishOnPage == 21
+13:36:50.448 [http-nio-8080-exec-44] DEBUG - dishes size before sorting == 21
+13:36:50.449 [http-nio-8080-exec-44] DEBUG - dishes were sorted
+13:36:50.449 [http-nio-8080-exec-44] DEBUG - dishes size before getDishOnPage == 21
+13:36:51.206 [http-nio-8080-exec-37] DEBUG - dishes size before sorting == 21
+13:36:51.206 [http-nio-8080-exec-37] DEBUG - dishes were sorted
+13:36:51.206 [http-nio-8080-exec-37] DEBUG - dishes size before getDishOnPage == 21
+13:36:59.244 [http-nio-8080-exec-37] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:37:23.770 [http-nio-8080-exec-42] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:38:11.468 [http-nio-8080-exec-46] DEBUG - dishes size before sorting == 21
+13:38:11.469 [http-nio-8080-exec-46] DEBUG - dishes were sorted
+13:38:11.469 [http-nio-8080-exec-46] DEBUG - dishes size before getDishOnPage == 21
+13:38:15.087 [http-nio-8080-exec-40] DEBUG - dishes size before sorting == 21
+13:38:15.087 [http-nio-8080-exec-40] DEBUG - dishes were sorted
+13:38:15.088 [http-nio-8080-exec-40] DEBUG - dishes size before getDishOnPage == 21
+13:38:16.453 [http-nio-8080-exec-44] DEBUG - dishes size before sorting == 21
+13:38:16.453 [http-nio-8080-exec-44] DEBUG - dishes were sorted
+13:38:16.453 [http-nio-8080-exec-44] DEBUG - dishes size before getDishOnPage == 21
+13:38:18.601 [http-nio-8080-exec-46] DEBUG - dishes size before sorting == 21
+13:38:18.602 [http-nio-8080-exec-46] DEBUG - dishes were sorted
+13:38:18.603 [http-nio-8080-exec-46] DEBUG - dishes size before getDishOnPage == 21
+13:39:06.371 [RMI TCP Connection(18)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:39:35.931 [http-nio-8080-exec-43] DEBUG - dishes size before sorting == 21
+13:39:35.932 [http-nio-8080-exec-43] DEBUG - dishes were sorted
+13:39:35.932 [http-nio-8080-exec-43] DEBUG - dishes size before getDishOnPage == 21
+13:40:28.839 [RMI TCP Connection(21)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:40:35.192 [http-nio-8080-exec-48] DEBUG - dishes size before sorting == 21
+13:40:35.194 [http-nio-8080-exec-48] DEBUG - dishes were sorted
+13:40:35.195 [http-nio-8080-exec-48] DEBUG - dishes size before getDishOnPage == 21
+13:41:21.836 [http-nio-8080-exec-52] DEBUG - dishes size before sorting == 21
+13:41:21.836 [http-nio-8080-exec-52] DEBUG - dishes were sorted
+13:41:21.837 [http-nio-8080-exec-52] DEBUG - dishes size before getDishOnPage == 21
+13:41:23.000 [http-nio-8080-exec-53] DEBUG - dishes size before sorting == 21
+13:41:23.000 [http-nio-8080-exec-53] DEBUG - dishes were sorted
+13:41:23.000 [http-nio-8080-exec-53] DEBUG - dishes size before getDishOnPage == 21
+13:43:22.424 [http-nio-8080-exec-53] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:127) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: java.sql.SQLException: Cleaning cart error
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:124) ~[classes/:?]
+	... 29 more
+13:46:34.501 [http-nio-8080-exec-58] DEBUG - dishes size before sorting == 21
+13:46:34.502 [http-nio-8080-exec-58] DEBUG - dishes were sorted
+13:46:34.502 [http-nio-8080-exec-58] DEBUG - dishes size before getDishOnPage == 21
+13:46:39.666 [http-nio-8080-exec-51] DEBUG - dishes size before sorting == 21
+13:46:39.668 [http-nio-8080-exec-51] DEBUG - dishes were sorted
+13:46:39.668 [http-nio-8080-exec-51] DEBUG - dishes size before getDishOnPage == 21
+13:46:45.879 [http-nio-8080-exec-57] DEBUG - dishes size before sorting == 21
+13:46:45.879 [http-nio-8080-exec-57] DEBUG - dishes were sorted
+13:46:45.879 [http-nio-8080-exec-57] DEBUG - dishes size before getDishOnPage == 21
+13:47:16.908 [http-nio-8080-exec-58] DEBUG - dishes size before sorting == 21
+13:47:16.909 [http-nio-8080-exec-58] DEBUG - dishes were sorted
+13:47:16.909 [http-nio-8080-exec-58] DEBUG - dishes size before getDishOnPage == 21
+13:47:17.540 [http-nio-8080-exec-56] DEBUG - dishes size before sorting == 21
+13:47:17.541 [http-nio-8080-exec-56] DEBUG - dishes were sorted
+13:47:17.541 [http-nio-8080-exec-56] DEBUG - dishes size before getDishOnPage == 21
+13:47:28.190 [http-nio-8080-exec-57] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:47:58.418 [http-nio-8080-exec-59] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:48:00.330 [http-nio-8080-exec-60] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:49:13.128 [RMI TCP Connection(24)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:51:08.731 [http-nio-8080-exec-67] DEBUG - dishes size before sorting == 21
+13:51:08.732 [http-nio-8080-exec-67] DEBUG - dishes were sorted
+13:51:08.733 [http-nio-8080-exec-67] DEBUG - dishes size before getDishOnPage == 21
+13:53:19.948 [RMI TCP Connection(27)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:53:27.414 [http-nio-8080-exec-68] DEBUG - dishes size before sorting == 21
+13:53:27.415 [http-nio-8080-exec-68] DEBUG - dishes were sorted
+13:53:27.416 [http-nio-8080-exec-68] DEBUG - dishes size before getDishOnPage == 21
+13:53:41.660 [http-nio-8080-exec-70] DEBUG - dishes size before sorting == 21
+13:53:41.661 [http-nio-8080-exec-70] DEBUG - dishes were sorted
+13:53:41.661 [http-nio-8080-exec-70] DEBUG - dishes size before getDishOnPage == 21
+13:54:26.600 [RMI TCP Connection(30)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:54:35.518 [http-nio-8080-exec-68] DEBUG - dishes size before sorting == 21
+13:54:35.519 [http-nio-8080-exec-68] DEBUG - dishes were sorted
+13:54:35.520 [http-nio-8080-exec-68] DEBUG - dishes size before getDishOnPage == 21
+13:55:28.065 [RMI TCP Connection(33)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+13:55:33.966 [http-nio-8080-exec-63] DEBUG - dishes size before sorting == 21
+13:55:33.968 [http-nio-8080-exec-63] DEBUG - dishes were sorted
+13:55:33.969 [http-nio-8080-exec-63] DEBUG - dishes size before getDishOnPage == 21
+13:55:47.995 [http-nio-8080-exec-84] DEBUG - dishes size before sorting == 21
+13:55:47.996 [http-nio-8080-exec-84] DEBUG - dishes were sorted
+13:55:47.996 [http-nio-8080-exec-84] DEBUG - dishes size before getDishOnPage == 21
+13:55:59.350 [http-nio-8080-exec-85] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:56:43.414 [http-nio-8080-exec-88] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+13:56:44.971 [http-nio-8080-exec-87] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:01:48.254 [http-nio-8080-exec-85] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:15:50.103 [RMI TCP Connection(36)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:16:00.172 [http-nio-8080-exec-87] DEBUG - dishes size before sorting == 21
+14:16:00.173 [http-nio-8080-exec-87] DEBUG - dishes were sorted
+14:16:00.173 [http-nio-8080-exec-87] DEBUG - dishes size before getDishOnPage == 21
+14:16:05.781 [http-nio-8080-exec-87] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:20:21.408 [RMI TCP Connection(39)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:20:30.985 [http-nio-8080-exec-93] DEBUG - dishes size before sorting == 21
+14:20:30.987 [http-nio-8080-exec-93] DEBUG - dishes were sorted
+14:20:30.988 [http-nio-8080-exec-93] DEBUG - dishes size before getDishOnPage == 21
+14:20:37.181 [http-nio-8080-exec-102] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:20:56.421 [http-nio-8080-exec-104] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:52) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:23:52.787 [RMI TCP Connection(42)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:24:01.619 [http-nio-8080-exec-109] DEBUG - dishes size before sorting == 21
+14:24:01.620 [http-nio-8080-exec-109] DEBUG - dishes were sorted
+14:24:01.621 [http-nio-8080-exec-109] DEBUG - dishes size before getDishOnPage == 21
+14:24:21.015 [http-nio-8080-exec-104] DEBUG - dishes size before sorting == 21
+14:24:21.016 [http-nio-8080-exec-104] DEBUG - dishes were sorted
+14:24:21.016 [http-nio-8080-exec-104] DEBUG - dishes size before getDishOnPage == 21
+14:24:23.902 [http-nio-8080-exec-108] DEBUG - dishes size before sorting == 21
+14:24:23.902 [http-nio-8080-exec-108] DEBUG - dishes were sorted
+14:24:23.902 [http-nio-8080-exec-108] DEBUG - dishes size before getDishOnPage == 21
+14:24:59.258 [http-nio-8080-exec-119] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:128) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: java.sql.SQLException: Cleaning cart error
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:125) ~[classes/:?]
+	... 29 more
+14:25:01.205 [http-nio-8080-exec-120] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:128) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: java.sql.SQLException: Cleaning cart error
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:125) ~[classes/:?]
+	... 29 more
+14:27:15.793 [RMI TCP Connection(45)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:27:36.757 [http-nio-8080-exec-118] DEBUG - dishes size before sorting == 21
+14:27:36.759 [http-nio-8080-exec-118] DEBUG - dishes were sorted
+14:27:36.760 [http-nio-8080-exec-118] DEBUG - dishes size before getDishOnPage == 21
+14:27:43.737 [http-nio-8080-exec-112] DEBUG - dishes size before sorting == 21
+14:27:43.737 [http-nio-8080-exec-112] DEBUG - dishes were sorted
+14:27:43.738 [http-nio-8080-exec-112] DEBUG - dishes size before getDishOnPage == 21
+14:27:47.400 [http-nio-8080-exec-115] DEBUG - dishes size before sorting == 21
+14:27:47.400 [http-nio-8080-exec-115] DEBUG - dishes were sorted
+14:27:47.400 [http-nio-8080-exec-115] DEBUG - dishes size before getDishOnPage == 21
+14:27:59.867 [http-nio-8080-exec-125] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:72) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:28:01.781 [http-nio-8080-exec-128] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Inserting failed
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:72) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:31:03.542 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:31:10.498 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+14:31:10.501 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+14:31:10.502 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+14:31:19.232 [http-nio-8080-exec-3] DEBUG - dishes size before sorting == 21
+14:31:19.233 [http-nio-8080-exec-3] DEBUG - dishes were sorted
+14:31:19.233 [http-nio-8080-exec-3] DEBUG - dishes size before getDishOnPage == 21
+14:31:23.754 [http-nio-8080-exec-1] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot update dish amount in cart
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:75) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:55) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: оператор не существует: integer ~~ integer
+  Подсказка: Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+  Позиция: 43
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.5.1.jar:42.5.1]
+	at com.epam.donetc.restaurant.database.CartManager.changeAmountOfDish(CartManager.java:71) ~[classes/:?]
+	... 29 more
+14:34:54.991 [http-nio-8080-exec-3] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:164) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: оператор не существует: integer ~~ integer
+  Подсказка: Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+  Позиция: 32
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.5.1.jar:42.5.1]
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:160) ~[classes/:?]
+	... 29 more
+14:35:28.098 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:35:31.879 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+14:35:31.883 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+14:35:31.884 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+14:35:41.869 [http-nio-8080-exec-9] ERROR - In client orders servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Cannot clean cart
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:130) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.ClientOrdersServlet.doPost(ClientOrdersServlet.java:58) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: оператор не существует: integer ~~ integer
+  Подсказка: Оператор с данными именем и типами аргументов не найден. Возможно, вам следует добавить явные приведения типов.
+  Позиция: 32
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2676) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2366) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:356) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:496) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:413) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190) ~[postgresql-42.5.1.jar:42.5.1]
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152) ~[postgresql-42.5.1.jar:42.5.1]
+	at com.epam.donetc.restaurant.database.CartManager.cleanCart(CartManager.java:126) ~[classes/:?]
+	... 29 more
+14:36:22.877 [RMI TCP Connection(5)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:36:30.298 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+14:36:30.301 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+14:36:30.302 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+14:36:37.950 [http-nio-8080-exec-3] DEBUG - dishes size before sorting == 21
+14:36:37.950 [http-nio-8080-exec-3] DEBUG - dishes were sorted
+14:36:37.950 [http-nio-8080-exec-3] DEBUG - dishes size before getDishOnPage == 21
+14:39:06.114 [http-nio-8080-exec-12] ERROR - In cart servlet doPost() 
+com.epam.donetc.restaurant.exeption.DBException: Deleting failed
+	at com.epam.donetc.restaurant.database.CartManager.deleteDishFromCart(CartManager.java:67) ~[classes/:?]
+	at com.epam.donetc.restaurant.servlets.CartServlet.doPost(CartServlet.java:57) [classes/:?]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696) [servlet-api.jar:4.0.FR]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-websocket.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at com.epam.donetc.restaurant.filters.AdminFilter.doFilter(AdminFilter.java:24) [classes/:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:57) [servlet-api.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [catalina.jar:9.0.69]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [catalina.jar:9.0.69]
+	at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:687) [catalina.jar:9.0.69]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [catalina.jar:9.0.69]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) [catalina.jar:9.0.69]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-coyote.jar:9.0.69]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-coyote.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) [tomcat-util.jar:9.0.69]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-util.jar:9.0.69]
+	at java.lang.Thread.run(Thread.java:1589) [?:?]
+14:39:24.212 [http-nio-8080-exec-16] DEBUG - dishes size before sorting == 4
+14:39:24.213 [http-nio-8080-exec-16] DEBUG - dishes were sorted
+14:39:24.213 [http-nio-8080-exec-16] DEBUG - dishes size before getDishOnPage == 4
+14:50:17.521 [http-nio-8080-exec-19] DEBUG - dishes size before sorting == 21
+14:50:17.521 [http-nio-8080-exec-19] DEBUG - dishes were sorted
+14:50:17.521 [http-nio-8080-exec-19] DEBUG - dishes size before getDishOnPage == 21
+14:50:18.344 [http-nio-8080-exec-14] DEBUG - dishes size before sorting == 21
+14:50:18.344 [http-nio-8080-exec-14] DEBUG - dishes were sorted
+14:50:18.344 [http-nio-8080-exec-14] DEBUG - dishes size before getDishOnPage == 21
+14:50:18.827 [http-nio-8080-exec-12] DEBUG - dishes size before sorting == 21
+14:50:18.827 [http-nio-8080-exec-12] DEBUG - dishes were sorted
+14:50:18.827 [http-nio-8080-exec-12] DEBUG - dishes size before getDishOnPage == 21
+14:50:19.339 [http-nio-8080-exec-11] DEBUG - dishes size before sorting == 21
+14:50:19.339 [http-nio-8080-exec-11] DEBUG - dishes were sorted
+14:50:19.339 [http-nio-8080-exec-11] DEBUG - dishes size before getDishOnPage == 21
+14:50:25.213 [http-nio-8080-exec-14] DEBUG - dishes size before sorting == 21
+14:50:25.213 [http-nio-8080-exec-14] DEBUG - dishes were sorted
+14:50:25.213 [http-nio-8080-exec-14] DEBUG - dishes size before getDishOnPage == 21
+14:50:31.030 [http-nio-8080-exec-20] DEBUG - dishes size before sorting == 21
+14:50:31.030 [http-nio-8080-exec-20] DEBUG - dishes were sorted
+14:50:31.030 [http-nio-8080-exec-20] DEBUG - dishes size before getDishOnPage == 21
+14:58:46.474 [RMI TCP Connection(9)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+14:59:12.833 [RMI TCP Connection(11)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:01:47.955 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:01:57.502 [http-nio-8080-exec-8] DEBUG - dishes size before sorting == 21
+15:01:57.503 [http-nio-8080-exec-8] DEBUG - dishes were sorted
+15:01:57.504 [http-nio-8080-exec-8] DEBUG - dishes size before getDishOnPage == 21
+15:03:02.177 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:06:09.588 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:08:49.130 [RMI TCP Connection(5)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:24:06.341 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:24:23.627 [http-nio-8080-exec-2] DEBUG - dishes size before sorting == 21
+15:24:23.631 [http-nio-8080-exec-2] DEBUG - dishes were sorted
+15:24:23.632 [http-nio-8080-exec-2] DEBUG - dishes size before getDishOnPage == 21
+15:24:33.101 [http-nio-8080-exec-7] DEBUG - dishes size before sorting == 21
+15:24:33.103 [http-nio-8080-exec-7] DEBUG - dishes were sorted
+15:24:33.103 [http-nio-8080-exec-7] DEBUG - dishes size before getDishOnPage == 21
+15:24:39.365 [http-nio-8080-exec-5] DEBUG - dishes size before sorting == 21
+15:24:39.366 [http-nio-8080-exec-5] DEBUG - dishes were sorted
+15:24:39.367 [http-nio-8080-exec-5] DEBUG - dishes size before getDishOnPage == 21
+15:24:42.597 [http-nio-8080-exec-3] DEBUG - dishes size before sorting == 4
+15:24:42.597 [http-nio-8080-exec-3] DEBUG - dishes were sorted
+15:24:42.597 [http-nio-8080-exec-3] DEBUG - dishes size before getDishOnPage == 4
+15:28:00.371 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+15:28:22.447 [RMI TCP Connection(4)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+10:58:46.446 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+10:58:53.604 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+10:58:53.607 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+10:58:53.608 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+11:09:58.079 [http-nio-8080-exec-7] DEBUG - dishes size before sorting == 21
+11:09:58.079 [http-nio-8080-exec-7] DEBUG - dishes were sorted
+11:09:58.079 [http-nio-8080-exec-7] DEBUG - dishes size before getDishOnPage == 21
+11:10:02.016 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+11:10:02.016 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+11:10:02.016 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
