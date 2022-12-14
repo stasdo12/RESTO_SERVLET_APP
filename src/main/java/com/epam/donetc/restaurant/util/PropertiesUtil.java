@@ -24,6 +24,6 @@ public class PropertiesUtil {
             PROPERTIES.load(inputStream);
         } catch (IOException e) {
             throw new RuntimeException(e);
-        }
+         }
     }
 }

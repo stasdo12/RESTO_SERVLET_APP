@@ -38,7 +38,7 @@
         <td>${receipt.id}</td>
         <td>${receipt.status}</td>
         <td>
-          <c:forEach items="${receipt.dishes}" var="dishAndAmount">
+          <c:forEach items="${receipt.dishes}" var="dishAndAmount" >
 
             ${dishAndAmount.key.name}: ${dishAndAmount.key.price} * ${dishAndAmount.value}<br>
           </c:forEach>

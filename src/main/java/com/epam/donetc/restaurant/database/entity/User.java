@@ -14,7 +14,7 @@ public class User implements Serializable {
         this.login = login;
         this.password = password;
         this.roleId = roleId;
-    }
+       }
 
     public int getId() {
         return id;

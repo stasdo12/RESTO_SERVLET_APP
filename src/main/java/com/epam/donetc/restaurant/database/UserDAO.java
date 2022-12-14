@@ -60,7 +60,7 @@ public class UserDAO {
         } catch (SQLException | DBException e) {
             throw new RuntimeException(e);
         }
-    }
+     }
 
     public static User logIn(String login, String password) throws DBException {
         try(Connection connection = ConnectionManager.get();

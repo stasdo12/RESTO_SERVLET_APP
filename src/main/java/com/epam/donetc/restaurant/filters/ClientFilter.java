@@ -22,6 +22,6 @@ public class ClientFilter extends HttpFilter {
             res.sendRedirect(req.getContextPath() + "/menu");
         }else {
             chain.doFilter(req,res);
-        }
+            }
     }
 }

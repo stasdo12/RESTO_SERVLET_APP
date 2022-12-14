@@ -41,7 +41,7 @@ public class ManagerOrdersServlet extends HttpServlet {
             log.error("In manager orders servlet doGet() ", ex);
             throw new AppException(ex);
         }
-    }
+       }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

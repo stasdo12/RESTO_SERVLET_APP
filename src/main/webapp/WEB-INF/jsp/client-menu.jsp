@@ -60,7 +60,7 @@
   <form method="get" action="${pageContext.request.contextPath}/menu">
     <c:forEach var="number" begin="1" end="${maxPage}">
       <div class="menu-pagination-item">
-        <input name="sortBy" value="${param.sortBy}" style="display: none">
+        <input name="sortBy" value="${param.sortBy}" style="display: none" >
         <input name="category" value="${param.category}" style="display: none">
         <input type="submit" name="currentPage" value="${number}" >
       </div>

@@ -17,7 +17,7 @@
   <p class="login-title">Log In</p>
   <form class="login-form" action="${pageContext.request.contextPath}/login" method="post">
     <input placeholder="Login" type="text" class="login-input" name="login"/>
-    <input placeholder="Password" type="password" class="login-input" name="password"/>
+    <input placeholder="Password" type="password" class="login-input" name="password" />
     <input type="submit" class="login-button" value="Log in!"/>
   </form>
   <c:if test="${param.err != null}">

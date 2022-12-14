@@ -53,7 +53,7 @@ public class ClientMenuServlet extends HttpServlet {
         }catch (DBException ex){
             log.error("In Client menu servlet doGet() ", ex);
             throw new AppException(ex);
-        }
+         }
     }
 
     @Override

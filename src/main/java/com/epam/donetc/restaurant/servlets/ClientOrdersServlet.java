@@ -45,7 +45,7 @@ public class ClientOrdersServlet extends HttpServlet {
         } catch(DBException ex){
             log.error("In client orders servlet doGet() ", ex);
             throw new AppException(ex);
-        }
+          }
     }
 
     @Override

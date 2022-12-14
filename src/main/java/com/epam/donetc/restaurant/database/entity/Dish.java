@@ -17,7 +17,7 @@ public class Dish {
         this.weight = weight;
         this.category = category;
         this.description = description;
-    }
+      }
 
     public Dish() {
     }

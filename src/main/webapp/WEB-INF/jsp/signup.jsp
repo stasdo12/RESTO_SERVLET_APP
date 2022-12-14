@@ -16,7 +16,7 @@
 <div class="login-box">
   <p class="login-title">Sign Up</p>
   <form class="login-form" action="${pageContext.request.contextPath}/signup" method="post">
-    <input name="login" class="login-input" placeholder="Login" required minlength="8" maxlength="20">
+    <input name="login" class="login-input" placeholder="Login" required minlength="8" maxlength="20" >
     <input type="password" name="password" class="login-input" placeholder="Password" required minlength="8" maxlength="20">
     <input type="submit" class="login-button" value="Sing up!">
   </form>

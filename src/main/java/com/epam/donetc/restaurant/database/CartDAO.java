@@ -25,7 +25,7 @@ public class CartDAO {
         } catch (SQLException e) {
             throw new DBException("Cannot get a cart", e);
         }
-    }
+        }
 
     public static void addDishToCart(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();

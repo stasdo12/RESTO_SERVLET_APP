@@ -51,7 +51,7 @@ import org.apache.logging.log4j.Logger;
             int amount = Integer.parseInt(request.getParameter("amount"));
             log.trace("dish id == " + dishId + " amount = " + amount);
             try{
-                if(amount > 0){
+                if(amount > 0) {
                     CartDAO.changeAmountOfDish(user.getId(), dishId, amount);
                 } else{
                     CartDAO.deleteDishFromCart(user.getId(), dishId);

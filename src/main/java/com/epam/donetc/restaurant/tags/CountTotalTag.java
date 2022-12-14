@@ -20,7 +20,7 @@ public class CountTotalTag extends TagSupport {
     public void setCart(Map<Dish, Integer> cart) {
         log.debug("cart ==>" + cart);
         this.cart = cart;
-    }
+        }
 
     @Override
     public int doStartTag() throws JspException {

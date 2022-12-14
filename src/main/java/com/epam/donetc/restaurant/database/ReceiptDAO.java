@@ -26,7 +26,7 @@ public class ReceiptDAO {
             throw new DBException("Cannot get all receipt", e);
         }
         return receipts;
-    }
+      }
 
     private static Receipt createReceipt(ResultSet rs) throws DBException {
         Receipt receipt;

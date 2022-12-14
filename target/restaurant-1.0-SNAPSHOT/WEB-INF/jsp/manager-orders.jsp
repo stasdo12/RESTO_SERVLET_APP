@@ -70,7 +70,7 @@
   <form method="get" action="${pageContext.request.contextPath}/manageOrders">
     <c:forEach var="number" begin="1" end="${maxPage}">
       <div class="menu-pagination-item">
-        <input type="submit" name="currentPage" value="${number}" >
+        <input type="submit" name="currentPage" value="${number}"  >
       </div>
     </c:forEach>
   </form>

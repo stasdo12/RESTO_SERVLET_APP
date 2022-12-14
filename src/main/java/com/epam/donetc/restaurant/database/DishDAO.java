@@ -48,7 +48,7 @@ public class DishDAO {
             throw new DBException("Cannot get all dishes", ex);
         }
         return dishes;
-    }
+     }
     public static List<Dish> getDishesByCategory(String category) throws DBException {
         List<Dish> allDishes = getAllDishes();
         return allDishes.stream()

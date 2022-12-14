@@ -10,7 +10,7 @@ public class Receipt {
     private int total;
 
     public Receipt() {
-    }
+      }
 
     public Receipt(int id, User user, Status status, Map<Dish, Integer> dishes) {
         this.id = id;

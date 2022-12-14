@@ -35,7 +35,7 @@ public class SignupServlet extends HttpServlet {
                 request.setAttribute("err", "true");
                 response.sendRedirect(request.getContextPath() + "/signup");
                 return;
-            }
+               }
             User user = UserDAO.signUp(login, password);
             request.getSession().setAttribute("user", user);
             response.sendRedirect(request.getContextPath() + "/menu");

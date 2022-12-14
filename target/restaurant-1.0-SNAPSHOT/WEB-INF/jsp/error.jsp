@@ -13,7 +13,7 @@
 <body>
 <%@include file="../jspf/header.jspf"%>
 
-<div class="error_box">
+<div class="error_box" >
   Something went wrong<br>
   :(
   <p class="error_text">Try again later</p>

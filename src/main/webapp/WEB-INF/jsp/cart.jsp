@@ -12,7 +12,7 @@
 <%@taglib prefix="mylib2" uri="http://restaurant.com" %>
 
 <html>
-<c:set var="title" value="Cart" scope="page"/>
+<c:set var="title" value="Cart" scope="page" />
 <%@include file="../jspf/head.jspf" %>
 <body>
 <%@include file="../jspf/header.jspf" %>

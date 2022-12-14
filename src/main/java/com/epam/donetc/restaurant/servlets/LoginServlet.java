@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
         if (login.isEmpty() || password.isEmpty()){
             response.sendRedirect(request.getContextPath() + "/login");
             return;
-        }
+         }
         try{
             User user = UserDAO.logIn(login, password);
             if(user != null){

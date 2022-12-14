@@ -13,7 +13,7 @@ public enum Category {
     Category(int id, String name) {
         this.id = id;
         this.name = name;
-    }
+        }
 
     public static Category getCategoryById(int id){
         for (Category c : values()) {

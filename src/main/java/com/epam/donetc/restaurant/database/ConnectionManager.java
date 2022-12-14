@@ -98,6 +98,6 @@ public class ConnectionManager {
         closeable.close();
     }catch (Exception ex){
         ex.printStackTrace();
-    }
+     }
     }
 }
