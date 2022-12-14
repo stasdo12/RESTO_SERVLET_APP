@@ -1415,3 +1415,33 @@ com.epam.donetc.restaurant.exeption.DBException: Deleting failed
 11:10:02.016 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
 11:10:02.016 [http-nio-8080-exec-10] DEBUG - dishes were sorted
 11:10:02.016 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+11:48:24.719 [http-nio-8080-exec-9] DEBUG - dishes size before sorting == 21
+11:48:24.739 [http-nio-8080-exec-9] DEBUG - dishes were sorted
+11:48:24.739 [http-nio-8080-exec-9] DEBUG - dishes size before getDishOnPage == 21
+11:51:25.623 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+11:51:30.494 [http-nio-8080-exec-8] DEBUG - dishes size before sorting == 21
+11:51:30.497 [http-nio-8080-exec-8] DEBUG - dishes were sorted
+11:51:30.498 [http-nio-8080-exec-8] DEBUG - dishes size before getDishOnPage == 21
+11:51:30.635 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+11:51:30.636 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+11:51:30.636 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+12:03:06.160 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+12:05:04.465 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+12:09:16.903 [RMI TCP Connection(6)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+12:10:20.747 [RMI TCP Connection(9)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+12:10:26.279 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 21
+12:10:26.281 [http-nio-8080-exec-10] DEBUG - dishes were sorted
+12:10:26.281 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 21
+12:10:27.888 [http-nio-8080-exec-4] DEBUG - dishes size before sorting == 21
+12:10:27.888 [http-nio-8080-exec-4] DEBUG - dishes were sorted
+12:10:27.888 [http-nio-8080-exec-4] DEBUG - dishes size before getDishOnPage == 21
+12:10:35.839 [http-nio-8080-exec-12] DEBUG - dishes size before sorting == 21
+12:10:35.839 [http-nio-8080-exec-12] DEBUG - dishes were sorted
+12:10:35.839 [http-nio-8080-exec-12] DEBUG - dishes size before getDishOnPage == 21
+12:10:55.622 [http-nio-8080-exec-14] DEBUG - dishes size before sorting == 21
+12:10:55.622 [http-nio-8080-exec-14] DEBUG - dishes were sorted
+12:10:55.622 [http-nio-8080-exec-14] DEBUG - dishes size before getDishOnPage == 21
+12:16:27.913 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\target\restaurant-1.0-SNAPSHOT\WEB-INF\log4j2.log
+12:16:38.128 [http-nio-8080-exec-4] DEBUG - dishes size before sorting == 21
+12:16:38.131 [http-nio-8080-exec-4] DEBUG - dishes were sorted
+12:16:38.131 [http-nio-8080-exec-4] DEBUG - dishes size before getDishOnPage == 21
