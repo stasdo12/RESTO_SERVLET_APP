@@ -1,6 +1,7 @@
 package com.epam.donetc.restaurant.Controller;
 
-import com.epam.donetc.restaurant.Controller.command.*;
+import com.epam.donetc.restaurant.Controller.command.get.*;
+import com.epam.donetc.restaurant.Controller.command.post.DeleteDishCommand;
 
 public enum CommandEnum {
     add_dish(new ManagerAddDishCommand()),
