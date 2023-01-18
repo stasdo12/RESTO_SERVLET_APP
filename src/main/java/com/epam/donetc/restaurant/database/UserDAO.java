@@ -2,17 +2,21 @@ package com.epam.donetc.restaurant.database;
 
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.database.entity.User;
+import com.epam.donetc.restaurant.util.PropertiesUtil;
+import org.apache.commons.codec.digest.DigestUtils;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Properties;
 
-public class UserDAO {
+public class UserDAO  {
 
+    private static final String SALT = "hxSalt";
+    String salt = PropertiesUtil.get(SALT);
 
-
-    public static User getUserByLogin(String login) throws DBException {
+    public  User getUserByLogin(String login) throws DBException {
         try(Connection con = ConnectionManager.get();
             PreparedStatement ps = con.prepareStatement(DBManager.GET_USER_BY_LOGIN)){
             ps.setString(1, login);
@@ -28,7 +32,7 @@ public class UserDAO {
         }
     }
 
-    public static User getUserById(int id){
+    public  User getUserById(int id){
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.GET_USER_BY_ID)) {
             ps.setInt(1,id);
@@ -43,31 +47,33 @@ public class UserDAO {
             throw new RuntimeException(e);
         }
     }
-    private static User createUser(ResultSet rs) throws SQLException{
+    private  User createUser(ResultSet rs) throws SQLException{
         return new User(rs.getInt(1), rs.getString(2),rs.getString(3), rs.getInt(4));
     }
 
-    public static User signUp(String login, String password){
+    public  User signUp(String login, String password, String email){
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.SIGN_UP)) {
-            int k = 0;
-            ps.setString(++k, login);
-            ps.setString(++k, password);
+            password = DigestUtils.md5Hex(password + salt);
+            ps.setString(1, login);
+            ps.setString(2, password);
+            ps.setString(3, email);
             if (ps.executeUpdate() == 0){
                 throw new DBException("Sign Up Failed");
             }
             return getUserByLogin(login);
         } catch (SQLException | DBException e) {
             throw new RuntimeException(e);
-        }
-     }
 
-    public static User logIn(String login, String password) throws DBException {
+        }
+    }
+
+    public  User logIn(String login, String password) throws DBException {
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.LOG_IN)){
-            int k = 0;
-            ps.setString(++k, login);
-            ps.setString(++k, password);
+            password = DigestUtils.md5Hex(password + salt);
+            ps.setString(1, login);
+            ps.setString(2, password);
             try(ResultSet rs = ps.executeQuery()){
                 if (rs.next()){
                     return createUser(rs);

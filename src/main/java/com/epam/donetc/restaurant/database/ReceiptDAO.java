@@ -4,6 +4,8 @@ import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
 import com.epam.donetc.restaurant.exeption.DBException;
+import com.epam.donetc.restaurant.service.DishService;
+import com.epam.donetc.restaurant.service.UserService;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,7 +15,8 @@ import java.util.Map;
 
 public class ReceiptDAO {
 
-    public static List<Receipt> getAllReceipt() throws DBException {
+
+    public  List<Receipt> getAllReceipt() throws DBException {
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get()) {
             Statement statement = connection.createStatement();
@@ -29,10 +32,11 @@ public class ReceiptDAO {
       }
 
     private static Receipt createReceipt(ResultSet rs) throws DBException {
+         UserService userService = new UserService();
         Receipt receipt;
         try {
             receipt = new Receipt(rs.getInt(1),
-                    UserDAO.getUserById(rs.getInt(2)),
+                    userService.getUserById(rs.getInt(2)),
                     Status.getStatusById(rs.getInt(3)));
             receipt.setDishes(getDishesByReceiptId(receipt.getId()));
             receipt.countTotal();
@@ -44,13 +48,14 @@ public class ReceiptDAO {
     }
 
     private static Map<Dish, Integer> getDishesByReceiptId(int receiptId) throws DBException {
+        DishService dishService = new DishService();
         Map<Dish, Integer> dishes = new HashMap<>();
         try (Connection con = ConnectionManager.get();
              PreparedStatement ps = con.prepareStatement(DBManager.GET_DISHES_BY_RECEIPT_ID)) {
             ps.setInt(1, receiptId);
             try (ResultSet rs = ps.executeQuery()) {
                 while (rs.next()) {
-                    dishes.put(DishDAO.getDishByID(rs.getInt(2)), rs.getInt(3));
+                    dishes.put(dishService.getDishByID(rs.getInt(2)), rs.getInt(3));
                 }
             } catch (SQLException ex) {
                 throw new DBException("Cannot put dishes into map", ex);
@@ -60,7 +65,7 @@ public class ReceiptDAO {
         }
         return dishes;
     }
-    public static void changeStatus(int receiptId, Status status)throws DBException{
+    public  void changeStatus(int receiptId, Status status)throws DBException{
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_RECEIPT_STATUS)) {
             ps.setInt(1, status.getId());
@@ -73,7 +78,37 @@ public class ReceiptDAO {
         }
     }
 
-    public static List<Receipt> getReceiptByUserId(int userId) throws DBException{
+    public void addAddress (int id, String address) {
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.ADDRESS)) {
+            ps.setString(1, address);
+            ps.setInt(2, id);
+            if (ps.executeUpdate()==0){
+                throw new SQLException("Added address error");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public String getAddress (int id){
+        String address = null;
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.GET_ADDRESS)) {
+            ps.setInt(1, id);
+
+            try(ResultSet rs = ps.executeQuery()){
+                if (rs.next()){
+                    address = rs.getString(1);
+                }
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return address;
+    }
+
+    public  List<Receipt> getReceiptByUserId(int userId) throws DBException{
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.GET_RECEIPT_BY_USER_ID)) {
@@ -90,7 +125,7 @@ public class ReceiptDAO {
         return receipts;
     }
 
-    public static int countMaxPage(int amount){
+    public  int countMaxPage(int amount){
         if (amount % 10 == 0){
             return amount/10;
         }else {
@@ -98,7 +133,7 @@ public class ReceiptDAO {
         }
     }
 
-    public static List<Receipt> getReceiptOnPage(List<Receipt> receipts, int currantPage){
+    public  List<Receipt> getReceiptOnPage(List<Receipt> receipts, int currantPage){
         int begin = (currantPage - 1) * 10;
         if (receipts.size() > 0 && receipts.size() < begin +10 ){
             receipts = receipts.subList(begin, receipts.size());

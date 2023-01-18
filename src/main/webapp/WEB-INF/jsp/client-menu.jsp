@@ -8,40 +8,45 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page isELIgnored="false" %>
+<%@page session="true" %>
 
-<html>
+<fmt:setLocale value="${sessionScope.lang}"/>
+<fmt:setBundle basename="messages"/>
+
+<html lang="${sessionScope.lang}">
 <c:set var="title" value="Menu" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
 <%@include file="../jspf/header.jspf"%>
-
 <jsp:useBean id="dishes" scope="session" type="java.util.List"/>
 <jsp:useBean id="maxPage" scope="session" type="java.lang.Integer"/>
 
 <div class="sort-filter-bar">
   <form class="menu_filter_sort" method="get" action="${pageContext.request.contextPath}/menu">
-    <label for="category">Choose a category:</label>
+    <label for="category"><fmt:message key="label.chooseACategory"/></label>
     <select id="category" name="category">
-      <option value="All">All categories</option>
-      <option value="pizza">Pizza</option>
-      <option value="sushi">Sushi</option>
-      <option value="burger">Burger</option>
-      <option value="drink">Drink</option>
-      <option value="salad">Salad</option>
-      <option value="dessert">Dessert</option>
+      <option value="All"><fmt:message key="label.allCategories"/></option>
+      <option value="pizza"><fmt:message key="label.pizza"/></option>
+      <option value="sushi"><fmt:message key="label.sushi"/></option>
+      <option value="burger"><fmt:message key="label.burger"/></option>
+      <option value="drink"><fmt:message key="label.drink"/></option>
+      <option value="salad"><fmt:message key="label.salad"/></option>
+      <option value="dessert"><fmt:message key="label.dessert"/></option>
     </select>
 
-    <label for="sortBy">Sort by:</label>
+    <label for="sortBy"><fmt:message key="label.sortBy"/></label>
     <select id="sortBy" name="sortBy">
-      <option value="category">Category</option>
-      <option value="name">Name</option>
-      <option value="price">Price</option>
+      <option value="category"><fmt:message key="label.category"/></option>
+      <option value="name"><fmt:message key="label.nameMenu"/></option>
+      <option value="price"><fmt:message key="label.price"/></option>
     </select>
     <select name="currentPage" style="display: none">
       <option value="1" selected></option>
     </select>
 
-    <input class="menu-apply-button" type="submit" value="Apply">
+    <input class="menu-apply-button" type="submit" value="<fmt:message key="label.applyButton"/>">
 
   </form>
 </div>
@@ -67,7 +72,7 @@
     </c:forEach>
   </form>
 </div>
-<%@include file="../jspf/footer.jspf"%>
+
 
 </body>
 </html>

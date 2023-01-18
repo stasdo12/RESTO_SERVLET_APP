@@ -9,6 +9,10 @@ public class User implements Serializable {
     private String password;
     private int roleId;
 
+    private String email;
+
+
+
     public User(int id, String login, String password, int roleId) {
         this.id = id;
         this.login = login;
@@ -41,12 +45,16 @@ public class User implements Serializable {
         return "User{" +
                 "id=" + id +
                 ", login='" + login + '\'' +
-                ", roleId=" + roleId +
+                ", roleId=" + roleId + email+
                 '}';
     }
 
     public String getPassword() {
         return password;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     @Override

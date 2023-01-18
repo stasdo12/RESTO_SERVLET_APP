@@ -8,8 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page isELIgnored="false" %>
 
-<html>
+<fmt:setLocale value="${param.lang}"/>
+<fmt:setBundle basename="messages"/>
+
+<html lang="${requestScope.lang}">
 <c:set var="title" value="Orders" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
@@ -22,11 +27,11 @@
   <table class="table">
     <thead>
     <tr>
-      <th>Order id</th>
-      <th>User id</th>
-      <th>Status</th>
-      <th>Dishes</th>
-      <th>Total</th>
+      <th><fmt:message key="label.orderId"/></th>
+      <th><fmt:message key="label.userId"/></th>
+      <th><fmt:message key="label.status"/></th>
+      <th><fmt:message key="label.dishes"/></th>
+      <th><fmt:message key="label.totalOrder"/></th>
     </tr>
     </thead>
     <tbody>
@@ -41,15 +46,15 @@
 
           <form class="menu_filter_sort" method="post" action="${pageContext.request.contextPath}/manageOrders">
             <select  id="status" name="status">
-              <option value="New">New</option>
-              <option value="Approved">Approved</option>
-              <option value="Cancelled">Cancelled</option>
-              <option value="Cooking">Cooking</option>
-              <option value="Delivering">Delivering</option>
-              <option value="Received">Received</option>
+              <option value="New"><fmt:message key="label.statusNew"/></option>
+              <option value="Approved"><fmt:message key="label.statusApproved"/></option>
+              <option value="Cancelled"><fmt:message key="label.statusCancelled"/></option>
+              <option value="Cooking"><fmt:message key="label.statusCooking"/></option>
+              <option value="Delivering"><fmt:message key="label.statusDelivering"/></option>
+              <option value="Received"><fmt:message key="label.statusReceived"/></option>
             </select>
             <input value="${receipt.id}" name="id" style="display: none">
-            <input class="manager-orders-apply" type="submit" value="Apply">
+            <input class="manager-orders-apply" type="submit" value="<fmt:message key="label.applyButton"/>">
 
           </form>
         </td>
@@ -75,7 +80,7 @@
     </c:forEach>
   </form>
 </div>
-<%@include file="../jspf/footer.jspf"%>
+
 
 </body>
 </html>

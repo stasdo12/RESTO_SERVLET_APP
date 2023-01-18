@@ -4,6 +4,7 @@ import com.epam.donetc.restaurant.database.UserDAO;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.AppException;
 import com.epam.donetc.restaurant.exeption.DBException;
+import com.epam.donetc.restaurant.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -14,6 +15,11 @@ import java.io.IOException;
 
 @WebServlet(name = "SignupServlet", value = "/signup")
 public class SignupServlet extends HttpServlet {
+    private UserService userService;
+
+    public SignupServlet() {
+        this.userService = new UserService();
+    }
 
     private static final Logger log = LogManager.getLogger(SignupServlet.class);
 
@@ -26,17 +32,18 @@ public class SignupServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws  IOException {
         String login = request.getParameter("login");
         String password = request.getParameter("password");
+        String email = request.getParameter("email");
         if(login.isEmpty()|| password.isEmpty()){
             response.sendRedirect(request.getContextPath()+ "/signup");
             return;
         }
         try{
-            if(UserDAO.getUserByLogin(login) != null){
+            if(userService.getUserByLogin(login) != null){
                 request.setAttribute("err", "true");
                 response.sendRedirect(request.getContextPath() + "/signup");
                 return;
                }
-            User user = UserDAO.signUp(login, password);
+            User user = userService.signUp(login, password,email);
             request.getSession().setAttribute("user", user);
             response.sendRedirect(request.getContextPath() + "/menu");
         } catch (DBException ex) {

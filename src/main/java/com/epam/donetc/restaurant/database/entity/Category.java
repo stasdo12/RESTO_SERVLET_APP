@@ -40,4 +40,9 @@ public enum Category {
     public int getId(){
         return id;
     }
+
+    @Override
+    public String toString() {
+        return getName();
+    }
 }

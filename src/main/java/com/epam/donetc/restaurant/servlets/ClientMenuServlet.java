@@ -6,18 +6,30 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-import com.epam.donetc.restaurant.database.CartDAO;
-import com.epam.donetc.restaurant.database.DishDAO;
-import com.epam.donetc.restaurant.database.ReceiptDAO;
+
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.AppException;
 import com.epam.donetc.restaurant.exeption.DBException;
+import com.epam.donetc.restaurant.service.CartService;
+import com.epam.donetc.restaurant.service.DishService;
+import com.epam.donetc.restaurant.service.ReceiptService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @WebServlet("/menu")
 public class ClientMenuServlet extends HttpServlet {
+    private int page = 1;
+    private int recordsPerPage = 10;
+    DishService dishService;
+    CartService cartService;
+    ReceiptService receiptService;
+
+    public ClientMenuServlet() {
+        this.dishService = new DishService();
+        this.cartService = new CartService();
+        this.receiptService = new ReceiptService();
+    }
 
     private static final Logger log = LogManager.getLogger(ClientMenuServlet.class);
 
@@ -33,27 +45,28 @@ public class ClientMenuServlet extends HttpServlet {
         try{
             List<Dish> dishes;
             if(category == null || category.isEmpty() || category.equalsIgnoreCase("All")){
-                dishes = DishDAO.getAllDishes();
+                dishes = dishService.getAllDishes();
             }else{
-                dishes = DishDAO.getDishesByCategory(category);
+                dishes = dishService.getDishesByCategory(category);
             }
-            int maxPage = ReceiptDAO.countMaxPage(dishes.size());
+            int maxPage = receiptService.countMaxPage(dishes.size());
 
             log.debug("dishes size before sorting == " + dishes.size());
-            dishes = DishDAO.sortBy(dishes, sortBy);
+            dishes = dishService.sortBy(dishes, sortBy);
             log.debug("dishes were sorted");
 
             log.trace("current page == " + currentPage);
             log.debug("dishes size before getDishOnPage == " + dishes.size());
-            dishes = DishDAO.getDishesOnePage(dishes, currentPage);
+            dishes = dishService.getDishesOnePage(dishes, currentPage);
 
+            session.setAttribute("category", category);
             session.setAttribute("maxPage", maxPage);
             session.setAttribute("dishes", dishes);
             request.getRequestDispatcher("/WEB-INF/jsp/client-menu.jsp").forward(request, response);
         }catch (DBException ex){
             log.error("In Client menu servlet doGet() ", ex);
             throw new AppException(ex);
-         }
+        }
     }
 
     @Override
@@ -63,8 +76,8 @@ public class ClientMenuServlet extends HttpServlet {
         int dishId = Integer.parseInt(request.getParameter("id"));
         int amount = Integer.parseInt(request.getParameter("amount"));
         try{
-            if(!CartDAO.getCart(user.getId()).containsKey(DishDAO.getDishByID(dishId))){
-                CartDAO.addDishToCart(user.getId(), dishId, amount);
+            if(!cartService.getCart(user.getId()).containsKey(dishService.getDishByID(dishId))){
+                cartService.addDishToCart(user.getId(), dishId, amount);
             }
         }catch (DBException ex){
             log.error("In Client menu servlet doPost() ", ex);

@@ -6,13 +6,17 @@
   Time: 11:56
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="mylib2" uri="http://restaurant.com" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page isELIgnored="false" %>
 
-<html>
-<c:set var="title" value="Cart" scope="page" />
+<fmt:setLocale value="${sessionScope.lang}>"/>
+<fmt:setBundle basename="messages"/>
+
+<html lang="${sessionScope.lang}>>
+<c:set var="title" value="Cart" scope="page"/>
 <%@include file="../jspf/head.jspf" %>
 <body>
 <%@include file="../jspf/header.jspf" %>
@@ -21,7 +25,7 @@
 <div class="grey_background">
     <c:if test="${cart.size()==0}">
         <div class="cart-empty">
-            Your cart is empty, try adding some dishes.
+            <fmt:message key="label.cartEmpty"/>
         </div>
     </c:if>
     <c:if test="${cart.size() != 0}">
@@ -30,9 +34,10 @@
             <thead>
             <tr>
                 <th></th>
-                <th>Dish description</th>
-                <th>Amount</th>
-                <th>Delete</th>
+                <th><fmt:message key="label.dishDescription"/></th>
+                <th><fmt:message key="label.amount"/></th>
+                <th><fmt:message key="label.address-client"/> </th>
+                <th><fmt:message key="label.delete"/></th>
             </tr>
             </thead>
             <tbody>
@@ -46,22 +51,32 @@
                         <div class="dish_cart_text">
                             <p><strong>${dish.name}</strong></p>
                             <p>${dish.description}</p>
-                            <p>${dish.weight} g</p>
-                            <p>${dish.price} UAH</p>
+                            <p>${dish.weight} <fmt:message key="label.g"/></p>
+                            <p>${dish.price} <fmt:message key="label.uah"/></p>
                         </div>
                     </td>
                     <td>
                         <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/cart">
-                            <input name="amount" type="number" min="1" value="${item.value}">
+                            <input class="amount-border" name="amount" type="number" min="1" value="${item.value}">
                             <input name="id" style="display: none" value="${dish.id}">
-                            <input type="submit" value="Apply">
+                            <input class="apply-cart" type="submit" value="<fmt:message key="label.applyButton"/>">
                         </form>
                     </td>
+                    <td>
+                        <form method="post" action="${pageContext.request.contextPath}/address">
+                            <input name="id" style="display: none" value="${user.id}">
+                            <input class="amount-border" name="address" required minlength="5">
+                            <input class="apply-cart" type="submit" value="<fmt:message key="label.applyButton"/>">
+                        </form>
+
+
+                    </td>
+
                     <td>
                         <form method="post" action="${pageContext.request.contextPath}/cart">
                             <input name="amount" style="display: none" type="number" value="0">
                             <input name="id" style="display: none" value="${dish.id}">
-                            <input type="submit" value="Delete">
+                            <input class="delete-button-cart" type="submit" value="<fmt:message key="label.delete"/>">
                         </form>
                     </td>
                 </tr>
@@ -70,14 +85,13 @@
         </table>
         <jsp:useBean id="total" scope="session" type="java.lang.Integer"/>
         <div class="cart-submit-order">
-            <p>Total: ${total}   UAH</p>
+            <p><fmt:message key="label.total"/> ${total}   <fmt:message key="label.uah"/></p>
             <form action="${pageContext.request.contextPath}/myOrders" method="post">
-                <input class="cart-submit-button" type="submit" value="Order"/>
+                <input class="cart-submit-button" type="submit" value="<fmt:message key="label.order"/>"/>
             </form>
         </div>
 
     </c:if>
-    <%@include file="../jspf/footer.jspf"%>
 </div>
 </body>
 </html>

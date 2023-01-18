@@ -11,7 +11,7 @@
         </File>
     </Appenders>
     <Loggers>
-        <Logger name="com.epam.koval.restaurant" level="trace">
+        <Logger name="com.epam.donetc.restaurant" level="trace">
             <AppenderRef ref="Console"  />
         </Logger>
         <Root level="debug">

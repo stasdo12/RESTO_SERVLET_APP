@@ -19,6 +19,7 @@ CREATE TABLE IF NOT EXISTS users
     id       SERIAL PRIMARY KEY,
     login    VARCHAR(255) NOT NULL UNIQUE,
     password VARCHAR(32)  NOT NULL,
+    email varchar(255) NOT NULL ,
     role_id  int REFERENCES role (id) ON DELETE CASCADE
                                       ON UPDATE CASCADE
                                       NOT NULL DEFAULT 1

@@ -6,7 +6,7 @@ package com.epam.donetc.restaurant.database;
 public class DBManager {
     //Login and Sign Up
     public static final String LOG_IN = "SELECT * FROM users WHERE login = ? AND password = ?";
-    public static final String SIGN_UP = "INSERT INTO users (login, password) VALUES (?, ?)";
+    public static final String SIGN_UP = "INSERT INTO users (login, password, email) VALUES (?, ?, ?)";
 
     //USER
     public static final String GET_USER_BY_ID = "SELECT * FROM users WHERE id = ?";
@@ -27,18 +27,33 @@ public class DBManager {
     public static final String CREATE_NEW_RECEIPT_BY_USER_ID = "INSERT INTO receipt (user_id) VALUES (?)";
     public static final String PUT_DISH_INTO_RECEIPT = "INSERT INTO receipt_has_dish ( receipt_id, dish_id, amount ) VALUES (?, ?, ?)";
 
+    public static final String GET_ADDRESS = "SELECT address FROM receipt WHERE id = ?";
 
+
+    //CHANGE DISHES AND ADD DISHES
+
+    public static final String CHANGE_DISH_BY_ID = "UPDATE  dish SET name = ?, prise = ?, weight = ?, category_id = ?, description = ? WHERE id = ?";
+    public static final String DELETE_DISH = "DELETE FROM dish WHERE id = ?";
+
+    public static final String ADD_DISH = "INSERT INTO dish (name, prise, weight, category_id, description) VALUES (?, ?, ?, ?, ?);";
 
     //CART
     public static final String GET_CART_BY_USER_ID = "SELECT * FROM cart WHERE user_id = ?";
     public static final String PUT_DISH_INTO_CART = "INSERT INTO cart(user_id, dish_id, amount) VALUES (?,?,?)";
     public static final String UPDATE_DISH_AMOUNT_IN_CART = "UPDATE cart SET amount = ? WHERE user_id = ? AND dish_id = ?";
+
+    public static final String UPDATE_ADDRESS_IN_CART = "UPDATE  cart SET address = ? WHERE user_id = ?";
+
+
+    public static final String ADDRESS= "UPDATE  receipt SET address = ? WHERE user_id = ?";
     public static final String DELETE_DISH_FROM_CART = "DELETE FROM cart WHERE user_id = ? AND dish_id = ?";
     public static final String CLEAR_CART = "DELETE from cart WHERE user_id =  ?";
 
 
 
-
+    //PAGINATION POSTGRESQL FOR DISH
+    public static final String PAGINATION = "SELECT * FROM dish  ORDER BY id OFFSET ? LIMIT ? ;";
+    public static final String COUNT = "SELECT COUNT(*) FROM dish";
 
 
 

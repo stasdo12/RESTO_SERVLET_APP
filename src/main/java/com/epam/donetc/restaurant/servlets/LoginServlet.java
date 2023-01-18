@@ -1,21 +1,25 @@
 package com.epam.donetc.restaurant.servlets;
 
-import com.epam.donetc.restaurant.database.UserDAO;
 import com.epam.donetc.restaurant.exeption.AppException;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.database.entity.User;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import com.epam.donetc.restaurant.service.UserService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
+    private UserService userService;
+
+    public LoginServlet() {
+        this.userService = new UserService();
+    }
 
     private static final Logger log = LogManager.getLogger(LoginServlet.class);
 
@@ -33,7 +37,7 @@ public class LoginServlet extends HttpServlet {
             return;
          }
         try{
-            User user = UserDAO.logIn(login, password);
+            User user = userService.logIn(login, password);
             if(user != null){
                 request.getSession().setAttribute("user", user);
                 if(user.getRoleId() == 1){

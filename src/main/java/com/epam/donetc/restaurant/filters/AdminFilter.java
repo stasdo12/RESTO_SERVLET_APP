@@ -15,12 +15,13 @@ public class AdminFilter extends HttpFilter {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
+        res.setCharacterEncoding("UTF-8");
         User user = (User) req.getSession().getAttribute("user");
         if (user == null){
             res.sendRedirect(req.getContextPath() + "/login");
         } else if (user.getRoleId() ==2) {
             res.sendRedirect(req.getContextPath()+ "/manageOrders");
-        }else {
+        } else {
             chain.doFilter(req, res);
          }
     }

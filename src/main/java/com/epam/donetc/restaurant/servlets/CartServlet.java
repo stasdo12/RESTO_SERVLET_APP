@@ -15,11 +15,17 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.Map;
 
+import com.epam.donetc.restaurant.service.CartService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
     @WebServlet("/cart")
     public class CartServlet extends HttpServlet {
+        CartService cartService;
+
+        public CartServlet() {
+            this.cartService = new CartService();
+        }
 
         private static final Logger log = LogManager.getLogger(CartServlet.class);
 
@@ -29,7 +35,7 @@ import org.apache.logging.log4j.Logger;
             Map<Dish, Integer> cart;
             User user = (User) session.getAttribute("user");
             try{
-                cart = CartDAO.getCart(user.getId());
+                cart = cartService.getCart(user.getId());
                 int total = 0;
                 for (Dish d: cart.keySet()) {
                     total += d.getPrice() * cart.get(d);
@@ -52,9 +58,9 @@ import org.apache.logging.log4j.Logger;
             log.trace("dish id == " + dishId + " amount = " + amount);
             try{
                 if(amount > 0) {
-                    CartDAO.changeAmountOfDish(user.getId(), dishId, amount);
+                    cartService.changeAmountOfDish(user.getId(), dishId, amount);
                 } else{
-                    CartDAO.deleteDishFromCart(user.getId(), dishId);
+                    cartService.deleteDishFromCart(user.getId(), dishId);
                 }
             }catch (DBException ex){
                 log.error("In cart servlet doPost() ", ex);

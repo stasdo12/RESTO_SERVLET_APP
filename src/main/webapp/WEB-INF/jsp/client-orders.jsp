@@ -8,7 +8,13 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
-<html>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ page isELIgnored="false" %>
+
+<fmt:setLocale value="${sessionScope.lang}"/>
+<fmt:setBundle basename="messages"/>
+
+<html lang="${sessionScope.lang}>
 <c:set var="title" value="My orders" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
@@ -24,10 +30,11 @@
   <table class="table">
     <thead>
     <tr>
-      <th>Order id</th>
-      <th>Status</th>
-      <th>Dishes</th>
-      <th>Total</th>
+      <th><fmt:message key="label.orderId"/></th>
+      <th><fmt:message key="label.status"/></th>
+      <th><fmt:message key="label.dishes"/></th>
+      <th><fmt:message key="label.totalOrder"/></th>
+      <th><fmt:message key="label.address-client"/> </th>
     </tr>
     </thead>
     <tbody>
@@ -44,6 +51,7 @@
           </c:forEach>
         </td>
         <td>${receipt.total}</td>
+        <td>${receipt.address}</td>
       </tr>
     </c:forEach>
     </tbody>
@@ -60,7 +68,7 @@
   </form>
 </div>
 </c:if>
-<%@include file="../jspf/footer.jspf"%>
+
 
 </body>
 </html>

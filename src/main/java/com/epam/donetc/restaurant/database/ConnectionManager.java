@@ -1,27 +1,31 @@
 package com.epam.donetc.restaurant.database;
 
 import com.epam.donetc.restaurant.util.PropertiesUtil;
+import org.apache.commons.dbcp2.BasicDataSource;
 
-import java.lang.reflect.Proxy;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.sql.Savepoint;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
+
 
 public class ConnectionManager {
-    static {
-        loadDriver();
-    }
+
+    private static ConnectionManager instance;
 
     private static final String PASSWORD_KEY = "db.password";
     private static final String URL_KEY = "db.url";
     private static final String USERNAME_KEY = "db.username";
-    private static final String POOL_SIZE = "db.pool.size";
-    private static  BlockingQueue<Connection> pool;
-    private static final Integer DEFAULT_POOL_SIZE = 10;
 
+    private static BasicDataSource ds = new BasicDataSource();
+
+    static {
+        loadDriver();
+        ds.setUrl(PropertiesUtil.get(URL_KEY));
+        ds.setUsername(PropertiesUtil.get(USERNAME_KEY));
+        ds.setPassword(PropertiesUtil.get(PASSWORD_KEY));
+        ds.setMinIdle(5);
+        ds.setMaxIdle(10);
+        ds.setMaxOpenPreparedStatements(100);
+    }
 
     private static void loadDriver() {
         try {
@@ -31,50 +35,12 @@ public class ConnectionManager {
         }
     }
 
-    static {
-        initConnectionPool();
+    public static Connection get() throws SQLException {
+        return ds.getConnection();
     }
 
-    private  ConnectionManager() {
-    }
+    private ConnectionManager() {
 
-    private static void initConnectionPool() {
-        String poolSize = PropertiesUtil.get(POOL_SIZE);
-        PropertiesUtil.get(poolSize);
-
-        var size  = poolSize ==null?DEFAULT_POOL_SIZE: Integer.parseInt(poolSize);
-        pool = new ArrayBlockingQueue<>(size);
-
-        for (int i = 0; i < size; i++) {
-            var connection = open();
-            var proxyConnection = (Connection)Proxy.newProxyInstance(ConnectionManager.class.getClassLoader(),
-                    new Class[]{Connection.class}, ((proxy, method, args) ->
-                            method.getName().equals("close")
-                                    ? pool.add((Connection) proxy): method.invoke(connection, args)));
-            pool.add(proxyConnection);
-
-        }
-
-    }
-
-
-    public static Connection get(){
-        try {
-            return pool.take();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
-    }
-    private static Connection open(){
-        try {
-            return DriverManager.getConnection(
-                    PropertiesUtil.get(URL_KEY),
-                    PropertiesUtil.get(USERNAME_KEY),
-                    PropertiesUtil.get(PASSWORD_KEY)
-            );
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
     }
 
     public static void rollback(Connection con) {
@@ -85,19 +51,19 @@ public class ConnectionManager {
         }
     }
 
-    public static void rollback(Connection con, Savepoint s) {
+    public static void close(AutoCloseable closeable) {
         try {
-            con.rollback(s);
-        } catch (SQLException ex) {
+            closeable.close();
+        } catch (Exception ex) {
             ex.printStackTrace();
         }
     }
 
-    public static void close(AutoCloseable closeable){
-    try {
-        closeable.close();
-    }catch (Exception ex){
-        ex.printStackTrace();
-     }
+
+    public static synchronized ConnectionManager getInstance() {
+        if (instance == null) {
+            instance = new ConnectionManager();
+        }
+        return instance;
     }
 }

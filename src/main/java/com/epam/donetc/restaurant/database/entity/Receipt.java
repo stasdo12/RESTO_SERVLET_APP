@@ -9,20 +9,31 @@ public class Receipt {
     private Map<Dish, Integer> dishes;
     private int total;
 
+    private String address;
+
     public Receipt() {
       }
 
-    public Receipt(int id, User user, Status status, Map<Dish, Integer> dishes) {
+    public Receipt(int id, User user, Status status, Map<Dish, Integer> dishes, String address) {
         this.id = id;
         this.user = user;
         this.status = status;
         this.dishes = dishes;
+        this.address = address;
     }
 
     public Receipt(int id, User user, Status status) {
         this.id = id;
         this.user = user;
         this.status = status;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     public int getId() {
