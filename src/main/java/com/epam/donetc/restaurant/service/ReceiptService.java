@@ -1,14 +1,11 @@
 package com.epam.donetc.restaurant.service;
 
-import com.epam.donetc.restaurant.database.ConnectionManager;
-import com.epam.donetc.restaurant.database.DBManager;
+
 import com.epam.donetc.restaurant.database.ReceiptDAO;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
 import com.epam.donetc.restaurant.exeption.DBException;
 
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ReceiptService {

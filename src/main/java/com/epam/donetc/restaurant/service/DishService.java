@@ -1,20 +1,15 @@
 package com.epam.donetc.restaurant.service;
 
-import com.epam.donetc.restaurant.database.ConnectionManager;
-import com.epam.donetc.restaurant.database.DBManager;
 import com.epam.donetc.restaurant.database.DishDAO;
-import com.epam.donetc.restaurant.database.entity.Category;
+
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.exeption.DBException;
-
-import java.sql.*;
-import java.util.ArrayList;
 import java.util.List;
 
 
 public class DishService {
 
-    private DishDAO dishDAO;
+    private final DishDAO dishDAO;
 
     public DishService() {
         this.dishDAO = new DishDAO();
@@ -29,8 +24,8 @@ public class DishService {
        return dishDAO.addDish(name, price, weight, category, desc);
     }
 
-    public boolean changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id){
-     return dishDAO.changeDishAllValues(newName, newPrise, newWeight, newCategory, desc, id);
+    public void changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id){
+        dishDAO.changeDishAllValues(newName, newPrise, newWeight, newCategory, desc, id);
     }
 
     public List<Dish> getAllDishes() throws DBException {
@@ -55,8 +50,8 @@ public class DishService {
 
     }
 
-    public boolean deleteDish(int dishId) {
-        return dishDAO.deleteDish(dishId);
+    public void deleteDish(int dishId) {
+        dishDAO.deleteDish(dishId);
     }
 
     public int getNoOfRecords() {

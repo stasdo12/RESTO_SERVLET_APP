@@ -1,19 +1,14 @@
 package com.epam.donetc.restaurant.service;
 
-import com.epam.donetc.restaurant.database.ConnectionManager;
-import com.epam.donetc.restaurant.database.DBManager;
+
 import com.epam.donetc.restaurant.database.UserDAO;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.DBException;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class UserService {
 
-    private UserDAO userDAO;
+    private final UserDAO userDAO;
 
     public UserService() {
         this.userDAO = new UserDAO();

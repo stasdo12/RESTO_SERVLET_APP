@@ -20,7 +20,6 @@ import org.apache.logging.log4j.Logger;
 @WebServlet("/menu")
 public class ClientMenuServlet extends HttpServlet {
     private int page = 1;
-    private int recordsPerPage = 10;
     DishService dishService;
     CartService cartService;
     ReceiptService receiptService;
@@ -35,17 +34,30 @@ public class ClientMenuServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        if (request.getParameter("page") != null)  {
+            page = Integer.parseInt(
+                    request.getParameter("page"));
+        }
         String category = request.getParameter("category");
         String sortBy = request.getParameter("sortBy");
         if(sortBy == null) sortBy = "category";
-        String curPage = request.getParameter("currentPage");
-        if(curPage == null || curPage.isEmpty()) curPage = "1";
-        int currentPage = Integer.parseInt(curPage);
+//        String curPage = request.getParameter("currentPage");
+//        if(curPage == null || curPage.isEmpty()) curPage = "1";
+//        int currentPage = Integer.parseInt(curPage);
         HttpSession session = request.getSession();
         try{
             List<Dish> dishes;
+
             if(category == null || category.isEmpty() || category.equalsIgnoreCase("All")){
-                dishes = dishService.getAllDishes();
+                int recordsPerPage = 10;
+                dishes = dishService.newViewAllDishForChange(
+                        (page - 1) * recordsPerPage,
+                        recordsPerPage);
+                int noOfRecords = dishService.getNoOfRecords();
+                int noOfPages = (int) Math.ceil(noOfRecords * 1.0
+                        / recordsPerPage);
+                request.setAttribute("noOfPages", noOfPages);
+                request.setAttribute("currentPage", page);
             }else{
                 dishes = dishService.getDishesByCategory(category);
             }
@@ -55,13 +67,13 @@ public class ClientMenuServlet extends HttpServlet {
             dishes = dishService.sortBy(dishes, sortBy);
             log.debug("dishes were sorted");
 
-            log.trace("current page == " + currentPage);
-            log.debug("dishes size before getDishOnPage == " + dishes.size());
-            dishes = dishService.getDishesOnePage(dishes, currentPage);
+//            log.trace("current page == " + currentPage);
+//            log.debug("dishes size before getDishOnPage == " + dishes.size());
+//            dishes = dishService.getDishesOnePage(dishes, currentPage);
 
-            session.setAttribute("category", category);
-            session.setAttribute("maxPage", maxPage);
-            session.setAttribute("dishes", dishes);
+            request.setAttribute("category", category);
+//            session.setAttribute("maxPage", maxPage);
+            request.setAttribute("dishes", dishes);
             request.getRequestDispatcher("/WEB-INF/jsp/client-menu.jsp").forward(request, response);
         }catch (DBException ex){
             log.error("In Client menu servlet doGet() ", ex);

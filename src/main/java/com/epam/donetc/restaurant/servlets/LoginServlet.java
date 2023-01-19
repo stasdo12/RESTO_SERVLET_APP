@@ -15,7 +15,8 @@ import org.apache.logging.log4j.Logger;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-    private UserService userService;
+
+    private final UserService userService;
 
     public LoginServlet() {
         this.userService = new UserService();

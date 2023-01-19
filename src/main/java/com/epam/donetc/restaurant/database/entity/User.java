@@ -6,8 +6,8 @@ import java.util.Objects;
 public class User implements Serializable {
     private int id;
     private String login;
-    private String password;
-    private int roleId;
+    private final String password;
+    private final int roleId;
 
     private String email;
 
@@ -19,6 +19,8 @@ public class User implements Serializable {
         this.password = password;
         this.roleId = roleId;
        }
+
+
 
     public int getId() {
         return id;

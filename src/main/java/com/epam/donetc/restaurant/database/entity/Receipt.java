@@ -14,11 +14,12 @@ public class Receipt {
     public Receipt() {
       }
 
-    public Receipt(int id, User user, Status status, Map<Dish, Integer> dishes, String address) {
+    public Receipt(int id, User user, Status status, Map<Dish, Integer> dishes, int total, String address) {
         this.id = id;
         this.user = user;
         this.status = status;
         this.dishes = dishes;
+        this.total = total;
         this.address = address;
     }
 
@@ -26,6 +27,22 @@ public class Receipt {
         this.id = id;
         this.user = user;
         this.status = status;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public void setTotal(int total) {
+        this.total = total;
     }
 
     public String getAddress() {

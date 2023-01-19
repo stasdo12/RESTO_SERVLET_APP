@@ -15,7 +15,7 @@ public class ConnectionManager {
     private static final String URL_KEY = "db.url";
     private static final String USERNAME_KEY = "db.username";
 
-    private static BasicDataSource ds = new BasicDataSource();
+    private static final BasicDataSource ds = new BasicDataSource();
 
     static {
         loadDriver();

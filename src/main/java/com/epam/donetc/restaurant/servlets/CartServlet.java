@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.servlets;
 
-import com.epam.donetc.restaurant.database.CartDAO;
+
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.AppException;

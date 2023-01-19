@@ -1,16 +1,10 @@
 package com.epam.donetc.restaurant.service;
 
 import com.epam.donetc.restaurant.database.CartDAO;
-import com.epam.donetc.restaurant.database.ConnectionManager;
-import com.epam.donetc.restaurant.database.DBManager;
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.exeption.DBException;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.HashMap;
+
 import java.util.Map;
 
 public class CartService {

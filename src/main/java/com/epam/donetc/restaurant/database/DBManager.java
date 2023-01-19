@@ -52,10 +52,9 @@ public class DBManager {
 
 
     //PAGINATION POSTGRESQL FOR DISH
+    public static final String PAGINATION_FOR_MANAGER = "SELECT * FROM receipt  ORDER BY id OFFSET ? LIMIT ? ";
+    public static final String COUNT_FOR_MANAGER = "SELECT COUNT(*) FROM receipt";
+
     public static final String PAGINATION = "SELECT * FROM dish  ORDER BY id OFFSET ? LIMIT ? ;";
     public static final String COUNT = "SELECT COUNT(*) FROM dish";
-
-
-
-
     }

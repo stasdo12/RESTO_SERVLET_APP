@@ -1,5 +1,5 @@
 package com.epam.donetc.restaurant.servlets;
-import com.epam.donetc.restaurant.database.ReceiptDAO;
+
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
 import com.epam.donetc.restaurant.database.entity.User;

@@ -12,7 +12,6 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
@@ -21,9 +20,8 @@ public class ChangeDishManagerServlet extends HttpServlet {
 
 
     private int page = 1;
-    private int recordsPerPage = 10;
 
-    private DishService dishService;
+    private final DishService dishService;
 
 
     public ChangeDishManagerServlet() {
@@ -39,6 +37,7 @@ public class ChangeDishManagerServlet extends HttpServlet {
             page = Integer.parseInt(
                     req.getParameter("page"));
         }
+        int recordsPerPage = 10;
         List<Dish> dishList = dishService.newViewAllDishForChange(
                 (page - 1) * recordsPerPage,
                 recordsPerPage);

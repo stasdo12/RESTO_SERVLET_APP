@@ -20,8 +20,8 @@
 <%@include file="../jspf/head.jspf"%>
 <body>
 <%@include file="../jspf/header.jspf"%>
-<jsp:useBean id="dishes" scope="session" type="java.util.List"/>
-<jsp:useBean id="maxPage" scope="session" type="java.lang.Integer"/>
+<jsp:useBean id="dishes" scope="request" type="java.util.List"/>
+<%--<jsp:useBean id="maxPage" scope="session" type="java.lang.Integer"/>--%>
 
 <div class="sort-filter-bar">
   <form class="menu_filter_sort" method="get" action="${pageContext.request.contextPath}/menu">
@@ -42,7 +42,7 @@
       <option value="name"><fmt:message key="label.nameMenu"/></option>
       <option value="price"><fmt:message key="label.price"/></option>
     </select>
-    <select name="currentPage" style="display: none">
+    <select name="page" style="display: none">
       <option value="1" selected></option>
     </select>
 
@@ -63,13 +63,27 @@
 
 <div class="menu-pagination">
   <form method="get" action="${pageContext.request.contextPath}/menu">
-    <c:forEach var="number" begin="1" end="${maxPage}">
+    <table class="menu-pagination-item" border="1" cellpadding="5" cellspacing="5">
+      <tr>
+        <%--@elvariable id="noOfPages" type="java.lang.Integer"--%>
+        <c:forEach begin="1" end="${noOfPages}" var="i">
+          <c:choose>
+            <c:when test="${currentPage eq i}">
+              <td>${i}</td>
+            </c:when>
+            <c:otherwise>
+              <td><a href="/menu?page=${i}">${i}</a></td>
+            </c:otherwise>
+          </c:choose>
+        </c:forEach>
+      </tr>
+    </table>
       <div class="menu-pagination-item">
         <input name="sortBy" value="${param.sortBy}" style="display: none" >
         <input name="category" value="${param.category}" style="display: none">
-        <input type="submit" name="currentPage" value="${number}" >
+<%--        <input type="submit" name="page" value="${number}" >--%>
       </div>
-    </c:forEach>
+
   </form>
 </div>
 

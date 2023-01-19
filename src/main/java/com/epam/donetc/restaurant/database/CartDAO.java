@@ -33,7 +33,6 @@ public class CartDAO {
     public void addDishToCart(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.PUT_DISH_INTO_CART)) {
-            int k = 0;
             ps.setInt(1, userId);
             ps.setInt(2, dishId);
             ps.setInt(3, amount);

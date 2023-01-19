@@ -51,7 +51,9 @@
           </c:forEach>
         </td>
         <td>${receipt.total}</td>
-        <td>${receipt.address}</td>
+        <td><c:forEach items="${receipt.address}" var="address">
+          ${receipt.address}
+        </c:forEach></td>
       </tr>
     </c:forEach>
     </tbody>

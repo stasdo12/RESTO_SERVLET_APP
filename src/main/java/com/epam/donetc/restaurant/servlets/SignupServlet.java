@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.servlets;
 
-import com.epam.donetc.restaurant.database.UserDAO;
+
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.AppException;
 import com.epam.donetc.restaurant.exeption.DBException;
@@ -15,7 +15,7 @@ import java.io.IOException;
 
 @WebServlet(name = "SignupServlet", value = "/signup")
 public class SignupServlet extends HttpServlet {
-    private UserService userService;
+    private final UserService userService;
 
     public SignupServlet() {
         this.userService = new UserService();

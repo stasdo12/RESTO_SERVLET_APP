@@ -3,6 +3,7 @@ package com.epam.donetc.restaurant.database;
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
+import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.service.DishService;
 import com.epam.donetc.restaurant.service.UserService;
@@ -14,6 +15,7 @@ import java.util.List;
 import java.util.Map;
 
 public class ReceiptDAO {
+    private int noOfRecords;
 
 
     public  List<Receipt> getAllReceipt() throws DBException {
@@ -31,6 +33,42 @@ public class ReceiptDAO {
         return receipts;
       }
 
+
+      public List<Receipt> getAllReceiptPagination(int offset, int noOfRecords){
+          UserService userService = new UserService();
+        List<Receipt> list = new ArrayList<>();
+        Receipt receipt = null;
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.PAGINATION_FOR_MANAGER);
+        PreparedStatement psCount = connection.prepareStatement(DBManager.COUNT_FOR_MANAGER);) {
+            ps.setInt(1, offset);
+            ps.setInt(2, noOfRecords);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                receipt = new Receipt();
+                receipt.setId(rs.getInt(1));
+                receipt.setUser(userService.getUserById(rs.getInt(2)));
+                receipt.setStatus(Status.getStatusById(3));
+                receipt.setDishes(getDishesByReceiptId(receipt.getId()));
+                receipt.setAddress(receipt.getAddress());
+                receipt.countTotal();
+                list.add(receipt);
+            }
+            rs.close();
+            rs = psCount.executeQuery();
+            if (rs.next()){
+                this.noOfRecords = rs.getInt(1);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } catch (DBException e) {
+            throw new RuntimeException(e);
+        }
+        return list;
+
+
+      }
+
     private static Receipt createReceipt(ResultSet rs) throws DBException {
          UserService userService = new UserService();
         Receipt receipt;
@@ -40,6 +78,8 @@ public class ReceiptDAO {
                     Status.getStatusById(rs.getInt(3)));
             receipt.setDishes(getDishesByReceiptId(receipt.getId()));
             receipt.countTotal();
+            receipt.setAddress(receipt.getAddress());
+
             System.out.println(receipt);
         } catch (SQLException ex) {
             throw new DBException("Cannot create receipt", ex);
@@ -141,5 +181,9 @@ public class ReceiptDAO {
             receipts = receipts.subList(begin, begin + 10);
         }
         return receipts;
+    }
+
+    public int getNoOfRecords() {
+        return noOfRecords;
     }
 }

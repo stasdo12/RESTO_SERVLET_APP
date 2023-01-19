@@ -8,8 +8,6 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import com.epam.donetc.restaurant.database.CartDAO;
-import com.epam.donetc.restaurant.database.ReceiptDAO;
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.User;
@@ -41,6 +39,7 @@ public class ClientOrdersServlet extends HttpServlet {
         if(curPage == null || curPage.isEmpty()) curPage = "1";
         int currentPage = Integer.parseInt(curPage);
         try{
+
             List<Receipt> receipts;
             receipts = receiptService.getReceiptByUserId(user.getId());
             if(receipts.size()>0){
