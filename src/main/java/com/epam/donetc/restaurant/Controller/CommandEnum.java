@@ -3,7 +3,7 @@ package com.epam.donetc.restaurant.Controller;
 import com.epam.donetc.restaurant.Controller.command.get.*;
 import com.epam.donetc.restaurant.Controller.command.post.DeleteDishCommand;
 
-public enum CommandEnum  {
+public enum CommandEnum   {
     add_dish(new ManagerAddDishCommand()),
     cart(new ClientCartCommand()),
     change_dish(new ManagerChangeCommand()),
