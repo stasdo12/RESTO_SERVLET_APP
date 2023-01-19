@@ -19,6 +19,7 @@
 <%@include file="../jspf/head.jspf"%>
 <%@include file="../jspf/header.jspf"%>
 <body class="back_info">
+
 <br><br><br>
 <div class="about_us">
 <h2><fmt:message key="label.contactUs"/></h2>

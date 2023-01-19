@@ -18,7 +18,7 @@ public class ReceiptDAO {
     private int noOfRecords;
 
 
-    public  List<Receipt> getAllReceipt() throws DBException {
+    public  List<Receipt> getAllReceipt() throws DBException  {
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get()) {
             Statement statement = connection.createStatement();

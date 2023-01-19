@@ -8,7 +8,7 @@ import com.epam.donetc.restaurant.exeption.DBException;
 
 import java.util.List;
 
-public class ReceiptService {
+public class ReceiptService  {
 
     ReceiptDAO receiptDAO;
 

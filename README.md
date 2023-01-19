@@ -8,6 +8,7 @@ This project was created for EPAM Java external course final project
 ##
 There are two user roles:
 -----------
+
     Client can view a menu with the ability to sort (by name, category and price)
     and filter (by category) dishes. 
     Clients also can make orders and view a list of their orders.  

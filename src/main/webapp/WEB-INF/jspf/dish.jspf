@@ -4,6 +4,7 @@
 <fmt:setLocale value="${sessionScope.lang}"/>
 <fmt:setBundle basename="messages"/>
 
+
 <jsp:useBean id="dish" type="com.epam.donetc.restaurant.database.entity.Dish"/>
 
 <div class="dish_box">

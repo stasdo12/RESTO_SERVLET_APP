@@ -6,7 +6,7 @@ import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.DBException;
 
 
-public class UserService {
+public class UserService  {
 
     private final UserDAO userDAO;
 

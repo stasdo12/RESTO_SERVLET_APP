@@ -5,6 +5,7 @@ CREATE DATABASE postgres;
 \C DATABASE postgres;
 
 
+
 DROP TABLE IF EXISTS role;
 CREATE TABLE IF NOT EXISTS role
 (

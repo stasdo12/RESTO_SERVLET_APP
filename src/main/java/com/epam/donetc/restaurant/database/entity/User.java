@@ -3,7 +3,7 @@ package com.epam.donetc.restaurant.database.entity;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class User implements Serializable {
+public class User implements Serializable  {
     private int id;
     private String login;
     private final String password;

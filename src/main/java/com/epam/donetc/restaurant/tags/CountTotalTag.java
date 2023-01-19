@@ -9,7 +9,7 @@ import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 import java.util.Map;
 
-public class CountTotalTag extends TagSupport {
+public class CountTotalTag extends TagSupport  {
 
     private static final Logger log = LogManager.getLogger(CountTotalTag.class);
 

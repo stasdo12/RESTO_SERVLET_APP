@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet("/change-dish")
-public class ChangeDishManagerServlet extends HttpServlet {
+public class ChangeDishManagerServlet extends HttpServlet  {
 
 
     private int page = 1;

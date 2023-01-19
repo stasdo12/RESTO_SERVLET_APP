@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebFilter({"/manageOrders" , "/change-dish", "/add-dish"})
-public class ClientFilter extends HttpFilter {
+public class ClientFilter extends HttpFilter  {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {

@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-public class UserMangerTest {
+public class UserMangerTest  {
     UserService userService = new UserService();
     UserDAO userDAO = new UserDAO();
 

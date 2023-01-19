@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 @WebServlet("/manageOrders")
-public class ManagerOrdersServlet extends HttpServlet {
+public class ManagerOrdersServlet extends HttpServlet  {
 
     ReceiptService receiptService;
 

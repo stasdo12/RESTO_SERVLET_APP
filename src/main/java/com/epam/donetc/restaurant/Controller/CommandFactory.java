@@ -4,7 +4,7 @@ import com.epam.donetc.restaurant.Controller.command.*;
 
 import javax.servlet.http.HttpServletRequest;
 
-public class CommandFactory {
+public class CommandFactory  {
     private CommandFactory(){
 
     }

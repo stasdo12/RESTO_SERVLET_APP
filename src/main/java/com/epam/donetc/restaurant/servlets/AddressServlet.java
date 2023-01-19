@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/address")
-public class AddressServlet extends HttpServlet {
+public class AddressServlet extends HttpServlet  {
 
 
     ReceiptService receiptService = new ReceiptService();

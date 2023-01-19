@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
-class DishManagerTest {
+class DishManagerTest  {
 
     private Connection c = mock(Connection.class);
 

@@ -10,7 +10,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserDAO  {
+public class UserDAO   {
 
     private static final String SALT = "hxSalt";
     String salt = PropertiesUtil.get(SALT);

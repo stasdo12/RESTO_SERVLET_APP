@@ -12,7 +12,7 @@ import java.util.Date;
 import java.util.Properties;
 
 @WebServlet("/info")
-public class InfoClientServlet extends HttpServlet {
+public class InfoClientServlet extends HttpServlet  {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

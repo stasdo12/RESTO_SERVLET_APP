@@ -25,6 +25,7 @@
 
 
   <table class="table">
+
     <thead>
     <tr>
       <th><fmt:message key="label.orderId"/></th>

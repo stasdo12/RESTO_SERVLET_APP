@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class DeleteDishCommand implements ICommand {
+public class DeleteDishCommand implements ICommand  {
 
     private static final Logger log = LogManager.getLogger(DeleteDishCommand.class);
     private final DishService dishService = new DishService();

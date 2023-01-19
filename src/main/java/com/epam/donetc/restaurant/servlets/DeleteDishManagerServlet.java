@@ -13,7 +13,7 @@ import java.io.IOException;
 
 
 @WebServlet("/delete")
-public class DeleteDishManagerServlet extends HttpServlet {
+public class DeleteDishManagerServlet extends HttpServlet  {
     private static final Logger log = LogManager.getLogger(CartServlet.class);
     DishService dishService = new DishService();
 

@@ -30,6 +30,7 @@
     </c:if>
     <c:if test="${cart.size() != 0}">
 
+
         <table class="table">
             <thead>
             <tr>

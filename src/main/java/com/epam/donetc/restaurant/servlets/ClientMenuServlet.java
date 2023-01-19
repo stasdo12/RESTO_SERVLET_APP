@@ -18,7 +18,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @WebServlet("/menu")
-public class ClientMenuServlet extends HttpServlet {
+public class ClientMenuServlet extends HttpServlet  {
     private int page = 1;
     DishService dishService;
     CartService cartService;

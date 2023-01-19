@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.database.entity;
 
-public enum Category {
+public enum Category  {
     PIZZA(1,"Pizza"),
     SUSHI(2,"Sushi"),
     BURGER(3, "Burger"),

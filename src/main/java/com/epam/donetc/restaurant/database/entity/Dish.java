@@ -2,7 +2,7 @@ package com.epam.donetc.restaurant.database.entity;
 
 import java.util.Objects;
 
-public class Dish {
+public class Dish  {
     private int id;
     private String name;
     private int price;

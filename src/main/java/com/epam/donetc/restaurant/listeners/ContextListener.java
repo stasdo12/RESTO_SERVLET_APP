@@ -12,7 +12,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @WebListener
-public class ContextListener implements ServletContextListener, HttpSessionListener, HttpSessionAttributeListener {
+public class ContextListener implements ServletContextListener, HttpSessionListener, HttpSessionAttributeListener  {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {

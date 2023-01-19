@@ -19,7 +19,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 @WebServlet("/myOrders")
-public class ClientOrdersServlet extends HttpServlet {
+public class ClientOrdersServlet extends HttpServlet  {
 
     CartService cartService;
     ReceiptService receiptService;

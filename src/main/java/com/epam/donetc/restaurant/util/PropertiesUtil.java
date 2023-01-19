@@ -3,7 +3,7 @@ package com.epam.donetc.restaurant.util;
 import java.io.IOException;
 import java.util.Properties;
 
-public class PropertiesUtil {
+public class PropertiesUtil  {
     private PropertiesUtil(){}
     private static final Properties PROPERTIES = new Properties();
 

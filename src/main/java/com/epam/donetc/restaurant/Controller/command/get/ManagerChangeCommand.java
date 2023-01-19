@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-public class ManagerChangeCommand implements ICommand {
+public class ManagerChangeCommand implements ICommand  {
     private int page = 1;
     private int recordsPerPage = 10;
 

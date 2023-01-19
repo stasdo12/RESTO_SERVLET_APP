@@ -7,7 +7,7 @@ import com.epam.donetc.restaurant.exeption.DBException;
 
 import java.util.Map;
 
-public class CartService {
+public class CartService  {
 
     CartDAO cartDAO;
 

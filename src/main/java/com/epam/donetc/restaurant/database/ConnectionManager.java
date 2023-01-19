@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.SQLException;
 
 
-public class ConnectionManager {
+public class ConnectionManager  {
 
     private static ConnectionManager instance;
 

@@ -19,7 +19,7 @@
 <body class="back_main">
 <form>
   <%--    <input type="submit" name="sessionLocale" value="en"/>--%>
-  <select class="select-css" id="language" name="sessionLocale" onchange="submit()">
+  <select  class="select-css" id="language" name="sessionLocale" onchange="submit()">
     <option value="en" <c:if test="${sessionScope.lang == 'en'}">selected</c:if>><fmt:message
             key="label.lang.en"/></option>
     <option value="uk" <c:if test="${sessionScope.lang == 'uk'}">selected</c:if>><fmt:message

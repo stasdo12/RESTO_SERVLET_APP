@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/add-dish")
-public class AddDishMangerServlet extends HttpServlet {
+public class AddDishMangerServlet extends HttpServlet  {
 
     DishService dishService = new DishService();
     private static final Logger log = LogManager.getLogger(CartServlet.class);

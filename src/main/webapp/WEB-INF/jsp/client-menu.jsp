@@ -24,6 +24,7 @@
 <%--<jsp:useBean id="maxPage" scope="session" type="java.lang.Integer"/>--%>
 
 <div class="sort-filter-bar">
+
   <form class="menu_filter_sort" method="get" action="${pageContext.request.contextPath}/menu">
     <label for="category"><fmt:message key="label.chooseACategory"/></label>
     <select id="category" name="category">

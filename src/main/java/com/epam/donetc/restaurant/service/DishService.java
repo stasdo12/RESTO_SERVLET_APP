@@ -7,7 +7,7 @@ import com.epam.donetc.restaurant.exeption.DBException;
 import java.util.List;
 
 
-public class DishService {
+public class DishService  {
 
     private final DishDAO dishDAO;
 

@@ -14,7 +14,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 
 @WebServlet(name = "SignupServlet", value = "/signup")
-public class SignupServlet extends HttpServlet {
+public class SignupServlet extends HttpServlet  {
     private final UserService userService;
 
     public SignupServlet() {

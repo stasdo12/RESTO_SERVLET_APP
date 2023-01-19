@@ -19,7 +19,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.mock;
 
-class ReceiptManagerTest {
+class ReceiptManagerTest  {
 
     private ReceiptService receiptService = new ReceiptService();
 

@@ -3,7 +3,7 @@ package com.epam.donetc.restaurant.database;
 
 //language=PostgreSQL
 
-public class DBManager {
+public class DBManager  {
     //Login and Sign Up
     public static final String LOG_IN = "SELECT * FROM users WHERE login = ? AND password = ?";
     public static final String SIGN_UP = "INSERT INTO users (login, password, email) VALUES (?, ?, ?)";

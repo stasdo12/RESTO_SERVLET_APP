@@ -14,7 +14,7 @@ import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletRequest;
 
 @WebFilter(filterName = "SessionLocaleFilter", urlPatterns = {"/*"})
-public class SessionLocaleFilter implements Filter {
+public class SessionLocaleFilter implements Filter  {
 
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {

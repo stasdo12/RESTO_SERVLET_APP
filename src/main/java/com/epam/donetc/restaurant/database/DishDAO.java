@@ -14,7 +14,7 @@ public class DishDAO {
 
     private int noOfRecords;
 
-    public Dish getDishByID(int id) throws DBException {
+    public Dish getDishByID(int id) throws DBException  {
         Dish dish;
         try (Connection con = ConnectionManager.get();
              PreparedStatement ps = con.prepareStatement(DBManager.GET_DISHES_BY_ID)) {

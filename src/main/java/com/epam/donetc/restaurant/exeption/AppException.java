@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.exeption;
 
-public class AppException extends  RuntimeException{
+public class AppException extends  RuntimeException {
     public AppException() {
     }
 

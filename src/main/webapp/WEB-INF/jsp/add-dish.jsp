@@ -42,5 +42,6 @@
     <td><input class="apply-cart" type="submit" value="<fmt:message key="label.addDish"/>"></td>
     </form>
 </table>
+
 </body>
 </html>

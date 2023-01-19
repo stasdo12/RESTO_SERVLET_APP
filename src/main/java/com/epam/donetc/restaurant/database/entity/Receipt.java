@@ -2,7 +2,7 @@ package com.epam.donetc.restaurant.database.entity;
 
 import java.util.Map;
 
-public class Receipt {
+public class Receipt  {
     private  int id;
     private  User user;
     private  Status status;

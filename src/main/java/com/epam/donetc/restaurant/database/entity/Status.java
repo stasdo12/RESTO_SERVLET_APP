@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.database.entity;
 
-public enum Status {
+public enum Status  {
     NEW(1, "New"),
     APPROVED(2, "Approved"),
     CANCELLED(3, "Cancelled"),
