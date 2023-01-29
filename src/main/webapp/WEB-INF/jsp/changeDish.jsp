@@ -44,7 +44,7 @@
             <td>${dish.category}</td>
             <td>
                 <div class="form-for-change">
-                <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/change-dish">
+                <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/controller?command=change">
                     <label>
                         <input class="change-input" name="id" style="display: none" value="${dish.id}">
                     </label>
@@ -74,7 +74,7 @@
 
             <td>
                 </form>
-                    <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/delete">
+                    <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/controller?command=delete">
                         <input class="delete-input" name="id" style="display: none" value="${dish.id}">
                         <input class="delete-button-cart" type="submit" value="<fmt:message key="label.delete"/>">
                         <br>
@@ -99,7 +99,7 @@
                         <td>${i}</td>
                     </c:when>
                     <c:otherwise>
-                        <td><a href="change-dish?page=${i}">${i}</a></td>
+                        <td><a href="/controller?command=change_dish&page=${i}">${i}</a></td>
                     </c:otherwise>
                 </c:choose>
             </c:forEach>

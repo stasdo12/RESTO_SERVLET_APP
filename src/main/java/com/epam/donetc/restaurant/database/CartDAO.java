@@ -11,6 +11,13 @@ import java.util.Map;
 
 public class CartDAO {
 
+    /**
+     * Extracts data about cart of certain user from database
+     * @param id user's id
+     * @return a map of dishes and their amount in a cart
+     * @throws DBException if any SQLException was caught
+     */
+
     public Map<Dish, Integer> getCart(int id) throws DBException  {
         DishService dishService = new DishService();
         try (Connection connection = ConnectionManager.get();
@@ -30,6 +37,14 @@ public class CartDAO {
         }
     }
 
+    /**
+     * Inserts data about new dish in a cart of certain user into database.
+     * @param userId user's id
+     * @param dishId dish's id
+     * @param amount amount of dish
+     * @throws DBException if any SQLException was caught
+     */
+
     public void addDishToCart(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.PUT_DISH_INTO_CART)) {
@@ -44,6 +59,14 @@ public class CartDAO {
         }
     }
 
+
+    /**
+     * Updates amount of dish in user's cart in a database.
+     * @param userId user's id
+     * @param dishId dish's id
+     * @param amount amount of dish that needs to be updated
+     * @throws DBException if any SQLException was caught
+     */
     public void changeAmountOfDish(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.UPDATE_DISH_AMOUNT_IN_CART)) {
@@ -71,6 +94,13 @@ public class CartDAO {
         }
     }
 
+
+    /**
+     * Deletes dish from a cart of certain user.
+     * @param userId user's id
+     * @param dishId dish's id
+     * @throws DBException if any SQLException was caught
+     */
     public void deleteDishFromCart(int userId, int dishId) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.DELETE_DISH_FROM_CART)) {
@@ -84,6 +114,13 @@ public class CartDAO {
         }
     }
 
+
+    /**
+     * Creates new receipt in database and inserts data about dishes in it.
+     * @param userId user's id
+     * @param cart user's cart represented by a map of dishes and their amount
+     * @throws DBException if any SQLException was caught
+     */
     public void submitOrder(int userId, Map<Dish, Integer> cart) throws DBException {
         Connection con = null;
         try {
@@ -132,6 +169,12 @@ public class CartDAO {
         return 0;
     }
 
+
+    /**
+     * Deletes all data about user's cart and dishes in it.
+     * @param id user's id
+     * @throws DBException if any SQLException was caught
+     */
     public void cleanCart(int id) throws DBException {
         try (Connection con = ConnectionManager.get();
              PreparedStatement ps = con.prepareStatement(DBManager.CLEAR_CART)) {

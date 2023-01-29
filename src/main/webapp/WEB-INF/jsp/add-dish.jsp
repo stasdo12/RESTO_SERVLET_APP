@@ -33,7 +33,7 @@
         <th><fmt:message key="label.addDish"/></th>
     </tr>
 
-    <td><form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/add-dish">
+    <td><form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/controller?command=add">
         <input  class="change-input" type="text" name="newName" placeholder="<fmt:message key="label.nameMenu"/>" required minlength="5"></td>
     <td><input class="change-input" type="number" name="newPrise" placeholder="<fmt:message key="label.price"/>" required min="1" ></td>
     <td><input class="change-input" type="number" name="newWeight"  placeholder="<fmt:message key="label.weight"/>" required min="1"></td>

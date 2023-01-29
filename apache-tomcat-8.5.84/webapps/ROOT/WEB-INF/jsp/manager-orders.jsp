@@ -25,6 +25,7 @@
 
 
   <table class="table">
+
     <thead>
     <tr>
       <th><fmt:message key="label.orderId"/></th>
@@ -44,7 +45,7 @@
         <td>${receipt.user.id}</td>
         <td>${receipt.status}
 
-          <form class="menu_filter_sort" method="post" action="${pageContext.request.contextPath}/manageOrders">
+          <form class="menu_filter_sort" method="post" action="${pageContext.request.contextPath}/controller?command=change_status">
             <select  id="status" name="status">
               <option value="New"><fmt:message key="label.statusNew"/></option>
               <option value="Approved"><fmt:message key="label.statusApproved"/></option>

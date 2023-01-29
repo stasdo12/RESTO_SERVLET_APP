@@ -57,7 +57,7 @@
                         </div>
                     </td>
                     <td>
-                        <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/cart">
+                        <form class="dish_cart_amount" method="post" action="${pageContext.request.contextPath}/controller?command=delete_dish_from_cart">
                             <input class="amount-border" name="amount" type="number" min="1" value="${item.value}">
                             <input name="id" style="display: none" value="${dish.id}">
                             <input class="apply-cart" type="submit" value="<fmt:message key="label.applyButton"/>">
@@ -74,7 +74,7 @@
                     </td>
 
                     <td>
-                        <form method="post" action="${pageContext.request.contextPath}/cart">
+                        <form method="post" action="${pageContext.request.contextPath}/controller?command=delete_dish_from_cart">
                             <input name="amount" style="display: none" type="number" value="0">
                             <input name="id" style="display: none" value="${dish.id}">
                             <input class="delete-button-cart" type="submit" value="<fmt:message key="label.delete"/>">

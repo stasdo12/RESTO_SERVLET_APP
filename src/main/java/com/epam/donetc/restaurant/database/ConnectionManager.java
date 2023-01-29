@@ -9,6 +9,8 @@ import java.sql.SQLException;
 
 public class ConnectionManager  {
 
+
+
     private static ConnectionManager instance;
 
     private static final String PASSWORD_KEY = "db.password";

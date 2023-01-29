@@ -61,14 +61,14 @@ public class ClientMenuServlet extends HttpServlet  {
             }else{
                 dishes = dishService.getDishesByCategory(category);
             }
-            int maxPage = receiptService.countMaxPage(dishes.size());
+//            int maxPage = receiptService.countMaxPage(dishes.size());
 
             log.debug("dishes size before sorting == " + dishes.size());
             dishes = dishService.sortBy(dishes, sortBy);
             log.debug("dishes were sorted");
 
-//            log.trace("current page == " + currentPage);
-//            log.debug("dishes size before getDishOnPage == " + dishes.size());
+            log.trace("current page == " + page);
+            log.debug("dishes size before getDishOnPage == " + dishes.size());
 //            dishes = dishService.getDishesOnePage(dishes, currentPage);
 
             request.setAttribute("category", category);

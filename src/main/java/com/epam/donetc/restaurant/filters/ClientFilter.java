@@ -15,12 +15,12 @@ public class ClientFilter extends HttpFilter  {
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
-        res.setCharacterEncoding("UTF-8");
+//        res.setCharacterEncoding("UTF-8");
         User user = (User) req.getSession().getAttribute("user");
         if (user == null){
-            res.sendRedirect(req.getContextPath() + "/login");
+            res.sendRedirect(req.getContextPath() + "/controller?command=login");
         } else if (user.getRoleId() == 1) {
-            res.sendRedirect(req.getContextPath() + "/menu");
+            res.sendRedirect(req.getContextPath() + "/controller?command=client_menu");
         }else {
             chain.doFilter(req,res);
             }

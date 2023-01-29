@@ -34,7 +34,7 @@
 <h2 class="text_contact_info" ><fmt:message key="label.writeUs"/></h2>
 </div>
 <br>
-<form class="form_about_us" action="${pageContext.request.contextPath}/info" method="post">
+<form class="form_about_us" action="${pageContext.request.contextPath}/controller?command=send" method="post">
     <input placeholder="<fmt:message key="label.nameMenu"/>" class="about_us_input" type="text" id="name" name="name" required minlength="10"><br>
     <input placeholder="<fmt:message key="label.email"/>" class="about_us_input" type="email" id="email" name="email"><br>
     <textarea  style="width: 283px;" placeholder="<fmt:message key="label.writeUs"/>" id="message" name="message"></textarea><br>

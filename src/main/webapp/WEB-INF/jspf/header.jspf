@@ -10,21 +10,21 @@
     <div class="horizontal_navbar">
         <ul>
             <c:if test="${user.roleId == 1}">
-                <li><a href="${pageContext.request.contextPath}/menu"><fmt:message key="label.menu" /></a></li>
-                <li><a href="${pageContext.request.contextPath}/cart"><fmt:message key="label.cart" /></a> </li>
-                <li><a href="${pageContext.request.contextPath}/myOrders"><fmt:message key="label.myOrders" /></a></li>
-                <li><a href="${pageContext.request.contextPath}/info"> <fmt:message key="label.info" /> </a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=client_menu"><fmt:message key="label.menu" /></a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=cart"><fmt:message key="label.cart" /></a> </li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=client_orders"><fmt:message key="label.myOrders" /></a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=info"> <fmt:message key="label.info" /> </a></li>
 
 
 
             </c:if>
             <c:if test="${user.roleId == 2}">
-                <li><a href="${pageContext.request.contextPath}/manageOrders"><fmt:message key="label.orders" /></a></li>
-                <li><a href="${pageContext.request.contextPath}/change-dish"> <fmt:message key="label.changeDish" /> </a></li>
-                <li><a href="${pageContext.request.contextPath}/add-dish"> <fmt:message key="label.addDish" /> </a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=manageOrders"><fmt:message key="label.orders" /></a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=change_dish"> <fmt:message key="label.changeDish" /> </a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=add_dish"> <fmt:message key="label.addDish" /> </a></li>
 
             </c:if>
-            <li style="float:right"><a href="${pageContext.request.contextPath}/login"><fmt:message key="label.logout" /></a></li>
+            <li style="float:right"><a href="${pageContext.request.contextPath}/controller?command=login"><fmt:message key="label.logout" /></a></li>
             <li style="float:right"><p><mylib:greeting user="${user}"/></p></li>
            <li> <form>
                 <%--    <input type="submit" name="sessionLocale" value="en"/>--%>

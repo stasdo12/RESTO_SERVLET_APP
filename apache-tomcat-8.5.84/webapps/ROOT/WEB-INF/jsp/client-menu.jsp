@@ -24,7 +24,8 @@
 <%--<jsp:useBean id="maxPage" scope="session" type="java.lang.Integer"/>--%>
 
 <div class="sort-filter-bar">
-  <form class="menu_filter_sort" method="get" action="${pageContext.request.contextPath}/menu">
+
+  <form class="menu_filter_sort" method="get" action="${pageContext.request.contextPath}/controller?command=client_menu">
     <label for="category"><fmt:message key="label.chooseACategory"/></label>
     <select id="category" name="category">
       <option value="All"><fmt:message key="label.allCategories"/></option>
@@ -62,7 +63,7 @@
 
 
 <div class="menu-pagination">
-  <form method="get" action="${pageContext.request.contextPath}/menu">
+  <form method="get" action="${pageContext.request.contextPath}/controller?command=client_menu">
     <table class="menu-pagination-item" border="1" cellpadding="5" cellspacing="5">
       <tr>
         <%--@elvariable id="noOfPages" type="java.lang.Integer"--%>
@@ -72,7 +73,7 @@
               <td>${i}</td>
             </c:when>
             <c:otherwise>
-              <td><a href="/menu?page=${i}">${i}</a></td>
+              <td><a href="/controller?command=client_menu&page=${i}">${i}</a></td>
             </c:otherwise>
           </c:choose>
         </c:forEach>

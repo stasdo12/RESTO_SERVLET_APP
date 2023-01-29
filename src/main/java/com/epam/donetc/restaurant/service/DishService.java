@@ -20,8 +20,8 @@ public class DishService  {
     }
 
 
-    public boolean addDish(String name, int price, int weight, int category, String desc){
-       return dishDAO.addDish(name, price, weight, category, desc);
+    public void addDish(String name, int price, int weight, int category, String desc){
+        dishDAO.addDish(name, price, weight, category, desc);
     }
 
     public void changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id){
@@ -51,7 +51,7 @@ public class DishService  {
     }
 
     public void deleteDish(int dishId) {
-        dishDAO.deleteDish(dishId);
+         dishDAO.deleteDish(dishId);
     }
 
     public int getNoOfRecords() {

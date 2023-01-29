@@ -16,7 +16,7 @@
         <p class="dish_description">${dish.description}</p>
         <p class="dish_weight">${dish.weight} <fmt:message key="label.g"/></p>
         <p class="dish_price">${dish.price} <fmt:message key="label.uah"/></p>
-        <form action="${pageContext.request.contextPath}/menu" method="post">
+        <form action="${pageContext.request.contextPath}/controller?command=add_to_cart" method="post">
             <input name="id" style="display: none" value="${dish.id}">
             <input value="1" name="amount" style="display: none">
             <input class="add-to-cart-button" type="submit"

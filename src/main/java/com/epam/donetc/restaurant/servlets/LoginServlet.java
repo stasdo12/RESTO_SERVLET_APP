@@ -42,9 +42,9 @@ public class LoginServlet extends HttpServlet  {
             if(user != null){
                 request.getSession().setAttribute("user", user);
                 if(user.getRoleId() == 1){
-                    response.sendRedirect(request.getContextPath() + "/menu");
+                    response.sendRedirect(request.getContextPath() + "/controller?command=client_menu");
                 } else {
-                    response.sendRedirect(request.getContextPath() + "/manageOrders");
+                    response.sendRedirect(request.getContextPath() + "/controller?command=manageOrders");
                 }
             } else {
                 request.setAttribute("error", "true");

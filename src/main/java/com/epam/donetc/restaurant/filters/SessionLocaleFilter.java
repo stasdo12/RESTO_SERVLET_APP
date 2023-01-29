@@ -12,9 +12,14 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 @WebFilter(filterName = "SessionLocaleFilter", urlPatterns = {"/*"})
 public class SessionLocaleFilter implements Filter  {
+    private String defaultLocale;
+
+
+
 
 
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
@@ -30,6 +35,8 @@ public class SessionLocaleFilter implements Filter  {
 
     public void destroy() {}
 
-    public void init(FilterConfig arg0) throws ServletException {}
+    public void init(FilterConfig arg0) throws ServletException {
+        defaultLocale = arg0.getInitParameter("defaultLocale");
+    }
 
 }

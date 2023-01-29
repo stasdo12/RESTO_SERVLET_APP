@@ -17,7 +17,12 @@ import java.util.Map;
 public class ReceiptDAO {
     private int noOfRecords;
 
-
+    /**
+     * Extracts data about all receipts that exist in a database
+     *
+     * @return list of receipts from a database
+     * @throws DBException if any SQLException was caught
+     */
     public  List<Receipt> getAllReceipt() throws DBException  {
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get()) {
@@ -69,6 +74,13 @@ public class ReceiptDAO {
 
       }
 
+    /**
+     * Creates an object of Receipt class by a given result set.
+     *
+     * @param rs Result set from a database
+     * @return new receipt object
+     * @throws DBException if any SQLException was caught
+     */
     private static Receipt createReceipt(ResultSet rs) throws DBException {
          UserService userService = new UserService();
         Receipt receipt;
@@ -87,6 +99,13 @@ public class ReceiptDAO {
         return receipt;
     }
 
+    /**
+     * Extracts data about dishes and their amount in a receipt from a database.
+     *
+     * @param receiptId id of a receipt
+     * @return map of dishes and their amount
+     * @throws DBException if any SQLException was caught
+     */
     private static Map<Dish, Integer> getDishesByReceiptId(int receiptId) throws DBException {
         DishService dishService = new DishService();
         Map<Dish, Integer> dishes = new HashMap<>();
@@ -105,6 +124,14 @@ public class ReceiptDAO {
         }
         return dishes;
     }
+
+    /**
+     * Updates status of a given receipt in a database.
+     *
+     * @param receiptId id of a receipt
+     * @param status    new status
+     * @throws DBException if any SQLException was caught
+     */
     public  void changeStatus(int receiptId, Status status)throws DBException{
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_RECEIPT_STATUS)) {
@@ -117,7 +144,13 @@ public class ReceiptDAO {
             throw new RuntimeException(e);
         }
     }
-
+    /**
+     * Add address to order by user id
+     *
+     * @param id user's id
+     * @param address add address to database
+     * @throws DBException if any SQLException was caught
+     */
     public void addAddress (int id, String address) {
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.ADDRESS)) {
@@ -130,7 +163,13 @@ public class ReceiptDAO {
             throw new RuntimeException(e);
         }
     }
-
+    /**
+     * Get address to order by user id
+     *
+     * @param id user's id
+     * @return String address
+     * @throws DBException if any SQLException was caught
+     */
     public String getAddress (int id){
         String address = null;
         try(Connection connection = ConnectionManager.get();
@@ -148,6 +187,13 @@ public class ReceiptDAO {
         return address;
     }
 
+    /**
+     * Creates a list of receipts from a data extracted from a database by user's id.
+     *
+     * @param userId user's id
+     * @return list of user's receipts
+     * @throws DBException if any SQLException was caught
+     */
     public  List<Receipt> getReceiptByUserId(int userId) throws DBException{
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get();

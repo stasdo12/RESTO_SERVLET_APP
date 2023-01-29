@@ -1,11 +1,18 @@
 package com.epam.donetc.restaurant.service;
 
 
+import com.epam.donetc.restaurant.database.ConnectionManager;
+import com.epam.donetc.restaurant.database.DBManager;
 import com.epam.donetc.restaurant.database.ReceiptDAO;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
 import com.epam.donetc.restaurant.exeption.DBException;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ReceiptService  {
@@ -26,6 +33,13 @@ public class ReceiptService  {
 
     public  List<Receipt> getReceiptByUserId(int userId) throws DBException{
        return receiptDAO.getReceiptByUserId(userId);
+    }
+
+    public List<Receipt> getAllReceiptPagination(int offset, int noOfRecords){
+       return receiptDAO.getAllReceiptPagination(offset, noOfRecords);
+    }
+    public int getNoOfRecords() {
+        return receiptDAO.getNoOfRecords();
     }
 
     public  int countMaxPage(int amount){

@@ -15,6 +15,13 @@ public class UserDAO   {
     private static final String SALT = "hxSalt";
     String salt = PropertiesUtil.get(SALT);
 
+
+    /**
+     * Creates a new User object with data from a database extracted by user's login.
+     * @param login login of a user
+     * @return new User object
+     * @throws DBException if any SQLException was caught
+     */
     public  User getUserByLogin(String login) throws DBException {
         try(Connection con = ConnectionManager.get();
             PreparedStatement ps = con.prepareStatement(DBManager.GET_USER_BY_LOGIN)){
@@ -31,6 +38,12 @@ public class UserDAO   {
         }
     }
 
+    /**
+     * Extracts data about a user by their id from database.
+     * @param id user's id
+     * @return a User object
+     * @throws DBException if any SQLException was caught
+     */
     public  User getUserById(int id){
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.GET_USER_BY_ID)) {
@@ -50,6 +63,13 @@ public class UserDAO   {
         return new User(rs.getInt(1), rs.getString(2),rs.getString(3), rs.getInt(4));
     }
 
+    /**
+     * Inserts data about new user into a database and returns a User object.
+     * @param login user's login
+     * @param password user's password
+     * @return a User object
+     * @throws DBException if any SQLException was caught
+     */
     public  User signUp(String login, String password, String email){
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.SIGN_UP)) {
@@ -67,6 +87,14 @@ public class UserDAO   {
         }
     }
 
+    /**
+     * Checks if user with such login and password exists in database and if so
+     * creates a new User object from a result set.
+     * @param login user's login
+     * @param password user's password
+     * @return a User object
+     * @throws DBException if any SQLException was caught
+     */
     public  User logIn(String login, String password) throws DBException {
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.LOG_IN)){

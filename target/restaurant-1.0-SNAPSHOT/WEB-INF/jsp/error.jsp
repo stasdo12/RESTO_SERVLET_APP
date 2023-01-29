@@ -16,6 +16,7 @@
 <c:set var="title" value="My orders" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
+
 <%@include file="../jspf/header.jspf"%>
 
 <div class="error_box" >

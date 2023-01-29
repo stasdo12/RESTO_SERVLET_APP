@@ -14,6 +14,14 @@ public class DishDAO {
 
     private int noOfRecords;
 
+    /**
+     * Creates new dish object using data from database about a dish by its id.
+     *
+     * @param id dish's id
+     * @return an object of dish
+     * @throws DBException if any SQLException was caught
+     */
+
     public Dish getDishByID(int id) throws DBException  {
         Dish dish;
         try (Connection con = ConnectionManager.get();
@@ -36,6 +44,18 @@ public class DishDAO {
         }
     }
 
+    /**
+     * Changes data about a dish.
+     * @param newName new name for dish
+     * @param newPrise new price for dish
+     * @param newWeight new weight for dish
+     * @param newCategory new category for dish
+     * @param desc new desc for dish
+     * @param id dish's id
+     * @return true
+     * @throws DBException if any SQLException was caught
+     */
+
     public boolean changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_DISH_BY_ID)) {
@@ -54,7 +74,12 @@ public class DishDAO {
         return true;
 
     }
-
+    /**
+     * Removes a dish from the menu
+     * @param dishId id dish's id
+     * @return true
+     * @throws DBException if any SQLException was caught
+     */
     public boolean deleteDish(int dishId) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.DELETE_DISH)) {
@@ -67,7 +92,16 @@ public class DishDAO {
         }
         return true;
     }
-
+    /**
+     * Adds a dish to the menu
+     * @param name new name for dish
+     * @param price new price for dish
+     * @param weight new weight for dish
+     * @param category new category for dish
+     * @param desc new desc for dish
+     * @return true
+     * @throws DBException if any SQLException was caught
+     */
     public boolean addDish(String name, int price, int weight, int category, String desc){
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.ADD_DISH)) {
@@ -85,7 +119,12 @@ public class DishDAO {
         return true;
     }
 
-
+    /**
+     * Creates new list of dishes using data from database.
+     *
+     * @return list of all dishes in menu
+     * @throws DBException if any SQLException was caught
+     */
     public List<Dish> getAllDishes() throws DBException {
         List<Dish> dishes = new ArrayList<>();
         try (Connection con = ConnectionManager.get();
@@ -100,7 +139,13 @@ public class DishDAO {
         return dishes;
     }
 
-
+    /**
+     * Filters dish data received from database by dish category.
+     *
+     * @param category category by which it filters dishes from menu
+     * @return list of dishes of a certain category
+     * @throws DBException if any SQLException was caught
+     */
     public List<Dish> getDishesByCategory(String category) throws DBException {
         List<Dish> allDishes = getAllDishes();
         return allDishes.stream()
@@ -108,7 +153,13 @@ public class DishDAO {
                 .collect(Collectors.toList());
     }
 
-
+    /**
+     * Sorts list of dishes by a chosen sorting method.
+     *
+     * @param dishes list of dishes that needs to be sorted
+     * @param sortBy sorting method
+     * @return list of sorted dishes
+     */
     public List<Dish> sortBy(List<Dish> dishes, String sortBy) {
         if (sortBy.equalsIgnoreCase("price")) {
             dishes = dishes.stream()
@@ -141,6 +192,16 @@ public class DishDAO {
     public int getNoOfRecords() {
         return noOfRecords;
     }
+
+    /**
+     * Creates a database query for a list of dishes that will be displayed on a specific page.
+     * There can be no more than 10 dishes per page.
+     *
+     * @param offset how many records to skip from the database
+     * @param noOfRecords
+    how many records on 1 page
+     * @return a sublist of the given list of dishes
+     */
 
     public List<Dish> newViewAllDishForChange(int offset, int noOfRecords) {
         List<Dish> list = new ArrayList<>();

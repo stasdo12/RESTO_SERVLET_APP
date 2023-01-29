@@ -32,7 +32,7 @@
 </form>
 <div class="login-box">
   <p class="login-title"><fmt:message key="label.login"/></p>
-  <form class="login-form" action="${pageContext.request.contextPath}/login" method="post">
+  <form class="login-form" action="${pageContext.request.contextPath}/controller?command=login_page" method="post">
     <input placeholder="Login" type="text" class="login-input" name="login"/>
     <input placeholder="Password" type="password" class="login-input" name="password" />
     <input type="submit" class="login-button" value="<fmt:message key="label.loginButton"/>"/>
@@ -41,7 +41,7 @@
     <p class="login-error"><fmt:message key="label.loginError"/></p>
   </c:if>
   <p class="login-register"><fmt:message key="label.loginRegister"/><a class="text_in_but"
-                                                                       href="${pageContext.request.contextPath}/signup"><fmt:message key="label.signUp"/></a></p>
+                                                                       href="${pageContext.request.contextPath}/controller?command=sign_up"><fmt:message key="label.signUp"/></a></p>
 </div>
 
 <%@include file="../jspf/footer.jspf"%>
