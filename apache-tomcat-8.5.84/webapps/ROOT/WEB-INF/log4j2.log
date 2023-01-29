@@ -1,9 +1,0 @@
-16:10:59.689 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\apache-tomcat-8.5.84\webapps\ROOT\WEB-INF\log4j2.log
-16:11:04.303 [http-nio-8080-exec-9] DEBUG - dishes size before sorting == 10
-16:11:04.304 [http-nio-8080-exec-9] DEBUG - dishes were sorted
-16:11:04.305 [http-nio-8080-exec-9] TRACE - current page == 1
-16:11:04.305 [http-nio-8080-exec-9] DEBUG - dishes size before getDishOnPage == 10
-16:11:20.687 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 10
-16:11:20.687 [http-nio-8080-exec-10] DEBUG - dishes were sorted
-16:11:20.688 [http-nio-8080-exec-10] TRACE - current page == 1
-16:11:20.688 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 10
