@@ -17,6 +17,14 @@ public class AddToCartClientCommand implements ICommand {
     private final CartService cartService = new CartService();
     private final DishService dishService = new DishService();
     Logger log = LogManager.getLogger(AddToCartClientCommand.class);
+
+    /**
+     * Called from doPost method in front-controller. Tries to add dish to cart.
+     * Logs error in case if not able
+     *
+     * @param req to get dish id
+     * @return path to redirect to execute Get method through front-controller
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();

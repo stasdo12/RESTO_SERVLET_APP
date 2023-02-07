@@ -1,4 +1,4 @@
-package com.epam.donetc.restaurant.database.servise;
+package com.epam.donetc.restaurant.database.service;
 
 import com.epam.donetc.restaurant.database.ConnectionManager;
 import com.epam.donetc.restaurant.database.entity.Receipt;

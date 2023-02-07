@@ -50,7 +50,7 @@ public class ClientMenuServlet extends HttpServlet  {
 
             if(category == null || category.isEmpty() || category.equalsIgnoreCase("All")){
                 int recordsPerPage = 10;
-                dishes = dishService.newViewAllDishForChange(
+                dishes = dishService.getDishesOnePage(
                         (page - 1) * recordsPerPage,
                         recordsPerPage);
                 int noOfRecords = dishService.getNoOfRecords();

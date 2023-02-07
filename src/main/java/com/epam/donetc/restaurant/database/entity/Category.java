@@ -1,5 +1,12 @@
 package com.epam.donetc.restaurant.database.entity;
 
+
+/**
+ * Category entity enum. Matches table 'category' in database.
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
 public enum Category  {
     PIZZA(1,"Pizza"),
     SUSHI(2,"Sushi"),

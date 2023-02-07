@@ -21,13 +21,21 @@ public class ManagerChangeCommand implements ICommand  {
 
     private static final Logger log = LogManager.getLogger(CartServlet.class);
 
+    /**
+     * Called from the doGet method in the front controller. Gets the required path and passes attributes from the session
+     * request
+     *
+     * @param req to get the message attribute from the session and put it into the request
+     * @return the changeDish page after trying to display the page
+     */
+
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         if (req.getParameter("page") != null)  {
             page = Integer.parseInt(
                     req.getParameter("page"));
         }
-        List<Dish> dishList = dishService.newViewAllDishForChange(
+        List<Dish> dishList = dishService.getDishesOnePage(
                 (page - 1) * recordsPerPage,
                 recordsPerPage);
         int noOfRecords = dishService.getNoOfRecords();

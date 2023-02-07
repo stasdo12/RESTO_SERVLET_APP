@@ -15,7 +15,7 @@
 <fmt:setBundle basename="messages"/>
 
 <html lang="${requestScope.lang}">
-<c:set var="title" value="Info" scope="page"/>
+<c:set var="title" value="info" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <%@include file="../jspf/header.jspf"%>
 <body class="back_info">

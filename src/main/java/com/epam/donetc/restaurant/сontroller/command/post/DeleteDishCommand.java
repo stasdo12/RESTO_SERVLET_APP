@@ -14,6 +14,13 @@ public class DeleteDishCommand implements ICommand  {
     private static final Logger log = LogManager.getLogger(DeleteDishCommand.class);
     private final DishService dishService = new DishService();
 
+    /**
+     * Called from doPost method in front-controller. Tries to delete dish from database.
+     * Logs error in case if not able
+     *
+     * @return path to redirect to execute Get method through front-controller
+     */
+
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         int dishId = Integer.parseInt(req.getParameter("id"));

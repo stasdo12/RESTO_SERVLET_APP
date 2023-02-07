@@ -19,6 +19,14 @@ public class ClientOrdersCommand implements ICommand {
     ReceiptService receiptService = new ReceiptService();
     Logger log = LogManager.getLogger(ClientOrdersCommand.class);
 
+    /**
+     * Called from the doGet method in the front controller. Gets the required path and passes attributes from the session
+     * request
+     *
+     * @param req to get the message attribute from the session and put it into the request
+     * @return the user's orders page after trying to display the page
+     */
+
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();

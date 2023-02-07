@@ -16,7 +16,7 @@
 <fmt:setBundle basename="messages"/>
 
 <html lang="${sessionScope.lang}>>
-<c:set var="title" value="Cart" scope="page"/>
+<c:set var="title" value="cart" scope="page"/>
 <%@include file="../jspf/head.jspf" %>
 <body>
 <%@include file="../jspf/header.jspf" %>
@@ -37,7 +37,6 @@
                 <th></th>
                 <th><fmt:message key="label.dishDescription"/></th>
                 <th><fmt:message key="label.amount"/></th>
-                <th><fmt:message key="label.address-client"/> </th>
                 <th><fmt:message key="label.delete"/></th>
             </tr>
             </thead>
@@ -64,16 +63,6 @@
                         </form>
                     </td>
                     <td>
-                        <form method="post" action="${pageContext.request.contextPath}/address">
-                            <input name="id" style="display: none" value="${user.id}">
-                            <input class="amount-border" name="address" required minlength="5">
-                            <input class="apply-cart" type="submit" value="<fmt:message key="label.applyButton"/>">
-                        </form>
-
-
-                    </td>
-
-                    <td>
                         <form method="post" action="${pageContext.request.contextPath}/controller?command=delete_dish_from_cart">
                             <input name="amount" style="display: none" type="number" value="0">
                             <input name="id" style="display: none" value="${dish.id}">
@@ -87,7 +76,7 @@
         <jsp:useBean id="total" scope="session" type="java.lang.Integer"/>
         <div class="cart-submit-order">
             <p><fmt:message key="label.total"/> ${total}   <fmt:message key="label.uah"/></p>
-            <form action="${pageContext.request.contextPath}/myOrders" method="post">
+            <form action="${pageContext.request.contextPath}/controller?command=client_make_order" method="post">
                 <input class="cart-submit-button" type="submit" value="<fmt:message key="label.order"/>"/>
             </form>
         </div>

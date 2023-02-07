@@ -7,20 +7,22 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
-<%@include file="../jspf/header.jspf"%>
+
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page isELIgnored="false" %>
 
-<fmt:setLocale value="${sessionScope.lang}"/>
+<fmt:setLocale value="${param.lang}"/>
 <fmt:setBundle basename="messages"/>
-<html lang="${sessionScope.lang}">
-<c:set var="title" value="Add" scope="page"/>
+
+<html lang="${requestScope.lang}">
+<c:set var="title" value="add_dish" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <style>
     <%@include file="/WEB-INF/css/style.css"%>
 </style>
 
 <body class="back_info" >
+<%@include file="../jspf/header.jspf"%>
 <br><br><br><br>
 
 <table class="table" border="3" cellpadding="5" cellspacing="5">

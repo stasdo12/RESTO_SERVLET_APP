@@ -2,6 +2,13 @@ package com.epam.donetc.restaurant.database.entity;
 
 import java.util.Map;
 
+/**
+ * Receipt entity class. Matches table 'receipt' in database.
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
+
 public class Receipt  {
     private  int id;
     private  User user;

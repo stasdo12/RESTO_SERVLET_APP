@@ -11,6 +11,13 @@ import java.util.Date;
 import java.util.Properties;
 
 public class SendEmail implements ICommand {
+
+    /**
+     * Called from doPost method in front-controller. Tries to send email from database.
+     * Logs error in case if not able
+     *
+     * @return path to redirect to execute Get method through front-controller
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp)  {
         try {

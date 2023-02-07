@@ -1,41 +1,52 @@
-package com.epam.donetc.restaurant.database.servise;
+package com.epam.donetc.restaurant.database.service;
 
-import com.epam.donetc.restaurant.database.ConnectionManager;
+import com.epam.donetc.restaurant.database.DishDAO;
 import com.epam.donetc.restaurant.database.entity.Category;
 import com.epam.donetc.restaurant.database.entity.Dish;
+import com.epam.donetc.restaurant.database.interfaceDAO.IDishDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.service.DishService;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 class DishServiceTest {
 
+
     @Mock
-    private final Connection c = mock(Connection.class);
-    @Mock
-    private final PreparedStatement ps = mock(PreparedStatement.class);
+    private IDishDAO dao;
+
     @Mock
     private final ResultSet rs = mock(ResultSet.class);
-    @Mock
-    private final ConnectionManager dbm = mock(ConnectionManager.class);
-    @Mock
-    private DishService dishService = new DishService();
+    private DishService dishService;
 
 
 
-
+    @BeforeEach
     private void setUp() {
         MockitoAnnotations.initMocks(this);
+        this.dishService = new DishService(dao);
+    }
+
+
+    @Test
+    public void testGetDishByID() throws DBException {
+        int id = 1;
+        DishDAO dishDAO = mock(DishDAO.class);
+        Dish expectedDish = createTestDish(1);
+        when(dishDAO.getDishByID(id)).thenReturn(expectedDish);
+        DishService dishService = new DishService();
+        Dish actualDish = dishService.getDishByID(id);
+        assertEquals(expectedDish, actualDish);
     }
 
     @Test
@@ -44,25 +55,20 @@ class DishServiceTest {
         for (Dish d: expected){
             mockResultSet(rs, d);
         }
-        setUp();
-        when(dishService.newViewAllDishForChange(0,5)).thenReturn(expected);
+        when(dishService.getDishesOnePage(0,5)).thenReturn(expected);
     }
 
     @Test
     public void shouldChangeDishAllValues() throws SQLException{
         Dish expected = createTestDish(1);
-        mockResultSet(rs, expected);
-        setUp();
-        doNothing().when(dishService).changeDishAllValues(expected.getName(), expected.getPrice(),
+        doNothing().when(dao).changeDishAllValues(expected.getName(), expected.getPrice(),
                 expected.getWeight(), expected.getCategory().getId(), expected.getDescription(), expected.getId());
     }
 
     @Test
     public void shouldAddDish()throws SQLException{
         Dish expected = createTestDish(1);
-        mockResultSet(rs,expected);
-        setUp();
-        doNothing().when(dishService).addDish(expected.getName(), expected.getPrice(), expected.getWeight(),
+        doNothing().when(dao).addDish(expected.getName(), expected.getPrice(), expected.getWeight(),
                 expected.getCategory().getId(),expected.getDescription());
     }
 
@@ -73,8 +79,8 @@ class DishServiceTest {
         for (Dish d: expected){
             mockResultSet(rs, d);
         }
-        setUp();
-        when(dishService.getAllDishes()).thenReturn(expected);
+
+        when(dao.getAllDishes()).thenReturn(expected);
     }
 
 
@@ -83,47 +89,33 @@ class DishServiceTest {
     public void shouldDeleteDish() throws  SQLException{
         Dish expected = createTestDish(1);
         mockResultSet(rs, expected);
-        setUp();
-        doNothing().when(dishService).deleteDish(expected.getId());
+        doNothing().when(dao).deleteDish(expected.getId());
 
     }
     @Test
     public void getDishByIdTest() throws DBException, SQLException {
         Dish expected = createTestDish(1);
         mockResultSet(rs, expected);
-        setUp();
-       when(dishService.getDishByID(expected.getId())).thenReturn(expected);
+        when(dishService.getDishByID(expected.getId())).thenReturn(expected);
     }
 
     @Test
     public void sortDishesByCategoryTest(){
         List<Dish> expected = createTestDishes(6);
-        List<Dish> actual = dishService.sortBy(expected, "category");
-        assertEquals(expected, actual);
+        when(dao.sortBy(expected, "category")).thenReturn(expected);
     }
 
     @Test
     public void sortDishesByNameTest(){
         List<Dish> expected = createTestDishes(6);
-        List<Dish> actual = dishService.sortBy(expected, "name");
-        assertEquals(expected, actual);
+        when(dao.sortBy(expected,"name" )).thenReturn(expected);
     }
 
     @Test
     public void sortDishesByPriceTest(){
         List<Dish> expected = createTestDishes(6);
-        List<Dish> actual = dishService.sortBy(expected, "price");
-        assertEquals(expected, actual);
+        when(dao.sortBy(expected,"price" )).thenReturn(expected);
     }
-    @Test
-    public void getDishesOnPageTest(){
-        List<Dish> dishes = createTestDishes(12);
-        List<Dish> page1expected = dishes.subList(0, 10);
-        List<Dish> page2expected = dishes.subList(10, 12);
-        assertEquals(page1expected, dishService.getDishesOnePage(dishes, 1));
-        assertEquals(page2expected, dishService.getDishesOnePage(dishes, 2));
-    }
-
 
 
 

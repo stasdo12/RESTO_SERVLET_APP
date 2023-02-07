@@ -17,6 +17,13 @@ public class ChangeStatusManagerCommand implements ICommand {
     private static Logger log = LogManager.getLogger(ChangeStatusManagerCommand.class);
     private final ReceiptService receiptService = new ReceiptService();
 
+    /**
+     * Called from doPost method in front-controller. Tries to change status in receipt.
+     * Logs error in case if not able
+     *
+     * @return path to redirect to execute Get method through front-controller
+     */
+
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         User user = (User) req.getSession().getAttribute("user");

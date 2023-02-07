@@ -16,7 +16,7 @@
 <fmt:setBundle basename="messages"/>
 
 <html lang="${sessionScope.lang}">
-<c:set var="title" value="Menu" scope="page"/>
+<c:set var="title" value="client_menu" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
 <%@include file="../jspf/header.jspf"%>
@@ -25,7 +25,7 @@
 
 <div class="sort-filter-bar">
 
-  <form class="menu_filter_sort" method="get" action="${pageContext.request.contextPath}/controller?command=client_menu">
+  <form class="menu_filter_sort" action="${pageContext.request.contextPath}/controller" method="get">
     <label for="category"><fmt:message key="label.chooseACategory"/></label>
     <select id="category" name="category">
       <option value="All"><fmt:message key="label.allCategories"/></option>
@@ -47,6 +47,7 @@
       <option value="1" selected></option>
     </select>
 
+    <input type="hidden" name="command" id="command" value="client_menu"/>
     <input class="menu-apply-button" type="submit" value="<fmt:message key="label.applyButton"/>">
 
   </form>

@@ -2,6 +2,13 @@ package com.epam.donetc.restaurant.database.entity;
 
 import java.util.Objects;
 
+/**
+ * Dish entity class. Matches table 'dish' in database.
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
+
 public class Dish  {
     private int id;
     private String name;

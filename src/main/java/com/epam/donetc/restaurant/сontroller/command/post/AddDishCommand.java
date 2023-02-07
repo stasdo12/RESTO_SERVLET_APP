@@ -11,7 +11,17 @@ import javax.servlet.http.HttpServletResponse;
 
 public class AddDishCommand implements ICommand {
     private final DishService dishService = new DishService();
+
+
     private static final Logger log = LogManager.getLogger(CartServlet.class);
+
+
+
+    /**
+     * Called from doPost method in front-controller. Tries to add dish to database.
+     * Logs error in case if not able
+     * @return path to redirect to execute Get method through front-controller
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         String name = req.getParameter("newName");

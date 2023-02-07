@@ -3,6 +3,12 @@ package com.epam.donetc.restaurant.util;
 import java.io.IOException;
 import java.util.Properties;
 
+/**
+ * This class retrieves data from the application.properties file
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
+
 public class PropertiesUtil  {
     private PropertiesUtil(){}
     private static final Properties PROPERTIES = new Properties();

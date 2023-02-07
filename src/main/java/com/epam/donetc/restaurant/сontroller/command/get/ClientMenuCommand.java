@@ -12,13 +12,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.List;
-
 public class ClientMenuCommand implements ICommand {
     private int page = 1;
 
     DishService dishService = new DishService();
 
     Logger log = LogManager.getLogger(ClientMenuCommand.class);
+
+    /**
+     * Called from the doGet method in the front controller. Gets the required path and passes attributes from the session
+     * request
+     *
+     * @param req to get the message attribute from the session and put it into the request
+     * @return the user's menu page after trying to display the page
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         if (req.getParameter("page") != null) {
@@ -37,7 +44,7 @@ public class ClientMenuCommand implements ICommand {
 
             if (category == null || category.isEmpty() || category.equalsIgnoreCase("All")) {
                 int recordsPerPage = 10;
-                dishes = dishService.newViewAllDishForChange(
+                dishes = dishService.getDishesOnePage(
                         (page - 1) * recordsPerPage,
                         recordsPerPage);
                 int noOfRecords = dishService.getNoOfRecords();

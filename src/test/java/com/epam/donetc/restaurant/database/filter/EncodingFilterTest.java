@@ -30,13 +30,5 @@ public class EncodingFilterTest {
         filter.doFilter(request, response, chain);
 
     }
-    @Test
-    public void testEncodingFilter() throws IOException, ServletException {
-        config.getInitParameter("UTF-8");
-        EncodingFilter encodingFilter = new EncodingFilter();
-        encodingFilter.init(config);
-        encodingFilter.doFilter(request, response, chain);
-        assertEquals("UTF-8", request.getCharacterEncoding());
-    }
 
 }

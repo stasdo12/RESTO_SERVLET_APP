@@ -8,14 +8,17 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 import java.util.Map;
-
+/**
+ * CountTotalTag  class.
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
 public class CountTotalTag extends TagSupport  {
 
     private static final Logger log = LogManager.getLogger(CountTotalTag.class);
 
     private Map<Dish, Integer> cart;
-
-    private int total;
 
     public void setCart(Map<Dish, Integer> cart) {
         log.debug("cart ==>" + cart);
@@ -24,7 +27,7 @@ public class CountTotalTag extends TagSupport  {
 
     @Override
     public int doStartTag() throws JspException {
-        total = 0;
+        int total = 0;
         for (Dish dish:
                 cart.keySet()) {
             total += dish.getPrice()*cart.get(dish);

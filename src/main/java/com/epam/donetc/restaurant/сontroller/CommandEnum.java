@@ -3,6 +3,14 @@ package com.epam.donetc.restaurant.сontroller;
 import com.epam.donetc.restaurant.сontroller.command.get.*;
 import com.epam.donetc.restaurant.сontroller.command.post.*;
 
+
+/**
+ * CommandEnum  enum. contains all possible commands.
+ * DoGet and DoPost method
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
 public enum CommandEnum   {
     add_dish(new ManagerAddDishCommand()),
     cart(new ClientCartCommand()),
@@ -13,6 +21,7 @@ public enum CommandEnum   {
     login(new LoginPageCommandGet()),
     manageOrders(new ManagerOrdersCommand()),
     sign_up(new SignupPageCommand()),
+    get_address(new GetAddressCommand()),
     error_page(new ErrorPageCommand()),
     //Post
     delete(new DeleteDishCommand()),
@@ -23,12 +32,15 @@ public enum CommandEnum   {
     delete_dish_from_cart(new DeleteDishFromCartCommand()),
     sign_up_post(new SignUpPostCommand()),
     change_status(new ChangeStatusManagerCommand()),
-    add_to_cart(new AddToCartClientCommand());
+    add_to_cart(new AddToCartClientCommand()),
+    client_make_order(new MakeOrderCommand()),
+    add_address(new AddAddressClientCommand());
 
 
 
 
-    private ICommand command;
+
+    private final ICommand command;
 
     CommandEnum(ICommand command) {
         this.command = command;

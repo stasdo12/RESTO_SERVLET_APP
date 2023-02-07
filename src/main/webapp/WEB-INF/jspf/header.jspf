@@ -26,16 +26,23 @@
             </c:if>
             <li style="float:right"><a href="${pageContext.request.contextPath}/controller?command=login"><fmt:message key="label.logout" /></a></li>
             <li style="float:right"><p><mylib:greeting user="${user}"/></p></li>
-           <li> <form>
+           <li>
+               <form action="${pageContext.request.contextPath}/controller" method="get">
+                   <input type="hidden" name="command" id="command" value="${title}"/>
                 <%--    <input type="submit" name="sessionLocale" value="en"/>--%>
                 <select class="select-css" id="language" name="sessionLocale" onchange="submit()">
                     <option value="en" <c:if test="${sessionScope.lang == 'en'}">selected</c:if>><fmt:message
                             key="label.lang.en"/></option>
+
                     <option value="uk" <c:if test="${sessionScope.lang == 'uk'}">selected</c:if>><fmt:message
                             key="label.lang.uk"/></option>
                 </select>
 
-            </form> </li>
+            </form>
+           </li>
+            <li><div style="float:left; font-size:12px; color:white; padding:5px;">
+                <%= new java.util.Date() %>
+            </div></li>
         </ul>
     </div>
 </nav>

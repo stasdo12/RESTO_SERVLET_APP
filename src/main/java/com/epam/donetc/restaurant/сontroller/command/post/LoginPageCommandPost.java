@@ -15,6 +15,13 @@ import javax.servlet.http.HttpServletResponse;
 public class LoginPageCommandPost implements ICommand {
     private static final Logger log = LogManager.getLogger(LoginPageCommandPost.class);
     private final UserService userService = new UserService();
+    /**
+     * Called from doPost method in front-controller. Tries to get user from database.
+     * Logs error in case if not able
+     *
+     * @param req to get users id
+     * @return path to redirect to execute Get method through front-controller
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         String login = req.getParameter("login");

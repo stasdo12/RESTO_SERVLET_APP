@@ -14,6 +14,13 @@ public class ChangeDishCommand implements ICommand {
     private final DishService dishService = new DishService();
     private static final Logger log = LogManager.getLogger(CartServlet.class);
 
+    /**
+     * Called from doPost method in front-controller. Tries to change dish in database.
+     * Logs error in case if not able
+     *
+     * @return path to redirect to execute Get method through front-controller
+     */
+
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         String newName = req.getParameter("newName");

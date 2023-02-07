@@ -1,15 +1,14 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
-<%@include file="../jspf/header.jspf"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page isELIgnored="false" %>
 
-<fmt:setLocale value="${sessionScope.lang}"/>
+<fmt:setLocale value="${param.lang}"/>
 <fmt:setBundle basename="messages"/>
 
-<html lang="${sessionScope.lang}">
-<c:set var="title" value="Change" scope="page"/>
+<html lang="${requestScope.lang}">
+<c:set var="title" value="change_dish" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <style>
     <%@include file="/WEB-INF/css/style.css"%>
@@ -17,6 +16,7 @@
 
 
 <body class="change-body">
+<%@include file="../jspf/header.jspf"%>
 
 
 

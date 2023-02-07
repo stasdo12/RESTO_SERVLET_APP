@@ -2,15 +2,21 @@ package com.epam.donetc.restaurant.database;
 
 import com.epam.donetc.restaurant.database.entity.Category;
 import com.epam.donetc.restaurant.database.entity.Dish;
+import com.epam.donetc.restaurant.database.interfaceDAO.IDishDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 
+import javax.servlet.annotation.WebServlet;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class DishDAO {
+public class DishDAO implements IDishDAO {
+
+    /**
+     * This is int fields where I will count how many entries I need to skip
+     */
 
     private int noOfRecords;
 
@@ -20,6 +26,7 @@ public class DishDAO {
      * @param id dish's id
      * @return an object of dish
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
 
     public Dish getDishByID(int id) throws DBException  {
@@ -52,11 +59,10 @@ public class DishDAO {
      * @param newCategory new category for dish
      * @param desc new desc for dish
      * @param id dish's id
-     * @return true
-     * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
 
-    public boolean changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id) {
+    public void changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_DISH_BY_ID)) {
             ps.setString(1, newName);
@@ -71,16 +77,15 @@ public class DishDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return true;
+
 
     }
     /**
      * Removes a dish from the menu
      * @param dishId id dish's id
-     * @return true
-     * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
-    public boolean deleteDish(int dishId) {
+    public void deleteDish(int dishId) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.DELETE_DISH)) {
             ps.setInt(1, dishId);
@@ -90,33 +95,31 @@ public class DishDAO {
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return true;
+
     }
     /**
-     * Adds a dish to the menu
-     * @param name new name for dish
-     * @param price new price for dish
-     * @param weight new weight for dish
-     * @param category new category for dish
-     * @param desc new desc for dish
-     * @return true
-     * @throws DBException if any SQLException was caught
+     * Adds a new dish to the database.
+     *
+     * @param name The name of the dish.
+     * @param price The price of the dish.
+     * @param weight The weight of the dish.
+     * @param category The category of the dish.
+     * @param desc The description of the dish.
      */
-    public boolean addDish(String name, int price, int weight, int category, String desc){
+    public void addDish(String name, int price, int weight, int category, String desc){
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.ADD_DISH)) {
-            ps.setString(1, name);
-            ps.setInt(2, price);
-            ps.setInt(3, weight);
-            ps.setInt(4, category);
-            ps.setString(5, desc);
+            ps.setString(1, name);// sets the first parameter to the dish name
+            ps.setInt(2, price);// sets the second parameter to the dish price
+            ps.setInt(3, weight);// sets the third parameter to the dish weight
+            ps.setInt(4, category);// sets the fourth parameter to the dish category
+            ps.setString(5, desc);// sets the fifth parameter to the dish description
             if (ps.executeUpdate() == 0){
                 throw new SQLException("Delete dish failed");
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        return true;
     }
 
     /**
@@ -124,6 +127,7 @@ public class DishDAO {
      *
      * @return list of all dishes in menu
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public List<Dish> getAllDishes() throws DBException {
         List<Dish> dishes = new ArrayList<>();
@@ -145,6 +149,7 @@ public class DishDAO {
      * @param category category by which it filters dishes from menu
      * @return list of dishes of a certain category
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public List<Dish> getDishesByCategory(String category) throws DBException {
         List<Dish> allDishes = getAllDishes();
@@ -159,6 +164,7 @@ public class DishDAO {
      * @param dishes list of dishes that needs to be sorted
      * @param sortBy sorting method
      * @return list of sorted dishes
+     * @author Stanislav Donetc
      */
     public List<Dish> sortBy(List<Dish> dishes, String sortBy) {
         if (sortBy.equalsIgnoreCase("price")) {
@@ -178,15 +184,15 @@ public class DishDAO {
         return dishes;
     }
 
-    public List<Dish> getDishesOnePage(List<Dish> dishes, int currentPage) {
-        int begin = (currentPage - 1) * 10;
-        if (dishes.size() > 0 && dishes.size() < begin + 10) {
-            dishes = dishes.subList(begin, dishes.size());
-        } else {
-            dishes = dishes.subList(begin, begin + 10);
-        }
-        return dishes;
-    }
+//    public List<Dish> getDishesOnePage(List<Dish> dishes, int currentPage) {
+//        int begin = (currentPage - 1) * 10;
+//        if (dishes.size() > 0 && dishes.size() < begin + 10) {
+//            dishes = dishes.subList(begin, dishes.size());
+//        } else {
+//            dishes = dishes.subList(begin, begin + 10);
+//        }
+//        return dishes;
+//    }
 
 
     public int getNoOfRecords() {
@@ -201,6 +207,7 @@ public class DishDAO {
      * @param noOfRecords
     how many records on 1 page
      * @return a sublist of the given list of dishes
+     * @author Stanislav Donetc
      */
 
     public List<Dish> newViewAllDishForChange(int offset, int noOfRecords) {

@@ -3,12 +3,17 @@ package com.epam.donetc.restaurant.filters;
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import java.io.IOException;
+
+
+/**
+ * This is an encoding filter for the entire application
+ *
+ * */
 @WebFilter(urlPatterns = {"/*"})
 public class EncodingFilter implements Filter  {
-    private String encoding;
     @Override
     public void init(FilterConfig config) throws ServletException {
-        encoding = config.getInitParameter("UTF-8");
+        String encoding = config.getInitParameter("UTF-8");
 
     }
 

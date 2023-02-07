@@ -19,6 +19,14 @@ public class ManagerOrdersCommand implements ICommand {
     ReceiptService receiptService = new ReceiptService();
 
     Logger log = LogManager.getLogger(ManagerOrdersCommand.class);
+
+    /**
+     * Called from the doGet method in the front controller. Gets the required path and passes attributes from the session
+     * request
+     *
+     * @param req to get the message attribute from the session and put it into the request
+     * @return the managerOrders page after trying to display the page
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();
@@ -33,7 +41,7 @@ public class ManagerOrdersCommand implements ICommand {
             int maxPage = receiptService.countMaxPage(receipts.size());
             receipts = receiptService.getReceiptOnPage(receipts, currentPage);
             log.trace("current page == " + currentPage);
-            log.trace("receipts == " + receipts);
+            log.trace("all receipts = " + receipts.size());
             session.setAttribute("maxPage", maxPage);
             session.setAttribute("receipts", receipts);
         } catch (DBException ex) {

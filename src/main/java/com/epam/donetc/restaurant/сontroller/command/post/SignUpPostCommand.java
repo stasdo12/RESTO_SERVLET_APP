@@ -17,6 +17,14 @@ public class SignUpPostCommand implements ICommand {
     private static Logger log = LogManager.getLogger(SignUpPostCommand.class);
     private final UserService userService = new UserService();
 
+    /**
+     * Called from doPost method in front-controller. Tries to put user to database.
+     * Logs error in case if not able
+     *
+     * @param req to get users id
+     * @return path to redirect to execute Get method through front-controller
+     */
+
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         String login = req.getParameter("login");

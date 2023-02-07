@@ -16,6 +16,13 @@ public class DeleteDishFromCartCommand implements ICommand {
 
     private final CartService cartService= new CartService();
     private static Logger log = LogManager.getLogger(DeleteDishFromCartCommand.class);
+
+    /**
+     * Called from doPost method in front-controller. Tries to delete dish from cart.
+     * Logs error in case if not able
+     *
+     * @return path to redirect to execute Get method through front-controller
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();

@@ -38,7 +38,7 @@ public class ChangeDishManagerServlet extends HttpServlet  {
                     req.getParameter("page"));
         }
         int recordsPerPage = 10;
-        List<Dish> dishList = dishService.newViewAllDishForChange(
+        List<Dish> dishList = dishService.getDishesOnePage(
                 (page - 1) * recordsPerPage,
                 recordsPerPage);
         int noOfRecords = dishService.getNoOfRecords();

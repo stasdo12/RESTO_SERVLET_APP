@@ -1,6 +1,7 @@
 package com.epam.donetc.restaurant.database;
 
 import com.epam.donetc.restaurant.database.entity.Dish;
+import com.epam.donetc.restaurant.database.interfaceDAO.ICartDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.service.DishService;
 
@@ -9,13 +10,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class CartDAO {
+public class CartDAO implements ICartDAO {
 
     /**
      * Extracts data about cart of certain user from database
      * @param id user's id
      * @return a map of dishes and their amount in a cart
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
 
     public Map<Dish, Integer> getCart(int id) throws DBException  {
@@ -43,6 +45,7 @@ public class CartDAO {
      * @param dishId dish's id
      * @param amount amount of dish
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
 
     public void addDishToCart(int userId, int dishId, int amount) throws DBException {
@@ -66,6 +69,7 @@ public class CartDAO {
      * @param dishId dish's id
      * @param amount amount of dish that needs to be updated
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public void changeAmountOfDish(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();
@@ -81,25 +85,13 @@ public class CartDAO {
         }
     }
 
-    public void changeAddress(int userId, String address) throws DBException {
-        try (Connection connection = ConnectionManager.get();
-             PreparedStatement ps = connection.prepareStatement(DBManager.UPDATE_ADDRESS_IN_CART)) {
-            ps.setString(1, address);
-            ps.setInt(2, userId);
-            if (ps.executeUpdate() == 0) {
-                throw new DBException("Inserting failed");
-            }
-        } catch (SQLException e) {
-            throw new DBException("Cannot update dish amount in cart", e);
-        }
-    }
-
 
     /**
      * Deletes dish from a cart of certain user.
      * @param userId user's id
      * @param dishId dish's id
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public void deleteDishFromCart(int userId, int dishId) throws DBException {
         try (Connection connection = ConnectionManager.get();
@@ -120,6 +112,7 @@ public class CartDAO {
      * @param userId user's id
      * @param cart user's cart represented by a map of dishes and their amount
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public void submitOrder(int userId, Map<Dish, Integer> cart) throws DBException {
         Connection con = null;
@@ -174,6 +167,7 @@ public class CartDAO {
      * Deletes all data about user's cart and dishes in it.
      * @param id user's id
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public void cleanCart(int id) throws DBException {
         try (Connection con = ConnectionManager.get();

@@ -16,11 +16,12 @@
 
 
 <html  lang="${sessionScope.lang}">
-<c:set var="title" value="Log In" scope="page"/>
+<c:set var="title" value="login" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body class="back_main">
 
-<form>
+<form action="${pageContext.request.contextPath}/controller" method="get">
+  <input type="hidden" name="command" id="command" value="${title}"/>
   <%--    <input type="submit" name="sessionLocale" value="en"/>--%>
   <select class="select-css" id="language" name="sessionLocale" onchange="submit()">
     <option value="en" <c:if test="${sessionScope.lang == 'en'}">selected</c:if>><fmt:message

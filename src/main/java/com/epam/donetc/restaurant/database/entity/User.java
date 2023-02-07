@@ -3,6 +3,12 @@ package com.epam.donetc.restaurant.database.entity;
 import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * User entity enum. Matches table 'users' in database.
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
 public class User implements Serializable  {
     private int id;
     private String login;

@@ -1,5 +1,6 @@
 package com.epam.donetc.restaurant.database;
 
+import com.epam.donetc.restaurant.database.interfaceDAO.IUserDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.util.PropertiesUtil;
@@ -10,7 +11,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class UserDAO   {
+public class UserDAO  implements IUserDAO {
 
     private static final String SALT = "hxSalt";
     String salt = PropertiesUtil.get(SALT);
@@ -21,6 +22,7 @@ public class UserDAO   {
      * @param login login of a user
      * @return new User object
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  User getUserByLogin(String login) throws DBException {
         try(Connection con = ConnectionManager.get();
@@ -42,7 +44,7 @@ public class UserDAO   {
      * Extracts data about a user by their id from database.
      * @param id user's id
      * @return a User object
-     * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  User getUserById(int id){
         try(Connection connection = ConnectionManager.get();
@@ -68,7 +70,7 @@ public class UserDAO   {
      * @param login user's login
      * @param password user's password
      * @return a User object
-     * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  User signUp(String login, String password, String email){
         try(Connection connection = ConnectionManager.get();
@@ -94,6 +96,7 @@ public class UserDAO   {
      * @param password user's password
      * @return a User object
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  User logIn(String login, String password) throws DBException {
         try(Connection connection = ConnectionManager.get();

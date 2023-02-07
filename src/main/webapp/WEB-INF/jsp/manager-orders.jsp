@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.epam.donetc.restaurant.service.ReceiptService" %><%--
   Created by IntelliJ IDEA.
   User: sante
   Date: 09.12.2022
@@ -15,7 +15,7 @@
 <fmt:setBundle basename="messages"/>
 
 <html lang="${requestScope.lang}">
-<c:set var="title" value="Orders" scope="page"/>
+<c:set var="title" value="manageOrders" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
 
@@ -32,6 +32,7 @@
       <th><fmt:message key="label.userId"/></th>
       <th><fmt:message key="label.status"/></th>
       <th><fmt:message key="label.dishes"/></th>
+      <th><fmt:message key="label.address-client"/></th>
       <th><fmt:message key="label.totalOrder"/></th>
     </tr>
     </thead>
@@ -65,6 +66,21 @@
             ${dishAndAmount.key.name}: ${dishAndAmount.key.price} * ${dishAndAmount.value}<br>
           </c:forEach>
         </td>
+        <td>
+<%--          <form method="get" action="${pageContext.request.contextPath}/controller?command=get_address" >--%>
+            <%
+              int receiptId = receipt.getId();
+              ReceiptService receiptService = new ReceiptService();
+              String address;
+            address = receiptService.getAddress(receiptId);
+            %>
+            <%= address%>
+<%--  <%= request.getAttribute("address")%>--%>
+<%--            <input type="submit" value="SUB">--%>
+
+
+<%--        </form>--%>
+        </td>
         <td>${receipt.total}</td>
       </tr>
     </c:forEach>
@@ -81,7 +97,5 @@
     </c:forEach>
   </form>
 </div>
-
-
 </body>
 </html>

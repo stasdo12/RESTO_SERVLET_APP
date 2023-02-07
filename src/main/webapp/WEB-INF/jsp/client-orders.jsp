@@ -11,11 +11,11 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page isELIgnored="false" %>
 
-<fmt:setLocale value="${sessionScope.lang}"/>
+<fmt:setLocale value="${requestScope.lang}"/>
 <fmt:setBundle basename="messages"/>
 
-<html lang="${sessionScope.lang}>
-<c:set var="title" value="My orders" scope="page"/>
+<html lang="${requestScope.lang}>
+<c:set var="title" value="client_orders" scope="page"/>
 <%@include file="../jspf/head.jspf"%>
 <body>
 
@@ -52,9 +52,12 @@
           </c:forEach>
         </td>
         <td>${receipt.total}</td>
-        <td><c:forEach items="${receipt.address}" var="address">
-          ${receipt.address}
-        </c:forEach></td>
+        <td> <form method="post" action="${pageContext.request.contextPath}/controller?command=add_address">
+          <input name="receiptId" style="display: none" value="${receipt.id}">
+          <input class="amount-border" name="address" required minlength="5" >
+          <input class="apply-cart" type="submit" value="<fmt:message key="label.applyButton"/>">
+        </form>
+        </td>
       </tr>
     </c:forEach>
     </tbody>

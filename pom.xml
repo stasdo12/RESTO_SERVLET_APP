@@ -121,6 +121,17 @@
     </dependency>
 
 
+    <!--assertJ -->
+    <!-- https://mvnrepository.com/artifact/org.assertj/assertj-core -->
+    <dependency>
+      <groupId>org.assertj</groupId>
+      <artifactId>assertj-core</artifactId>
+      <version>3.24.2</version>
+      <scope>test</scope>
+    </dependency>
+
+
+
   </dependencies>
 
   <build>
@@ -137,6 +148,18 @@
         <target>10</target>
       </configuration>
     </plugin>
+
+      <!--javaDocMaven-->
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.4.1</version>
+          <configuration>
+            <reportOutputDirectory>C:\Users\sante\IdeaProjects\restourant\javadoc</reportOutputDirectory>
+          </configuration>
+        </plugin>
+
     </plugins>
   </build>
 </project>

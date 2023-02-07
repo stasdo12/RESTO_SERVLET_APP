@@ -3,7 +3,7 @@ package com.epam.donetc.restaurant.database;
 import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
-import com.epam.donetc.restaurant.database.entity.User;
+import com.epam.donetc.restaurant.database.interfaceDAO.IReceiptDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.service.DishService;
 import com.epam.donetc.restaurant.service.UserService;
@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ReceiptDAO {
+public class ReceiptDAO implements IReceiptDAO {
     private int noOfRecords;
 
     /**
@@ -22,6 +22,7 @@ public class ReceiptDAO {
      *
      * @return list of receipts from a database
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  List<Receipt> getAllReceipt() throws DBException  {
         List<Receipt> receipts = new ArrayList<>();
@@ -37,6 +38,33 @@ public class ReceiptDAO {
         }
         return receipts;
       }
+
+    public void addAddress(String address, int receiptId){
+        try(Connection connection = ConnectionManager.get();
+            PreparedStatement ps = connection.prepareStatement(DBManager.ADDRESS)) {
+            ps.setString(1, address);
+            ps.setInt(2, receiptId);
+            if (ps.executeUpdate()==0){
+                throw new SQLException("Add address failed");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    public String getAddress(int receiptId){
+        String address = null;
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.GET_ADDRESS)) {
+            ps.setInt(1, receiptId);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                address = rs.getString(1);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return address;
+    }
 
 
       public List<Receipt> getAllReceiptPagination(int offset, int noOfRecords){
@@ -64,12 +92,10 @@ public class ReceiptDAO {
             if (rs.next()){
                 this.noOfRecords = rs.getInt(1);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        } catch (DBException e) {
+        } catch (SQLException | DBException e) {
             throw new RuntimeException(e);
         }
-        return list;
+          return list;
 
 
       }
@@ -80,6 +106,7 @@ public class ReceiptDAO {
      * @param rs Result set from a database
      * @return new receipt object
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     private static Receipt createReceipt(ResultSet rs) throws DBException {
          UserService userService = new UserService();
@@ -105,6 +132,7 @@ public class ReceiptDAO {
      * @param receiptId id of a receipt
      * @return map of dishes and their amount
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     private static Map<Dish, Integer> getDishesByReceiptId(int receiptId) throws DBException {
         DishService dishService = new DishService();
@@ -131,6 +159,7 @@ public class ReceiptDAO {
      * @param receiptId id of a receipt
      * @param status    new status
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  void changeStatus(int receiptId, Status status)throws DBException{
         try(Connection connection = ConnectionManager.get();
@@ -144,48 +173,7 @@ public class ReceiptDAO {
             throw new RuntimeException(e);
         }
     }
-    /**
-     * Add address to order by user id
-     *
-     * @param id user's id
-     * @param address add address to database
-     * @throws DBException if any SQLException was caught
-     */
-    public void addAddress (int id, String address) {
-        try(Connection connection = ConnectionManager.get();
-        PreparedStatement ps = connection.prepareStatement(DBManager.ADDRESS)) {
-            ps.setString(1, address);
-            ps.setInt(2, id);
-            if (ps.executeUpdate()==0){
-                throw new SQLException("Added address error");
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-    }
-    /**
-     * Get address to order by user id
-     *
-     * @param id user's id
-     * @return String address
-     * @throws DBException if any SQLException was caught
-     */
-    public String getAddress (int id){
-        String address = null;
-        try(Connection connection = ConnectionManager.get();
-        PreparedStatement ps = connection.prepareStatement(DBManager.GET_ADDRESS)) {
-            ps.setInt(1, id);
 
-            try(ResultSet rs = ps.executeQuery()){
-                if (rs.next()){
-                    address = rs.getString(1);
-                }
-            }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
-        }
-        return address;
-    }
 
     /**
      * Creates a list of receipts from a data extracted from a database by user's id.
@@ -193,6 +181,7 @@ public class ReceiptDAO {
      * @param userId user's id
      * @return list of user's receipts
      * @throws DBException if any SQLException was caught
+     * @author Stanislav Donetc
      */
     public  List<Receipt> getReceiptByUserId(int userId) throws DBException{
         List<Receipt> receipts = new ArrayList<>();

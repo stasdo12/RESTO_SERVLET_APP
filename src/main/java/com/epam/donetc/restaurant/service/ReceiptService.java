@@ -1,18 +1,12 @@
 package com.epam.donetc.restaurant.service;
 
 
-import com.epam.donetc.restaurant.database.ConnectionManager;
-import com.epam.donetc.restaurant.database.DBManager;
+
+
 import com.epam.donetc.restaurant.database.ReceiptDAO;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
 import com.epam.donetc.restaurant.exeption.DBException;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class ReceiptService  {
@@ -23,13 +17,35 @@ public class ReceiptService  {
         this.receiptDAO = new ReceiptDAO();
     }
 
+    /**
+     * Extracts data about all receipts that exist in a database
+     * @see ReceiptDAO#getAllReceipt() 
+     * @return list of receipts from a database
+     * @throws DBException if any SQLException was caught
+     */
+
     public List<Receipt> getAllReceipt() throws DBException {
         return receiptDAO.getAllReceipt();
     }
+    /**
+     * Updates status of a given receipt in a database.
+     * @see ReceiptDAO#changeStatus(int, Status) 
+     * @param receiptId id of a receipt
+     * @param status    new status
+     * @throws DBException if any SQLException was caught
+     */
     public  void changeStatus(int receiptId, Status status)throws DBException{
         receiptDAO.changeStatus(receiptId, status);
     }
 
+
+    /**
+     * Creates a list of receipts from a data extracted from a database by user's id.
+     * @see ReceiptDAO#getReceiptByUserId(int) 
+     * @param userId user's id
+     * @return list of user's receipts
+     * @throws DBException if any SQLException was caught
+     */
 
     public  List<Receipt> getReceiptByUserId(int userId) throws DBException{
        return receiptDAO.getReceiptByUserId(userId);
@@ -50,15 +66,12 @@ public class ReceiptService  {
         return receiptDAO.getReceiptOnPage(receipts, currantPage);
     }
 
-    public void addAddress (int id, String address) {
-       receiptDAO.addAddress(id, address);
+    public void addAddress(String address, int receiptId){
+        receiptDAO.addAddress(address, receiptId);
     }
 
-    public String getAddress (int id){
-     return receiptDAO.getAddress(id);
+    public String getAddress(int receiptId){
+       return receiptDAO.getAddress(receiptId);
     }
-
-
-
 
 }

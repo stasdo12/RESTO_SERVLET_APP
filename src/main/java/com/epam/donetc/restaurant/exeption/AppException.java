@@ -1,5 +1,10 @@
 package com.epam.donetc.restaurant.exeption;
-
+/**
+ * Wrapper for RuntimeException
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
 public class AppException extends  RuntimeException {
     public AppException() {
     }

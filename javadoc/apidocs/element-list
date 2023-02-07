@@ -1,0 +1,14 @@
+com.epam.donetc.restaurant
+com.epam.donetc.restaurant.database
+com.epam.donetc.restaurant.database.entity
+com.epam.donetc.restaurant.database.interfaceDAO
+com.epam.donetc.restaurant.exeption
+com.epam.donetc.restaurant.filters
+com.epam.donetc.restaurant.listeners
+com.epam.donetc.restaurant.service
+com.epam.donetc.restaurant.servlets
+com.epam.donetc.restaurant.tags
+com.epam.donetc.restaurant.util
+com.epam.donetc.restaurant.сontroller
+com.epam.donetc.restaurant.сontroller.command.get
+com.epam.donetc.restaurant.сontroller.command.post

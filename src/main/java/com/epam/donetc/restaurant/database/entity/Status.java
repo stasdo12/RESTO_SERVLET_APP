@@ -1,5 +1,10 @@
 package com.epam.donetc.restaurant.database.entity;
-
+/**
+ * Status entity enum. Matches table 'status' in database.
+ *
+ * @author Stanislav Donetc
+ * @version 1.0
+ */
 public enum Status  {
     NEW(1, "New"),
     APPROVED(2, "Approved"),

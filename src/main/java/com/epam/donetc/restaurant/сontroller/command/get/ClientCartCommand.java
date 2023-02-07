@@ -10,14 +10,25 @@ import com.epam.donetc.restaurant.сontroller.ICommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import javax.servlet.annotation.WebFilter;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
+
 public class ClientCartCommand implements ICommand  {
     private static final Logger log = LogManager.getLogger(ClientMenuServlet.class);
     CartService cartService = new CartService();
+
+    /**
+     * Called from the doGet method in the front controller. Gets the required path and passes attributes from the session
+     * request
+     *
+     * @param req to get the message attribute from the session and put it into the request
+     * @return the user's cart page after trying to display the page
+     */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
         HttpSession session = req.getSession();
