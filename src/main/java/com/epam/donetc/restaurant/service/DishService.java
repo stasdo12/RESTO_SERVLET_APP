@@ -90,11 +90,6 @@ public class DishService  {
     }
 
 
-//    public  List<Dish> getDishesOnePage(List<Dish> dishes, int currentPage){
-//        return dishDAO.getDishesOnePage(dishes, currentPage);
-//    }
-
-
     /**
      * Creates a database query for a list of dishes that will be displayed on a specific page.
      * There can be no more than 10 dishes per page.

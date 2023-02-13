@@ -15,7 +15,7 @@ import java.io.IOException;
 /**
  * This is an administrator permission filter
  * */
-@WebFilter(filterName = "AdminFilter", urlPatterns = {"/","/controller?command=client_menu",
+@WebFilter( urlPatterns = {"/","/controller?command=client_menu",
         "/controller?command=client_orders",
         "/controller?command=cart"})
 
@@ -32,6 +32,7 @@ public class AdminFilter extends HttpFilter  {
         User user = (User) req.getSession().getAttribute("user");
         log.trace(user + " This is user id");
         if (user == null){
+
             res.sendRedirect(req.getContextPath() + "/controller?command=login");
         } else if (user.getRoleId() ==2) {
             log.trace(user.getRoleId() + "If user role id == 2 sendRedirect to manager Orders");

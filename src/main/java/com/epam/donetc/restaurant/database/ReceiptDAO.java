@@ -24,6 +24,7 @@ public class ReceiptDAO implements IReceiptDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public  List<Receipt> getAllReceipt() throws DBException  {
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get()) {
@@ -39,6 +40,14 @@ public class ReceiptDAO implements IReceiptDAO {
         return receipts;
       }
 
+
+    /**
+     *Add address to receipt
+     * @param address Address String
+     * @param receiptId receipt id where we add this address
+     * @author Stanislav Donetc
+     */
+    @Override
     public void addAddress(String address, int receiptId){
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.ADDRESS)) {
@@ -51,6 +60,13 @@ public class ReceiptDAO implements IReceiptDAO {
             throw new RuntimeException(e);
         }
     }
+    /**
+     *Get address from receipt
+     * @param receiptId receipt id where we get address
+     * @return String Address
+     * @author Stanislav Donetc
+     */
+    @Override
     public String getAddress(int receiptId){
         String address = null;
         try(Connection connection = ConnectionManager.get();
@@ -67,6 +83,15 @@ public class ReceiptDAO implements IReceiptDAO {
     }
 
 
+    /**
+     * Takes the first 10 records from the database and counts how many are left
+     * @param offset how many records we need to skip
+     * @param noOfRecords limit
+     * @return list of Receipt
+     * @author Stanislav Donetc
+     */
+
+    @Override
       public List<Receipt> getAllReceiptPagination(int offset, int noOfRecords){
           UserService userService = new UserService();
         List<Receipt> list = new ArrayList<>();
@@ -108,6 +133,7 @@ public class ReceiptDAO implements IReceiptDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+
     private static Receipt createReceipt(ResultSet rs) throws DBException {
          UserService userService = new UserService();
         Receipt receipt;
@@ -161,6 +187,7 @@ public class ReceiptDAO implements IReceiptDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public  void changeStatus(int receiptId, Status status)throws DBException{
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_RECEIPT_STATUS)) {
@@ -183,6 +210,7 @@ public class ReceiptDAO implements IReceiptDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public  List<Receipt> getReceiptByUserId(int userId) throws DBException{
         List<Receipt> receipts = new ArrayList<>();
         try(Connection connection = ConnectionManager.get();
@@ -199,6 +227,7 @@ public class ReceiptDAO implements IReceiptDAO {
         }
         return receipts;
     }
+
 
     public  int countMaxPage(int amount){
         if (amount % 10 == 0){
@@ -217,6 +246,7 @@ public class ReceiptDAO implements IReceiptDAO {
         }
         return receipts;
     }
+
 
     public int getNoOfRecords() {
         return noOfRecords;

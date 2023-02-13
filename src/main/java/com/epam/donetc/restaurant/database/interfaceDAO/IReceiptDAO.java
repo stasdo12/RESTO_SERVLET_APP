@@ -15,4 +15,6 @@ public interface IReceiptDAO {
     public  void changeStatus(int receiptId, Status status)throws DBException;
 
     public  List<Receipt> getReceiptByUserId(int userId) throws DBException;
+    public void addAddress(String address, int receiptId);
+    public String getAddress(int receiptId);
 }

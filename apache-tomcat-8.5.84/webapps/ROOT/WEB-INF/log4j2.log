@@ -1,0 +1,12 @@
+11:08:44.326 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\apache-tomcat-8.5.84\webapps\ROOT\WEB-INF\log4j2.log
+11:08:44.961 [http-nio-8080-exec-1] TRACE - null This is user id
+11:08:44.975 [http-nio-8080-exec-2] TRACE - This is command what we used now login this id usernull
+11:08:47.521 [http-nio-8080-exec-2] TRACE - UTF-8 get request
+11:08:47.530 [http-nio-8080-exec-3] TRACE - null This is user id
+11:08:47.535 [http-nio-8080-exec-4] TRACE - This is command what we used now login this id usernull
+11:08:47.538 [http-nio-8080-exec-4] TRACE - UTF-8 get request
+11:08:48.113 [http-nio-8080-exec-5] TRACE - null This is user id
+11:08:48.126 [http-nio-8080-exec-6] TRACE - This is command what we used now login this id usernull
+11:08:48.131 [http-nio-8080-exec-6] TRACE - UTF-8 get request
+11:11:33.069 [http-nio-8080-exec-10] TRACE - This is command what we used now login this id usernull
+11:11:33.106 [http-nio-8080-exec-10] TRACE - UTF-8 get request

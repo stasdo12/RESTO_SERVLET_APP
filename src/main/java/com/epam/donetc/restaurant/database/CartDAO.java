@@ -19,6 +19,7 @@ public class CartDAO implements ICartDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
 
     public Map<Dish, Integer> getCart(int id) throws DBException  {
         DishService dishService = new DishService();
@@ -47,7 +48,7 @@ public class CartDAO implements ICartDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
-
+    @Override
     public void addDishToCart(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.PUT_DISH_INTO_CART)) {
@@ -71,6 +72,7 @@ public class CartDAO implements ICartDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public void changeAmountOfDish(int userId, int dishId, int amount) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.UPDATE_DISH_AMOUNT_IN_CART)) {
@@ -93,6 +95,8 @@ public class CartDAO implements ICartDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+
+    @Override
     public void deleteDishFromCart(int userId, int dishId) throws DBException {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.DELETE_DISH_FROM_CART)) {
@@ -114,6 +118,7 @@ public class CartDAO implements ICartDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public void submitOrder(int userId, Map<Dish, Integer> cart) throws DBException {
         Connection con = null;
         try {
@@ -130,6 +135,7 @@ public class CartDAO implements ICartDAO {
             ConnectionManager.close(con);
         }
     }
+
 
     private static void putDishIntoReceipt(Connection connection, int receiptId, Dish dish, int amount) throws SQLException {
         try (PreparedStatement ps = connection.prepareStatement(DBManager.PUT_DISH_INTO_RECEIPT)) {
@@ -169,6 +175,7 @@ public class CartDAO implements ICartDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public void cleanCart(int id) throws DBException {
         try (Connection con = ConnectionManager.get();
              PreparedStatement ps = con.prepareStatement(DBManager.CLEAR_CART)) {

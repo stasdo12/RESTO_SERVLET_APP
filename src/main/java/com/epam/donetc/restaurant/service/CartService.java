@@ -84,9 +84,4 @@ public class CartService  {
         cartDAO.cleanCart(id);
     }
 
-//    public void changeAddress(int userId, String address) throws DBException{
-//        cartDAO.changeAddress(userId, address);
-//    }
-
-
 }

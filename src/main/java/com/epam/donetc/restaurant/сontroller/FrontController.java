@@ -16,9 +16,9 @@ import java.io.IOException;
  * @author Stanislav Donetc
  * @version 1.0
  * */
-@WebServlet(name = "/controller", urlPatterns = "/controller")
+@WebServlet(name = "FrontController", value = "/controller")
 public class FrontController extends HttpServlet  {
-    Logger log  = LogManager.getLogger(FrontController.class);
+    private Logger log  = LogManager.getLogger(FrontController.class);
 
     /**
      * Calls and executes action and then forwards requestDispatcher

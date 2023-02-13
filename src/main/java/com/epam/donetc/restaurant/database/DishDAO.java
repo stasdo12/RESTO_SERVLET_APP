@@ -28,6 +28,7 @@ public class DishDAO implements IDishDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
 
     public Dish getDishByID(int id) throws DBException  {
         Dish dish;
@@ -61,6 +62,7 @@ public class DishDAO implements IDishDAO {
      * @param id dish's id
      * @author Stanislav Donetc
      */
+    @Override
 
     public void changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id) {
         try (Connection connection = ConnectionManager.get();
@@ -85,6 +87,7 @@ public class DishDAO implements IDishDAO {
      * @param dishId id dish's id
      * @author Stanislav Donetc
      */
+    @Override
     public void deleteDish(int dishId) {
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.DELETE_DISH)) {
@@ -106,6 +109,7 @@ public class DishDAO implements IDishDAO {
      * @param category The category of the dish.
      * @param desc The description of the dish.
      */
+    @Override
     public void addDish(String name, int price, int weight, int category, String desc){
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.ADD_DISH)) {
@@ -121,6 +125,7 @@ public class DishDAO implements IDishDAO {
             throw new RuntimeException(e);
         }
     }
+    @Override
 
     /**
      * Creates new list of dishes using data from database.
@@ -151,6 +156,7 @@ public class DishDAO implements IDishDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public List<Dish> getDishesByCategory(String category) throws DBException {
         List<Dish> allDishes = getAllDishes();
         return allDishes.stream()
@@ -166,6 +172,7 @@ public class DishDAO implements IDishDAO {
      * @return list of sorted dishes
      * @author Stanislav Donetc
      */
+    @Override
     public List<Dish> sortBy(List<Dish> dishes, String sortBy) {
         if (sortBy.equalsIgnoreCase("price")) {
             dishes = dishes.stream()
@@ -194,7 +201,7 @@ public class DishDAO implements IDishDAO {
 //        return dishes;
 //    }
 
-
+    @Override
     public int getNoOfRecords() {
         return noOfRecords;
     }
@@ -209,7 +216,7 @@ public class DishDAO implements IDishDAO {
      * @return a sublist of the given list of dishes
      * @author Stanislav Donetc
      */
-
+    @Override
     public List<Dish> newViewAllDishForChange(int offset, int noOfRecords) {
         List<Dish> list = new ArrayList<>();
         Dish dish = null;

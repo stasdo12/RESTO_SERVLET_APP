@@ -17,6 +17,10 @@ public class ReceiptService  {
         this.receiptDAO = new ReceiptDAO();
     }
 
+    public ReceiptService(ReceiptDAO dao) {
+        this.receiptDAO = dao;
+    }
+
     /**
      * Extracts data about all receipts that exist in a database
      * @see ReceiptDAO#getAllReceipt() 
@@ -66,9 +70,23 @@ public class ReceiptService  {
         return receiptDAO.getReceiptOnPage(receipts, currantPage);
     }
 
+    /**
+     *Add address to receipt
+     * @param address Address String
+     * @param receiptId receipt id where we add this address
+     * @author Stanislav Donetc
+     */
+
     public void addAddress(String address, int receiptId){
         receiptDAO.addAddress(address, receiptId);
     }
+
+    /**
+     *Get address from receipt
+     * @param receiptId receipt id where we get address
+     * @return String Address
+     * @author Stanislav Donetc
+     */
 
     public String getAddress(int receiptId){
        return receiptDAO.getAddress(receiptId);

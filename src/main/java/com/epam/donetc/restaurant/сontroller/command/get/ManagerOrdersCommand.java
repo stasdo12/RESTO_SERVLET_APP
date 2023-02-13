@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public class ManagerOrdersCommand implements ICommand {
+    private int page = 1;
 
     ReceiptService receiptService = new ReceiptService();
 
@@ -29,25 +30,31 @@ public class ManagerOrdersCommand implements ICommand {
      */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
+        if (req.getParameter("page") != null) {
+            page = Integer.parseInt(
+                    req.getParameter("page"));
+        }
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
         String status = req.getParameter("status");
-        String curPage = req.getParameter("currentPage");
-        if (curPage == null || curPage.isEmpty()) curPage = "1";
-        int currentPage = Integer.parseInt(curPage);
-        try {
-            List<Receipt> receipts;
-            receipts = receiptService.getAllReceipt();
-            int maxPage = receiptService.countMaxPage(receipts.size());
-            receipts = receiptService.getReceiptOnPage(receipts, currentPage);
-            log.trace("current page == " + currentPage);
-            log.trace("all receipts = " + receipts.size());
-            session.setAttribute("maxPage", maxPage);
-            session.setAttribute("receipts", receipts);
-        } catch (DBException ex) {
-            log.error("In manager orders servlet doGet() ", ex);
-            throw new AppException(ex);
-        }
+//        String curPage = req.getParameter("currentPage");
+//        if (curPage == null || curPage.isEmpty()) curPage = "1";
+//        int currentPage = Integer.parseInt(curPage);
+        List<Receipt> receipts;
+        int recordsPerPage = 10;
+        receipts = receiptService.getAllReceiptPagination(
+                (page -1) * recordsPerPage,recordsPerPage
+        );
+        int noOfRecords = receiptService.getNoOfRecords();
+        int noOfPages = (int) Math.ceil(noOfRecords * 1.0 / recordsPerPage);
+        req.setAttribute("noOfPages", noOfPages);
+        req.setAttribute("currentPage", page);
+//        int maxPage = receiptService.countMaxPage(receipts.size());
+//        receipts = receiptService.getReceiptOnPage(receipts, currentPage);
+        log.trace("current page == " + page);
+        log.trace("receipts == " + receipts);
+//        session.setAttribute("maxPage", maxPage);
+        session.setAttribute("receipts", receipts);
         return "/WEB-INF/jsp/manager-orders";
     }
 }

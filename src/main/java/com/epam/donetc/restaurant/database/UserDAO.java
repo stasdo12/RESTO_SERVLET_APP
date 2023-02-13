@@ -24,6 +24,7 @@ public class UserDAO  implements IUserDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public  User getUserByLogin(String login) throws DBException {
         try(Connection con = ConnectionManager.get();
             PreparedStatement ps = con.prepareStatement(DBManager.GET_USER_BY_LOGIN)){
@@ -46,6 +47,7 @@ public class UserDAO  implements IUserDAO {
      * @return a User object
      * @author Stanislav Donetc
      */
+    @Override
     public  User getUserById(int id){
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.GET_USER_BY_ID)) {
@@ -72,6 +74,7 @@ public class UserDAO  implements IUserDAO {
      * @return a User object
      * @author Stanislav Donetc
      */
+    @Override
     public  User signUp(String login, String password, String email){
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.SIGN_UP)) {
@@ -98,6 +101,7 @@ public class UserDAO  implements IUserDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public  User logIn(String login, String password) throws DBException {
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.LOG_IN)){
