@@ -64,10 +64,20 @@ public class DBManager  {
     public static final String PAGINATION = "SELECT * FROM dish  ORDER BY id OFFSET ? LIMIT ? ;";
     public static final String COUNT = "SELECT COUNT(*) FROM dish";
 
+    public static final String GET_RECEIPT_BY_USER_ID_PAGINATION = "SELECT * FROM receipt WHERE user_id = ? " +
+            "ORDER BY  create_date DESC OFFSET ? LIMIT ?";
+
+    public static final String COUNT_FOR_CLIENT = "SELECT COUNT(*) FROM receipt WHERE user_id = ?";
+
     //add address to receipt has dish
 
     public static final String ADDRESS = "UPDATE receipt_has_dish SET address = ? WHERE receipt_id = ?";
 
     public static final String GET_ADDRESS = "SELECT address FROM receipt_has_dish WHERE receipt_id = ? LIMIT 1";
+
+    //add admin
+    public static final String GET_ALL_USER = "SELECT id, login FROM users WHERE role_id = 1";
+    public static final String MAKE_ADMIN = "UPDATE users SET role_id = 2 WHERE id = ?";
+
 
     }

@@ -8,9 +8,12 @@ import com.epam.donetc.restaurant.service.DishService;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 
 public class CartDAO implements ICartDAO {
+
+    private final static Pattern POSITIVE_INTEGER_PATTERN = Pattern.compile("^[0-9 ]+$");
 
     /**
      * Extracts data about cart of certain user from database
@@ -74,6 +77,9 @@ public class CartDAO implements ICartDAO {
      */
     @Override
     public void changeAmountOfDish(int userId, int dishId, int amount) throws DBException {
+        if (!POSITIVE_INTEGER_PATTERN.matcher(String.valueOf(amount)).matches()) {
+            throw new IllegalArgumentException("Amount must be a positive integer");
+        }else{
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.UPDATE_DISH_AMOUNT_IN_CART)) {
             ps.setInt(1, amount);
@@ -84,6 +90,7 @@ public class CartDAO implements ICartDAO {
             }
         } catch (SQLException e) {
             throw new DBException("Cannot update dish amount in cart", e);
+        }
         }
     }
 

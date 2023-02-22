@@ -8,7 +8,12 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.util.Arrays;
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -17,6 +22,8 @@ public class UserServiceTestNew {
 
     public static final String PASSWORD = "password";
     public static final String TEST_LOGIN = "testLogin";
+    public static final String TEST_PASSWORD = "testPassword";
+    public static final String TEST_EMAIL = "testEmail";
     @Mock
     private IUserDAO userDAO;
     @InjectMocks
@@ -46,22 +53,37 @@ public class UserServiceTestNew {
 
     @Test
     public void testSignUp() {
-        User expectedUser = new User(1, TEST_LOGIN, "testPassword", 1);
-        when(userDAO.signUp(TEST_LOGIN, "testPassword", "testEmail")).thenReturn(expectedUser);
+        User expectedUser = new User(1, TEST_LOGIN, TEST_PASSWORD, 1);
+        when(userDAO.signUp(TEST_LOGIN, TEST_PASSWORD, TEST_EMAIL)).thenReturn(expectedUser);
 
-        User actualUser = userService.signUp(TEST_LOGIN, "testPassword", "testEmail");
+        User actualUser = userService.signUp(TEST_LOGIN, TEST_PASSWORD, TEST_EMAIL);
 
         assertEquals(expectedUser, actualUser);
     }
 
     @Test
     public void testLogIn() throws DBException {
-        User expectedUser = new User(1, TEST_LOGIN, "testPassword", 1);
-        when(userDAO.logIn(TEST_LOGIN, "testPassword")).thenReturn(expectedUser);
+        User expectedUser = new User(1, TEST_LOGIN, TEST_PASSWORD, 1);
+        when(userDAO.logIn(TEST_LOGIN, TEST_PASSWORD)).thenReturn(expectedUser);
 
-        User actualUser = userService.logIn(TEST_LOGIN, "testPassword");
+        User actualUser = userService.logIn(TEST_LOGIN, TEST_PASSWORD);
 
         assertEquals(expectedUser, actualUser);
+    }
+
+    @Test
+    public void testGetAllUser(){
+        List<User> expectedUsers = Arrays.asList(new User(), new User());
+        when(userDAO.getAllUser()).thenReturn(expectedUsers);
+        List<User> actualUser = userService.getAllUser();
+        assertEquals(expectedUsers, actualUser);
+        verify(userDAO).getAllUser();
+    }
+
+    @Test
+    public void testChangeUserRoleId(){
+        userService.changeUserRoleId(1);
+        verify(userDAO).changeUserRoleId(1);
     }
 
 }

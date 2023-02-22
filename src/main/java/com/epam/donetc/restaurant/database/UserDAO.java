@@ -10,11 +10,63 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.regex.Pattern;
 
 public class UserDAO  implements IUserDAO {
 
     private static final String SALT = "hxSalt";
-    String salt = PropertiesUtil.get(SALT);
+    private final String salt = PropertiesUtil.get(SALT);
+
+    private static final Pattern USERNAME_PATTERN = Pattern.compile("[a-zA-Z0-9_]+");
+    private static final Pattern PASSWORD_PATTERN = Pattern.compile("[a-zA-Z0-9_]+");
+
+
+    /**
+     * Change user role by userId
+     * @param userId id of a user
+     * @author Stanislav Donetc
+     */
+    @Override
+    public void changeUserRoleId(int userId){
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.MAKE_ADMIN)) {
+            ps.setInt(1, userId);
+            if (ps.executeUpdate() == 0){
+                throw new SQLException("Make admin failed");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    /**
+     * Get all user who are not admin.
+     * @return List of users
+     * @author Stanislav Donetc
+     */
+    @Override
+    public List<User> getAllUser(){
+        List<User> users = new ArrayList<>();
+        User user = null;
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.GET_ALL_USER)) {
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                user = new User();
+                user.setId(rs.getInt(1));
+                user.setLogin(rs.getString(2));
+                users.add(user);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return users;
+    }
 
 
     /**
@@ -76,6 +128,11 @@ public class UserDAO  implements IUserDAO {
      */
     @Override
     public  User signUp(String login, String password, String email){
+        if (!USERNAME_PATTERN.matcher(login).matches()) {
+            throw new IllegalArgumentException("Invalid login format");
+        } else if (!PASSWORD_PATTERN.matcher(password).matches()) {
+            throw new IllegalArgumentException("Invalid password format");
+        } else {
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.SIGN_UP)) {
             password = DigestUtils.md5Hex(password + salt);
@@ -89,6 +146,7 @@ public class UserDAO  implements IUserDAO {
         } catch (SQLException | DBException e) {
             throw new RuntimeException(e);
 
+            }
         }
     }
 
@@ -103,20 +161,26 @@ public class UserDAO  implements IUserDAO {
      */
     @Override
     public  User logIn(String login, String password) throws DBException {
-        try(Connection connection = ConnectionManager.get();
-            PreparedStatement ps = connection.prepareStatement(DBManager.LOG_IN)){
-            password = DigestUtils.md5Hex(password + salt);
-            ps.setString(1, login);
-            ps.setString(2, password);
-            try(ResultSet rs = ps.executeQuery()){
-                if (rs.next()){
-                    return createUser(rs);
-                }else {
-                    return null;
+        if (!USERNAME_PATTERN.matcher(login).matches()) {
+            throw new IllegalArgumentException("Invalid login format");
+        } else if (!PASSWORD_PATTERN.matcher(password).matches()) {
+            throw new IllegalArgumentException("Invalid password format");
+        } else {
+            try (Connection connection = ConnectionManager.get();
+                 PreparedStatement ps = connection.prepareStatement(DBManager.LOG_IN)) {
+                password = DigestUtils.md5Hex(password + salt);
+                ps.setString(1, login);
+                ps.setString(2, password);
+                try (ResultSet rs = ps.executeQuery()) {
+                    if (rs.next()) {
+                        return createUser(rs);
+                    } else {
+                        return null;
+                    }
                 }
+            } catch (SQLException e) {
+                throw new DBException("Login Error" + e);
             }
-        } catch (SQLException e) {
-            throw new DBException("Login Error" + e);
         }
     }
 

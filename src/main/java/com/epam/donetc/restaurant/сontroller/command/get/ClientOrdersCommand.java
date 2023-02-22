@@ -2,10 +2,7 @@ package com.epam.donetc.restaurant.сontroller.command.get;
 
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.User;
-import com.epam.donetc.restaurant.exeption.AppException;
-import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.service.ReceiptService;
-import com.epam.donetc.restaurant.servlets.ClientOrdersServlet;
 import com.epam.donetc.restaurant.сontroller.ICommand;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,6 +13,8 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public class ClientOrdersCommand implements ICommand {
+
+    private int page = 1;
     ReceiptService receiptService = new ReceiptService();
     Logger log = LogManager.getLogger(ClientOrdersCommand.class);
 
@@ -29,28 +28,34 @@ public class ClientOrdersCommand implements ICommand {
 
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp) {
+        if (req.getParameter("page") != null) {
+            page = Integer.parseInt(
+                    req.getParameter("page"));
+        }
         HttpSession session = req.getSession();
         User user = (User) session.getAttribute("user");
-        String curPage = req.getParameter("currentPage");
-        if (curPage == null || curPage.isEmpty()) curPage = "1";
-        int currentPage = Integer.parseInt(curPage);
-        try {
+//        String curPage = req.getParameter("currentPage");
+//        if (curPage == null || curPage.isEmpty()) curPage = "1";
+//        int currentPage = Integer.parseInt(curPage);
 
-            List<Receipt> receipts;
-            receipts = receiptService.getReceiptByUserId(user.getId());
-            if (receipts.size() > 0) {
-                int maxPage = receiptService.countMaxPage(receipts.size());
-                receipts = receiptService.getReceiptOnPage(receipts, currentPage);
-                log.trace("current page == " + currentPage);
-                log.trace("receipts == " + receipts);
-                session.setAttribute("maxPage", maxPage);
-            }
-            session.setAttribute("receipts", receipts);
-
-        } catch (DBException ex) {
-            log.error("In client orders servlet doGet() ", ex);
-            throw new AppException(ex);
-        }
+        List<Receipt> receipts;
+        int recordsPerPage = 10;
+        receipts = receiptService.getAllReceiptByUserIdPagination(user.getId(),
+                (page - 1) * recordsPerPage, recordsPerPage);
+        log.trace(receipts.size());
+//            receipts = receiptService.getReceiptByUserId(user.getId());
+        int noOfRecords = receiptService.getNoOfRecords();
+        int noOfPages = (int) Math.ceil(noOfRecords * 1.0 / recordsPerPage);
+        req.setAttribute("noOfPages", noOfPages);
+        req.setAttribute("currentPage", page);
+//            if (receipts.size() > 0) {
+////                int maxPage = receiptService.countMaxPage(receipts.size());
+////                receipts = receiptService.getReceiptOnPage(receipts, currentPage);
+////                log.trace("current page == " + currentPage);
+////                log.trace("receipts == " + receipts);
+////                session.setAttribute("maxPage", maxPage);
+//            }
+        session.setAttribute("receipts", receipts);
         return "/WEB-INF/jsp/client-orders";
 
     }

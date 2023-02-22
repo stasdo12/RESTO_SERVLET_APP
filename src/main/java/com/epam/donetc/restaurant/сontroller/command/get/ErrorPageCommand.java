@@ -5,7 +5,7 @@ import com.epam.donetc.restaurant.сontroller.ICommand;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class ErrorPageCommand implements ICommand  {
+public class ErrorPageCommand implements ICommand {
     /**
      * Called from the doGet method in the front controller.
      *

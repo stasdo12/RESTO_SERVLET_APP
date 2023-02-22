@@ -12,10 +12,14 @@ import java.util.Objects;
 public class User implements Serializable  {
     private int id;
     private String login;
-    private final String password;
-    private final int roleId;
+    private  String password;
+    private  int roleId;
 
     private String email;
+
+    public User(){
+
+    }
 
 
 

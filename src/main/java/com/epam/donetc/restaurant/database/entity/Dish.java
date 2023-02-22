@@ -9,7 +9,7 @@ import java.util.Objects;
  * @version 1.0
  */
 
-public class Dish  {
+public class Dish {
     private int id;
     private String name;
     private int price;
@@ -24,7 +24,7 @@ public class Dish  {
         this.weight = weight;
         this.category = category;
         this.description = description;
-      }
+    }
 
     public Dish() {
     }

@@ -3,15 +3,20 @@ package com.epam.donetc.restaurant.database.interfaceDAO;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.exeption.DBException;
 
+import java.util.List;
+
 public interface IUserDAO {
+    void changeUserRoleId(int userId);
 
-    public User getUserByLogin(String login) throws DBException;
+    User getUserByLogin(String login) throws DBException;
 
-    public  User getUserById(int id);
+    User getUserById(int id);
 
-    public  User signUp(String login, String password, String email);
+    User signUp(String login, String password, String email);
 
-    public  User logIn(String login, String password) throws DBException;
+    User logIn(String login, String password) throws DBException;
+
+    List<User> getAllUser();
 
 
 }

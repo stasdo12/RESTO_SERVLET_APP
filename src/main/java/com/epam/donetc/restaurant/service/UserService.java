@@ -1,10 +1,17 @@
 package com.epam.donetc.restaurant.service;
 
 
+import com.epam.donetc.restaurant.database.ConnectionManager;
+import com.epam.donetc.restaurant.database.DBManager;
 import com.epam.donetc.restaurant.database.UserDAO;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.database.interfaceDAO.IUserDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
 
 
 public class UserService  {
@@ -18,6 +25,30 @@ public class UserService  {
     public UserService(IUserDAO dao) {
         this.userDAO = dao;
     }
+
+
+
+    /**
+     * Change user role by userId
+     * @param userId id of a user
+     * @author Stanislav Donetc
+     */
+
+    public void changeUserRoleId(int userId){
+        userDAO.changeUserRoleId(userId);
+    }
+
+
+    /**
+     * Get all user who are not admin.
+     * @return List of users
+     * @author Stanislav Donetc
+     */
+    public List<User> getAllUser(){
+        return userDAO.getAllUser();
+    }
+
+
 
     /**
      * Creates a new User object with data from a database extracted by user's login.

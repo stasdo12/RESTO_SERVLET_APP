@@ -13,8 +13,11 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Pattern;
 
 public class ReceiptDAO implements IReceiptDAO {
+
+    private static final Pattern ADDRESS_PATTERN = Pattern.compile("[0-9А-Яа-яA-Za-z\\s]+");
     private int noOfRecords;
 
     /**
@@ -49,6 +52,9 @@ public class ReceiptDAO implements IReceiptDAO {
      */
     @Override
     public void addAddress(String address, int receiptId){
+        if (!ADDRESS_PATTERN.matcher(address).matches()) {
+            throw new IllegalArgumentException("Invalid address format");
+        }
         try(Connection connection = ConnectionManager.get();
             PreparedStatement ps = connection.prepareStatement(DBManager.ADDRESS)) {
             ps.setString(1, address);
@@ -80,6 +86,48 @@ public class ReceiptDAO implements IReceiptDAO {
             throw new RuntimeException(e);
         }
         return address;
+    }
+
+    /**
+     * Takes the first 10 records from the database and counts how many are left
+     * @param offset how many records we need to skip
+     * @param noOfRecords limit
+     * @return list of Receipt
+     * @author Stanislav Donetc
+     */
+
+    @Override
+    public List<Receipt> getAllReceiptByUserIdPagination(int userID, int offset, int noOfRecords ){
+        UserService userService = new UserService();
+        List<Receipt> list = new ArrayList<>();
+        Receipt receipt = null;
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.GET_RECEIPT_BY_USER_ID_PAGINATION);
+        PreparedStatement psCount = connection.prepareStatement(DBManager.COUNT_FOR_CLIENT);) {
+            ps.setInt(1, userID);
+            ps.setInt(2, offset);
+            ps.setInt(3, noOfRecords);
+            psCount.setInt(1, userID);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                receipt = new Receipt();
+                receipt.setId(rs.getInt(1));
+                receipt.setUser(userService.getUserById(rs.getInt(2)));
+                receipt.setStatus(Status.getStatusById(rs.getInt(3)));
+                receipt.setDishes(getDishesByReceiptId(receipt.getId()));
+                receipt.setAddress(receipt.getAddress());
+                receipt.countTotal();
+                list.add(receipt);
+            }
+            rs.close();
+            rs = psCount.executeQuery();
+            if (rs.next()){
+                this.noOfRecords = rs.getInt(1);
+            }
+        } catch (SQLException | DBException e) {
+            throw new RuntimeException(e);
+        }
+        return list;
     }
 
 

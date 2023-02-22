@@ -67,7 +67,6 @@
           </c:forEach>
         </td>
         <td>
-          ${address}
 <%--          <form method="get" action="${pageContext.request.contextPath}/controller?command=get_address" >--%>
             <%
               int receiptId = receipt.getId();
@@ -91,7 +90,7 @@
 
 <div class="menu-pagination">
   <form method="get" action="${pageContext.request.contextPath}/controller?command=manageOrders">
-    <table class="menu-pagination-item" border="1" cellpadding="5" cellspacing="5">
+    <table class="table-for-pagination" border="1" cellpadding="5" cellspacing="5">
       <tr>
         <%--@elvariable id="noOfPages" type="java.lang.Integer"--%>
         <c:forEach begin="1" end="${noOfPages}" var="i">
@@ -109,14 +108,5 @@
   </form>
 </div>
 
-<%--<div class="menu-pagination">--%>
-<%--  <form method="get" action="${pageContext.request.contextPath}/manageOrders">--%>
-<%--    <c:forEach var="number" begin="1" end="${maxPage}">--%>
-<%--      <div class="menu-pagination-item">--%>
-<%--        <input type="submit" name="currentPage" value="${number}"  >--%>
-<%--      </div>--%>
-<%--    </c:forEach>--%>
-<%--  </form>--%>
-<%--</div>--%>
 </body>
 </html>

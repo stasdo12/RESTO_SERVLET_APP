@@ -1,48 +1,53 @@
 package com.epam.donetc.restaurant.database.service;
 
-import com.epam.donetc.restaurant.database.DishDAO;
 import com.epam.donetc.restaurant.database.entity.Dish;
+import com.epam.donetc.restaurant.database.interfaceDAO.IDishDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 import com.epam.donetc.restaurant.service.DishService;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
-
+@ExtendWith(MockitoExtension.class)
 public class DishServiceTestNew {
+    public static final int ID = 1;
+    public static final String NAME = "test";
+    public static final int PRICE = 10;
+    public static final int WEIGHT = 20;
+    public static final int CATEGORY = 30;
+    public static final String DESC = "desc";
+    @Mock
+    private IDishDAO mockDishDAO;
+
+    @InjectMocks
     private DishService dishService;
-    private DishDAO mockDishDAO;
-
-
-    @BeforeEach
-    public void setup() {
-        mockDishDAO = mock(DishDAO.class);
-        dishService = new DishService(mockDishDAO);
-    }
 
     @Test
     public void testGetDishByID() throws DBException {
         Dish expectedDish = new Dish();
-        when(mockDishDAO.getDishByID(1)).thenReturn(expectedDish);
-        Dish actualDish = dishService.getDishByID(1);
+        when(mockDishDAO.getDishByID(ID)).thenReturn(expectedDish);
+        Dish actualDish = dishService.getDishByID(ID);
         assertEquals(expectedDish, actualDish);
-        verify(mockDishDAO).getDishByID(1);
+        verify(mockDishDAO).getDishByID(ID);
     }
 
     @Test
     public void testAddDish() {
-        dishService.addDish("test", 10, 20, 30, "desc");
-        verify(mockDishDAO).addDish("test", 10, 20, 30, "desc");
+        dishService.addDish(NAME, PRICE, WEIGHT, CATEGORY, DESC);
+        verify(mockDishDAO).addDish(NAME, PRICE, WEIGHT, CATEGORY, DESC);
     }
 
     @Test
     public void testChangeDishAllValues() {
-        dishService.changeDishAllValues("newTest", 100, 200, 300, "newDesc", 1);
-        verify(mockDishDAO).changeDishAllValues("newTest", 100, 200, 300, "newDesc", 1);
+        dishService.changeDishAllValues(NAME, PRICE, WEIGHT, CATEGORY, DESC, ID);
+        verify(mockDishDAO).changeDishAllValues(NAME, PRICE, WEIGHT, CATEGORY, DESC, ID);
     }
 
     @Test

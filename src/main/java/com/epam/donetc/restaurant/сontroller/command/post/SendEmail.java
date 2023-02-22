@@ -9,8 +9,17 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.UnsupportedEncodingException;
 import java.util.Date;
 import java.util.Properties;
+import java.util.regex.Pattern;
 
 public class SendEmail implements ICommand {
+
+    private static final Pattern USERNAME_PATTERN = Pattern.compile("[a-zA-Z0-9]+$");
+    private static final Pattern MESSAGE_PATTERN = Pattern.compile("[a-zA-Z0-9]+$");
+    private static final Pattern EMAIL_PATTERN = Pattern.compile(
+            "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@"
+                    + "[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$"
+    );
+
 
     /**
      * Called from doPost method in front-controller. Tries to send email from database.
@@ -20,14 +29,16 @@ public class SendEmail implements ICommand {
      */
     @Override
     public String execute(HttpServletRequest req, HttpServletResponse resp)  {
-        try {
-            req.setCharacterEncoding("UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            throw new RuntimeException(e);
-        }
+
         String name = req.getParameter("name");
+        if (!name.matches(String.valueOf(USERNAME_PATTERN)))
+            throw new IllegalArgumentException("Invalid name format");
         String email = req.getParameter("email");
+        if (!email.matches(String.valueOf(EMAIL_PATTERN)))
+            throw new IllegalArgumentException("Invalid email format");
         String message = req.getParameter("message");
+        if (!message.matches(String.valueOf(MESSAGE_PATTERN)))
+            throw new IllegalArgumentException("Invalid message format");
         String username = "stanislavdonetc@gmail.com";
         String password = "ehbejtlxthtjuosb";
         String recipient = "santeh.vodavdom@gmail.com";

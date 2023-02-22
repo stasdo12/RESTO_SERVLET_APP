@@ -12,6 +12,7 @@ import com.epam.donetc.restaurant.сontroller.command.post.*;
  * @version 1.0
  */
 public enum CommandEnum   {
+    add_admin(new ManagerAddAdminGetCommand()),
     add_dish(new ManagerAddDishCommand()),
     cart(new ClientCartCommand()),
     change_dish(new ManagerChangeCommand()),
@@ -24,6 +25,7 @@ public enum CommandEnum   {
     get_address(new GetAddressCommand()),
     error_page(new ErrorPageCommand()),
     //Post
+    make_admin(new ManagerMakeAdminCommand()),
     delete(new DeleteDishCommand()),
     change(new ChangeDishCommand()),
     login_page(new LoginPageCommandPost()),

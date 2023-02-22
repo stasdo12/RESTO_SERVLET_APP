@@ -22,6 +22,7 @@
                 <li><a href="${pageContext.request.contextPath}/controller?command=manageOrders"><fmt:message key="label.orders" /></a></li>
                 <li><a href="${pageContext.request.contextPath}/controller?command=change_dish"> <fmt:message key="label.changeDish" /> </a></li>
                 <li><a href="${pageContext.request.contextPath}/controller?command=add_dish"> <fmt:message key="label.addDish" /> </a></li>
+                <li><a href="${pageContext.request.contextPath}/controller?command=add_admin"> <fmt:message key="label.addAdmin"/> </a></li>
 
             </c:if>
             <li style="float:right"><a href="${pageContext.request.contextPath}/controller?command=login"><fmt:message key="label.logout" /></a></li>

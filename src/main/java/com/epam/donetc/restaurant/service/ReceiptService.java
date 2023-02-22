@@ -1,8 +1,4 @@
 package com.epam.donetc.restaurant.service;
-
-
-
-
 import com.epam.donetc.restaurant.database.ReceiptDAO;
 import com.epam.donetc.restaurant.database.entity.Receipt;
 import com.epam.donetc.restaurant.database.entity.Status;
@@ -90,6 +86,10 @@ public class ReceiptService  {
 
     public String getAddress(int receiptId){
        return receiptDAO.getAddress(receiptId);
+    }
+
+    public List<Receipt> getAllReceiptByUserIdPagination(int userID, int offset, int noOfRecords ){
+        return receiptDAO.getAllReceiptByUserIdPagination(userID, offset, noOfRecords);
     }
 
 }

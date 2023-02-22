@@ -5,7 +5,7 @@ import com.epam.donetc.restaurant.database.entity.Dish;
 import com.epam.donetc.restaurant.database.interfaceDAO.IDishDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 
-import javax.servlet.annotation.WebServlet;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -65,6 +65,30 @@ public class DishDAO implements IDishDAO {
     @Override
 
     public void changeDishAllValues(String newName, int newPrise, int newWeight, int newCategory, String desc, int id) {
+        // Validate newName: allow only letters, spaces, and hyphens
+        if (!newName.matches("[a-zA-Z\\s\\-]+")) {
+            throw new IllegalArgumentException("Invalid name");
+        }
+
+        // Validate newPrice: allow only positive integers
+        if (newPrise <= 0 || !String.valueOf(newPrise).matches("\\d+")) {
+            throw new IllegalArgumentException("Invalid price");
+        }
+
+        // Validate newWeight: allow only positive integers
+        if (newWeight <= 0 || !String.valueOf(newWeight).matches("\\d+")) {
+            throw new IllegalArgumentException("Invalid weight");
+        }
+
+        // Validate newCategory: allow only positive integers
+        if (newCategory <= 0 || !String.valueOf(newCategory).matches("\\d+")) {
+            throw new IllegalArgumentException("Invalid category");
+        }
+
+        // Validate desc: allow letters, digits, spaces, and punctuation
+        if (!desc.matches("[\\w\\s\\p{Punct}]+")) {
+            throw new IllegalArgumentException("Invalid description");
+        }
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_DISH_BY_ID)) {
             ps.setString(1, newName);
@@ -111,6 +135,24 @@ public class DishDAO implements IDishDAO {
      */
     @Override
     public void addDish(String name, int price, int weight, int category, String desc){
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Dish name is required.");
+        }
+        if (!name.matches("[a-zA-Z\\s\\-]+")) {
+            throw new IllegalArgumentException("Dish name must contain only letters, numbers, and spaces.");
+        }
+        if (price <= 0) {
+            throw new IllegalArgumentException("Dish price must be greater than zero.");
+        }
+        if (weight <= 0) {
+            throw new IllegalArgumentException("Dish weight must be greater than zero.");
+        }
+        if (category <= 0) {
+            throw new IllegalArgumentException("Dish category must be specified.");
+        }
+        if (desc == null || desc.trim().isEmpty()) {
+            throw new IllegalArgumentException("Dish description is required.");
+        }
         try(Connection connection = ConnectionManager.get();
         PreparedStatement ps = connection.prepareStatement(DBManager.ADD_DISH)) {
             ps.setString(1, name);// sets the first parameter to the dish name
@@ -125,7 +167,7 @@ public class DishDAO implements IDishDAO {
             throw new RuntimeException(e);
         }
     }
-    @Override
+
 
     /**
      * Creates new list of dishes using data from database.
@@ -134,6 +176,7 @@ public class DishDAO implements IDishDAO {
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
+    @Override
     public List<Dish> getAllDishes() throws DBException {
         List<Dish> dishes = new ArrayList<>();
         try (Connection con = ConnectionManager.get();
