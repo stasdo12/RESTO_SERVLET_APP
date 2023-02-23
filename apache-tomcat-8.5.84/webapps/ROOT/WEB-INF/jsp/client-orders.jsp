@@ -65,12 +65,22 @@
 </div>
 
 <div class="menu-pagination">
-  <form method="get" action="${pageContext.request.contextPath}/myOrders">
-    <c:forEach var="number" begin="1" end="${maxPage}">
-      <div class="menu-pagination-item">
-        <input type="submit" name="currentPage" value="${number}" >
-      </div>
-    </c:forEach>
+  <form method="get" action="${pageContext.request.contextPath}/controller?command=client_orders">
+    <table class="table-for-pagination" border="1" cellpadding="5" cellspacing="5">
+      <tr>
+          <%--@elvariable id="noOfPages" type="java.lang.Integer"--%>
+        <c:forEach begin="1" end="${noOfPages}" var="i">
+          <c:choose>
+            <c:when test="${currentPage eq i}">
+              <td>${i}</td>
+            </c:when>
+            <c:otherwise>
+              <td><a href="/controller?command=client_orders&page=${i}">${i}</a></td>
+            </c:otherwise>
+          </c:choose>
+        </c:forEach>
+      </tr>
+    </table>
   </form>
 </div>
 </c:if>

@@ -99,13 +99,13 @@
                         <td>${i}</td>
                     </c:when>
                     <c:otherwise>
-                        <td><a href="/controller?command=change_dish&page=${i}">${i}</a></td>
+                        <td><a href="${pageContext.request.contextPath}/controller?command=change_dish&page=${i}">${i}</a></td>
                     </c:otherwise>
                 </c:choose>
             </c:forEach>
         </tr>
     </table>
-    <div class="menu-pagination">
+</div>
 
 
 </body>

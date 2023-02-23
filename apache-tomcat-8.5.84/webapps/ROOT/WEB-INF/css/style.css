@@ -406,6 +406,15 @@ h1{
 
 }
 
+.table-for-pagination{
+    margin: 10px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    color: #054d0a;
+    background-color: #D6D6D6;
+    cursor: pointer;
+}
+
 .menu-pagination-item input{
     background-color: #D6D6D6;
     color: #111111;

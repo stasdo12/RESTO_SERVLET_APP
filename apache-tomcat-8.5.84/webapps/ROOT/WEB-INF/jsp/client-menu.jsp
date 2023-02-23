@@ -65,7 +65,7 @@
 
 <div class="menu-pagination">
   <form method="get" action="${pageContext.request.contextPath}/controller?command=client_menu">
-    <table class="menu-pagination-item" border="1" cellpadding="5" cellspacing="5">
+    <table class="table-for-pagination" border="1" cellpadding="5" cellspacing="5">
       <tr>
         <%--@elvariable id="noOfPages" type="java.lang.Integer"--%>
         <c:forEach begin="1" end="${noOfPages}" var="i">
