@@ -1,16 +1,11 @@
 package com.epam.donetc.restaurant.service;
 
 
-import com.epam.donetc.restaurant.database.ConnectionManager;
-import com.epam.donetc.restaurant.database.DBManager;
 import com.epam.donetc.restaurant.database.UserDAO;
 import com.epam.donetc.restaurant.database.entity.User;
 import com.epam.donetc.restaurant.database.interfaceDAO.IUserDAO;
 import com.epam.donetc.restaurant.exeption.DBException;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 import java.util.List;
 
 
@@ -24,6 +19,20 @@ public class UserService  {
 
     public UserService(IUserDAO dao) {
         this.userDAO = dao;
+    }
+
+
+
+    /**
+     * Change user email and password
+     * @param login users login immutable
+     * @param newPass users new pass
+     * @param  newEmail users new email
+     * @author Stanislav Donetc
+     */
+
+    public void accountManagement(String login, String newPass, String newEmail){
+        userDAO.accountManagement(login, newPass, newEmail);
     }
 
 

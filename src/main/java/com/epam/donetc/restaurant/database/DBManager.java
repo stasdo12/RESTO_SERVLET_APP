@@ -79,5 +79,7 @@ public class DBManager  {
     public static final String GET_ALL_USER = "SELECT id, login FROM users WHERE role_id = 1";
     public static final String MAKE_ADMIN = "UPDATE users SET role_id = 2 WHERE id = ?";
 
+    //update userData
 
+    public static final String CHANGE_PASSWORD_AND_EMAIL = "UPDATE  users SET password = ?, email = ? WHERE login = ?";
     }

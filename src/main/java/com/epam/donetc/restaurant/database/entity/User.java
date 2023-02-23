@@ -22,7 +22,13 @@ public class User implements Serializable  {
     }
 
 
-
+    public User(int id, String login, String password, int roleId, String email) {
+        this.id = id;
+        this.login = login;
+        this.password = password;
+        this.roleId = roleId;
+        this.email = email;
+    }
 
     public User(int id, String login, String password, int roleId) {
         this.id = id;

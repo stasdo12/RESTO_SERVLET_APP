@@ -26,6 +26,29 @@ public class UserDAO  implements IUserDAO {
 
 
     /**
+     * Change user email and password
+     * @param login users login immutable
+     * @param newPass users new pass
+     * @param  newEmail users new email
+     * @author Stanislav Donetc
+     */
+    @Override
+    public void accountManagement(String login, String newPass, String newEmail){
+        try(Connection connection = ConnectionManager.get();
+        PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_PASSWORD_AND_EMAIL)) {
+            ps.setString(1, newPass);
+            ps.setString(2, newEmail);
+            ps.setString(3, login);
+            if (ps.executeUpdate() == 0){
+                throw new SQLException("Change data failed");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    /**
      * Change user role by userId
      * @param userId id of a user
      * @author Stanislav Donetc
