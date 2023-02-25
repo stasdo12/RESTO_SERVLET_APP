@@ -1,12 +1,24 @@
-11:08:44.326 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\apache-tomcat-8.5.84\webapps\ROOT\WEB-INF\log4j2.log
-11:08:44.961 [http-nio-8080-exec-1] TRACE - null This is user id
-11:08:44.975 [http-nio-8080-exec-2] TRACE - This is command what we used now login this id usernull
-11:08:47.521 [http-nio-8080-exec-2] TRACE - UTF-8 get request
-11:08:47.530 [http-nio-8080-exec-3] TRACE - null This is user id
-11:08:47.535 [http-nio-8080-exec-4] TRACE - This is command what we used now login this id usernull
-11:08:47.538 [http-nio-8080-exec-4] TRACE - UTF-8 get request
-11:08:48.113 [http-nio-8080-exec-5] TRACE - null This is user id
-11:08:48.126 [http-nio-8080-exec-6] TRACE - This is command what we used now login this id usernull
-11:08:48.131 [http-nio-8080-exec-6] TRACE - UTF-8 get request
-11:11:33.069 [http-nio-8080-exec-10] TRACE - This is command what we used now login this id usernull
-11:11:33.106 [http-nio-8080-exec-10] TRACE - UTF-8 get request
+15:42:58.283 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\apache-tomcat-8.5.84\webapps\ROOT\WEB-INF\log4j2.log
+15:42:58.345 [RMI TCP Connection(2)-127.0.0.1] TRACE - null
+15:42:58.345 [RMI TCP Connection(2)-127.0.0.1] TRACE - null
+15:42:58.900 [http-nio-8080-exec-1] TRACE - null This is user id
+15:42:58.907 [http-nio-8080-exec-2] TRACE - This is command what we used now login this id usernull
+15:42:59.945 [http-nio-8080-exec-2] TRACE - UTF-8 get request
+15:42:59.949 [http-nio-8080-exec-3] TRACE - null This is user id
+15:42:59.952 [http-nio-8080-exec-4] TRACE - This is command what we used now login this id usernull
+15:42:59.958 [http-nio-8080-exec-4] TRACE - UTF-8 get request
+15:43:00.107 [http-nio-8080-exec-5] TRACE - null This is user id
+15:43:00.116 [http-nio-8080-exec-6] TRACE - This is command what we used now login this id usernull
+15:43:00.119 [http-nio-8080-exec-6] TRACE - UTF-8 get request
+15:43:02.552 [http-nio-8080-exec-7] TRACE - UTF-8 post request
+15:43:02.560 [http-nio-8080-exec-8] TRACE - This is command what we used now client_menu this id userUser{id=2, login='user', roleId=1null}
+15:43:02.571 [http-nio-8080-exec-8] DEBUG - dishes size before sorting == 10
+15:43:02.573 [http-nio-8080-exec-8] DEBUG - dishes were sorted
+15:43:02.573 [http-nio-8080-exec-8] TRACE - current page == 1
+15:43:02.574 [http-nio-8080-exec-8] DEBUG - dishes size before getDishOnPage == 10
+15:43:03.360 [http-nio-8080-exec-8] TRACE - UTF-8 get request
+15:43:05.715 [http-nio-8080-exec-9] TRACE - This is command what we used now info this id userUser{id=2, login='user', roleId=1null}
+15:43:06.081 [http-nio-8080-exec-9] TRACE - UTF-8 get request
+15:43:13.967 [http-nio-8080-exec-10] TRACE - UTF-8 post request
+15:43:13.973 [http-nio-8080-exec-1] TRACE - This is command what we used now info this id userUser{id=2, login='user', roleId=1null}
+15:43:13.987 [http-nio-8080-exec-1] TRACE - UTF-8 get request

@@ -7,7 +7,7 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page isELIgnored="false" %>
 <fmt:setLocale value="${param.lang}"/>
@@ -34,8 +34,10 @@
             <td>${user.login}</td>
         <td>
         <form  method="post" action="${pageContext.request.contextPath}/controller?command=make_admin">
-        <input name="id" style="display: none" value="${user.id}">
-        <input class="delete-button-cart" type="submit" value="<fmt:message key="label.addAdmin"/>">
+            <label>
+                <input name="id" style="display: none" value="${user.id}">
+            </label>
+            <input class="delete-button-cart" type="submit" value="<fmt:message key="label.addAdmin"/>">
 
 
 

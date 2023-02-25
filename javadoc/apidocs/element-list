@@ -9,6 +9,6 @@ com.epam.donetc.restaurant.service
 com.epam.donetc.restaurant.servlets
 com.epam.donetc.restaurant.tags
 com.epam.donetc.restaurant.util
-com.epam.donetc.restaurant.сontroller
-com.epam.donetc.restaurant.сontroller.command.get
-com.epam.donetc.restaurant.сontroller.command.post
+com.epam.donetc.restaurant.controller
+com.epam.donetc.restaurant.controller.command.get
+com.epam.donetc.restaurant.controller.command.post

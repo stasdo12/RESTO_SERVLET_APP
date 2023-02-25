@@ -8,7 +8,7 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@taglib prefix="mylib" tagdir="/WEB-INF/tags" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page isELIgnored="false" %>
 <fmt:setLocale value="${param.lang}"/>
@@ -26,7 +26,9 @@
 <div class="about_us">
 <h2><fmt:message key="label.accManagement"/></h2>
 <form class="form_about_us" method="post" action="${pageContext.request.contextPath}/controller?command=acc_management_post">
-    <input name="login"  value="${user.login}" style="display: none">
+    <label>
+        <input name="login"  value="${user.login}" style="display: none">
+    </label>
     <label style="color: black" for="newEmail"><fmt:message key="label.newEmail"/>:</label>
     <input type="email" id="newEmail" name="newEmail" placeholder="new Email"><br><br>
     <label style="color: black" for="newPassword"><fmt:message key="label.newPassword"/>:</label>

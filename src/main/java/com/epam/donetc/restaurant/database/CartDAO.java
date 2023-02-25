@@ -17,6 +17,7 @@ public class CartDAO implements ICartDAO {
 
     /**
      * Extracts data about cart of certain user from database
+     *
      * @param id user's id
      * @return a map of dishes and their amount in a cart
      * @throws DBException if any SQLException was caught
@@ -24,7 +25,7 @@ public class CartDAO implements ICartDAO {
      */
     @Override
 
-    public Map<Dish, Integer> getCart(int id) throws DBException  {
+    public Map<Dish, Integer> getCart(int id) throws DBException {
         DishService dishService = new DishService();
         try (Connection connection = ConnectionManager.get();
              PreparedStatement ps = connection.prepareStatement(DBManager.GET_CART_BY_USER_ID)) {
@@ -45,6 +46,7 @@ public class CartDAO implements ICartDAO {
 
     /**
      * Inserts data about new dish in a cart of certain user into database.
+     *
      * @param userId user's id
      * @param dishId dish's id
      * @param amount amount of dish
@@ -69,6 +71,7 @@ public class CartDAO implements ICartDAO {
 
     /**
      * Updates amount of dish in user's cart in a database.
+     *
      * @param userId user's id
      * @param dishId dish's id
      * @param amount amount of dish that needs to be updated
@@ -79,24 +82,25 @@ public class CartDAO implements ICartDAO {
     public void changeAmountOfDish(int userId, int dishId, int amount) throws DBException {
         if (!POSITIVE_INTEGER_PATTERN.matcher(String.valueOf(amount)).matches()) {
             throw new IllegalArgumentException("Amount must be a positive integer");
-        }else{
-        try (Connection connection = ConnectionManager.get();
-             PreparedStatement ps = connection.prepareStatement(DBManager.UPDATE_DISH_AMOUNT_IN_CART)) {
-            ps.setInt(1, amount);
-            ps.setInt(2, userId);
-            ps.setInt(3, dishId);
-            if (ps.executeUpdate() == 0) {
-                throw new DBException("Inserting failed");
+        } else {
+            try (Connection connection = ConnectionManager.get();
+                 PreparedStatement ps = connection.prepareStatement(DBManager.UPDATE_DISH_AMOUNT_IN_CART)) {
+                ps.setInt(1, amount);
+                ps.setInt(2, userId);
+                ps.setInt(3, dishId);
+                if (ps.executeUpdate() == 0) {
+                    throw new DBException("Inserting failed");
+                }
+            } catch (SQLException e) {
+                throw new DBException("Cannot update dish amount in cart", e);
             }
-        } catch (SQLException e) {
-            throw new DBException("Cannot update dish amount in cart", e);
-        }
         }
     }
 
 
     /**
      * Deletes dish from a cart of certain user.
+     *
      * @param userId user's id
      * @param dishId dish's id
      * @throws DBException if any SQLException was caught
@@ -120,8 +124,9 @@ public class CartDAO implements ICartDAO {
 
     /**
      * Creates new receipt in database and inserts data about dishes in it.
+     *
      * @param userId user's id
-     * @param cart user's cart represented by a map of dishes and their amount
+     * @param cart   user's cart represented by a map of dishes and their amount
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc
      */
@@ -178,6 +183,7 @@ public class CartDAO implements ICartDAO {
 
     /**
      * Deletes all data about user's cart and dishes in it.
+     *
      * @param id user's id
      * @throws DBException if any SQLException was caught
      * @author Stanislav Donetc

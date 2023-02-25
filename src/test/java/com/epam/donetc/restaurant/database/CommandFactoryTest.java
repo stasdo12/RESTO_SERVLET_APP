@@ -1,8 +1,8 @@
 package com.epam.donetc.restaurant.database;
 
-import com.epam.donetc.restaurant.сontroller.CommandEnum;
-import com.epam.donetc.restaurant.сontroller.CommandFactory;
-import com.epam.donetc.restaurant.сontroller.ICommand;
+import com.epam.donetc.restaurant.controller.CommandEnum;
+import com.epam.donetc.restaurant.controller.CommandFactory;
+import com.epam.donetc.restaurant.controller.ICommand;
 import org.junit.jupiter.api.Test;
 
 import javax.servlet.http.HttpServletRequest;

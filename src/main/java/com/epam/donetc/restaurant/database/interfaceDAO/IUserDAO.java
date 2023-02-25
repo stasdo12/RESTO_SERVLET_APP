@@ -7,6 +7,7 @@ import java.util.List;
 
 public interface IUserDAO {
     void accountManagement(String login, String newPass, String newEmail);
+
     void changeUserRoleId(int userId);
 
     User getUserByLogin(String login) throws DBException;

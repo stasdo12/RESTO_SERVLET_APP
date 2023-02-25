@@ -1,5 +1,5 @@
 package com.epam.donetc.restaurant.database.doGet;
-import com.epam.donetc.restaurant.сontroller.command.get.LoginPageCommandGet;
+import com.epam.donetc.restaurant.controller.command.get.LoginPageCommandGet;
 import org.junit.jupiter.api.Test;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;

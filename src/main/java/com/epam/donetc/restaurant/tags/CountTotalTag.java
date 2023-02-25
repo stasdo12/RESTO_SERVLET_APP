@@ -4,7 +4,6 @@ import com.epam.donetc.restaurant.database.entity.Dish;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.TagSupport;
 import java.io.IOException;
 import java.util.Map;
@@ -26,7 +25,7 @@ public class CountTotalTag extends TagSupport  {
         }
 
     @Override
-    public int doStartTag() throws JspException {
+    public int doStartTag(){
         int total = 0;
         for (Dish dish:
                 cart.keySet()) {

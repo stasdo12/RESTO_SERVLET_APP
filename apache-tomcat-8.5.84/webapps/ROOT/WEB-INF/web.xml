@@ -6,7 +6,7 @@
 
 <!--    <servlet>-->
 <!--        <servlet-name>Controller</servlet-name>-->
-<!--        <servlet-class>com.epam.donetc.restaurant.сontroller.FrontController</servlet-class>-->
+<!--        <servlet-class>com.epam.donetc.restaurant.controller.FrontController</servlet-class>-->
 <!--    </servlet>-->
 
 <!--    <servlet-mapping>-->

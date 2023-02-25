@@ -234,16 +234,6 @@ public class DishDAO implements IDishDAO {
         return dishes;
     }
 
-//    public List<Dish> getDishesOnePage(List<Dish> dishes, int currentPage) {
-//        int begin = (currentPage - 1) * 10;
-//        if (dishes.size() > 0 && dishes.size() < begin + 10) {
-//            dishes = dishes.subList(begin, dishes.size());
-//        } else {
-//            dishes = dishes.subList(begin, begin + 10);
-//        }
-//        return dishes;
-//    }
-
     @Override
     public int getNoOfRecords() {
         return noOfRecords;

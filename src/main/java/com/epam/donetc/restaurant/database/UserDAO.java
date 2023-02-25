@@ -23,6 +23,7 @@ public class UserDAO  implements IUserDAO {
 
     private static final Pattern USERNAME_PATTERN = Pattern.compile("[a-zA-Z0-9_]+");
     private static final Pattern PASSWORD_PATTERN = Pattern.compile("[a-zA-Z0-9_]+");
+    private static final Pattern EMAIL_PATTERN = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
 
 
     /**
@@ -33,17 +34,23 @@ public class UserDAO  implements IUserDAO {
      * @author Stanislav Donetc
      */
     @Override
-    public void accountManagement(String login, String newPass, String newEmail){
-        try(Connection connection = ConnectionManager.get();
-        PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_PASSWORD_AND_EMAIL)) {
-            ps.setString(1, newPass);
-            ps.setString(2, newEmail);
-            ps.setString(3, login);
-            if (ps.executeUpdate() == 0){
-                throw new SQLException("Change data failed");
+    public void accountManagement(String login, String newPass, String newEmail) {
+        if (!EMAIL_PATTERN.matcher(newEmail).matches()) {
+            throw new IllegalArgumentException("Invalid email format");
+        } else if (!PASSWORD_PATTERN.matcher(newPass).matches()) {
+            throw new IllegalArgumentException("Invalid password format");
+        } else {
+            try (Connection connection = ConnectionManager.get();
+                 PreparedStatement ps = connection.prepareStatement(DBManager.CHANGE_PASSWORD_AND_EMAIL)) {
+                ps.setString(1, newPass);
+                ps.setString(2, newEmail);
+                ps.setString(3, login);
+                if (ps.executeUpdate() == 0) {
+                    throw new SQLException("Change data failed");
+                }
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
             }
-        } catch (SQLException e) {
-            throw new RuntimeException(e);
         }
     }
 

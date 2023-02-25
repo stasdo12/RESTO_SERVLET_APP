@@ -18,7 +18,7 @@ import org.apache.logging.log4j.Logger;
  * @version 1.0
  */
 @WebListener
-public class ContextListener implements ServletContextListener, HttpSessionListener, HttpSessionAttributeListener  {
+public class ContextListener implements ServletContextListener, HttpSessionListener, HttpSessionAttributeListener {
 
     @Override
     public void contextInitialized(ServletContextEvent sce) {
@@ -28,5 +28,5 @@ public class ContextListener implements ServletContextListener, HttpSessionListe
 
         final Logger log = LogManager.getLogger(ContextListener.class);
         log.debug("logPath = " + System.getProperty("logFile"));
-         }
+    }
 }

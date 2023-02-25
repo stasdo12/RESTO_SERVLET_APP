@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.database.doGet;
 
-import com.epam.donetc.restaurant.сontroller.command.get.InfoCommand;
+import com.epam.donetc.restaurant.controller.command.get.InfoCommand;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 

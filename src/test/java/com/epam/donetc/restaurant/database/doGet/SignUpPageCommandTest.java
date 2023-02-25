@@ -1,6 +1,6 @@
 package com.epam.donetc.restaurant.database.doGet;
 
-import com.epam.donetc.restaurant.сontroller.command.get.SignupPageCommand;
+import com.epam.donetc.restaurant.controller.command.get.SignupPageCommand;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 

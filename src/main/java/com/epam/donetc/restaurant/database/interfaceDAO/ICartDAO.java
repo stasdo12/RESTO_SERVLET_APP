@@ -7,17 +7,17 @@ import java.util.Map;
 
 public interface ICartDAO {
 
-    public Map<Dish, Integer> getCart(int id) throws DBException;
+    Map<Dish, Integer> getCart(int id) throws DBException;
 
-    public void addDishToCart(int userId, int dishId, int amount) throws DBException;
+    void addDishToCart(int userId, int dishId, int amount) throws DBException;
 
-    public void changeAmountOfDish(int userId, int dishId, int amount) throws DBException;
+    void changeAmountOfDish(int userId, int dishId, int amount) throws DBException;
 
 
-    public void deleteDishFromCart(int userId, int dishId) throws DBException;
+    void deleteDishFromCart(int userId, int dishId) throws DBException;
 
-    public void submitOrder(int userId, Map<Dish, Integer> cart) throws DBException;
+    void submitOrder(int userId, Map<Dish, Integer> cart) throws DBException;
 
-    public void cleanCart(int id) throws DBException;
+    void cleanCart(int id) throws DBException;
 
 }

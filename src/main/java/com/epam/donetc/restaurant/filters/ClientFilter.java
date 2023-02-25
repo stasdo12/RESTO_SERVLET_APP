@@ -5,7 +5,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpFilter;
@@ -21,7 +20,7 @@ import java.io.IOException;
 //@WebFilter("/controller")
 
 public class ClientFilter extends HttpFilter  {
-    Logger log = LogManager.getLogger(AdminFilter.class);
+   private final Logger log = LogManager.getLogger(AdminFilter.class);
 
 
     @Override

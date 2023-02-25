@@ -7,14 +7,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class UserServiceTestNew {
@@ -84,6 +84,13 @@ public class UserServiceTestNew {
     public void testChangeUserRoleId(){
         userService.changeUserRoleId(1);
         verify(userDAO).changeUserRoleId(1);
+    }
+
+    @Test
+    public void testAccountManagement(){
+        doNothing().when(userDAO).accountManagement(TEST_LOGIN, TEST_PASSWORD, TEST_EMAIL);
+        userService.accountManagement(TEST_LOGIN, TEST_PASSWORD, TEST_EMAIL);
+        verify(userDAO, Mockito.times(1)).accountManagement(TEST_LOGIN, TEST_PASSWORD, TEST_EMAIL);
     }
 
 }

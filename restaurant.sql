@@ -76,6 +76,9 @@ CREATE TABLE IF NOT EXISTS receipt_has_dish
     dish_id    INT REFERENCES dish (id) ON DELETE CASCADE
                                         ON UPDATE CASCADE,
     amount     INT NOT NULL DEFAULT 1,
+
+    address varchar(228) NOT NULL,
+
     CHECK (amount > 0)
 );
 
@@ -96,10 +99,10 @@ VALUES ('client'),
        ('manager');
 
 
-INSERT INTO users (login, password, role_id)
-VALUES ('admin', 'admin', 2),
-       ('user', 'user', 1),
-       ('client', 'client', 1);
+INSERT INTO users (login, password, role_id, email)
+VALUES ('admin', 'admin', 2, 'testAdmin@gmail.com'),
+       ('user', 'user', 1, 'testuser@gmail.com'),
+       ('client', 'client', 1, 'testClient@gmail.com');
 
 
 
@@ -164,11 +167,11 @@ VALUES (2, 3, 3),
        (5, 8, 2);
 
 
-INSERT INTO receipt_has_dish(receipt_id, dish_id, amount)
-VALUES (1, 2, 2),
-       (1, 3, 1),
-       (2, 5, 1),
-       (2, 6, 3);
+INSERT INTO receipt_has_dish(receipt_id, dish_id, amount, address)
+VALUES (1, 2, 2, 'testAddress1'),
+       (1, 3, 1, 'testAddress2'),
+       (2, 5, 1, 'testAddress3'),
+       (2, 6, 3, 'testAddress4');
 
 
 
