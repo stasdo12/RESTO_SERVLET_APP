@@ -26,7 +26,7 @@ public class SendEmail implements ICommand {
 
     private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
     private final Document document = new Document();
-    private static final Pattern USERNAME_PATTERN_REGEX = Pattern.compile("[a-zA-Z0-9]+$");
+    private static final Pattern USERNAME_PATTERN_REGEX = Pattern.compile("^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$");
     private static final Pattern EMAIL_PATTERN_REGEX = Pattern.compile("^[\\w.-]+@[a-zA-Z\\d-]+(?:\\.[a-zA-Z\\d-]+)*$");
 
     private static final Pattern USERNAME_PATTERN = Pattern.compile(String.valueOf(USERNAME_PATTERN_REGEX));

@@ -29,10 +29,16 @@
     <label>
         <input name="login"  value="${user.login}" style="display: none">
     </label>
+
+    <label style="color: black" for="oldPass"> Old Pass</label>
+    <input type="password" id="oldPass" name="oldPass" placeholder="Your OldPass"
+           required minlength="8"><br><br>
     <label style="color: black" for="newEmail"><fmt:message key="label.newEmail"/>:</label>
-    <input type="email" id="newEmail" name="newEmail" placeholder="new Email"><br><br>
+    <input type="email" id="newEmail" name="newEmail" placeholder="new Email"
+           required minlength="7"><br><br>
     <label style="color: black" for="newPassword"><fmt:message key="label.newPassword"/>:</label>
-    <input type="password" id="newPassword" name="newPassword"><br><br>
+    <input type="password" id="newPassword" name="newPassword"
+           required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$"><br><br>
 
     <input class="apply-cart" type="submit" value="<fmt:message key="label.updateAccount"/>">
 </form>

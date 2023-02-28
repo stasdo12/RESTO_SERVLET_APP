@@ -32,9 +32,12 @@
 <div class="login-box">
   <p class="login-title"><fmt:message key="label.signUp"/></p>
   <form class="login-form" action="${pageContext.request.contextPath}/controller?command=sign_up_post" method="post">
-    <input name="login" class="login-input" placeholder="Login" required minlength="8" maxlength="20" >
-    <input type="password" name="password" class="login-input" placeholder="Password" required minlength="8" maxlength="20">
-    <input class="login-input" type="email" name="email" placeholder="Email">
+    <input name="login" class="login-input" placeholder="Login"
+           required minlength="8" maxlength="20" pattern="[a-zA-Z0-9_]+">
+    <input type="password" name="password" class="login-input" placeholder="Password"
+           required minlength="8" maxlength="20" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{8,}$">
+    <input class="login-input" type="email" name="email" placeholder="Email"
+    minlength="5">
     <input type="submit" class="login-button" value="<fmt:message key="label.signUp"/>">
   </form>
   <c:if test="${param.err != null}">

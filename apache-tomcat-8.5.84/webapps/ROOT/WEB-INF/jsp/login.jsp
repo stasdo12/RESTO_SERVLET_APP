@@ -34,8 +34,10 @@
 <div class="login-box">
   <p class="login-title"><fmt:message key="label.login"/></p>
   <form class="login-form" action="${pageContext.request.contextPath}/controller?command=login_page" method="post">
-    <input placeholder="Login" type="text" class="login-input" name="login"/>
-    <input placeholder="Password" type="password" class="login-input" name="password" />
+    <input placeholder="Login" type="text" class="login-input" name="login"
+           required minlength="8" maxlength="20" pattern="[a-zA-Z0-9_]+"/>
+    <input placeholder="Password" type="password" class="login-input" name="password"
+           required minlength="8" maxlength="20" />
     <input type="submit" class="login-button" value="<fmt:message key="label.loginButton"/>"/>
   </form>
   <c:if test="${param.err != null}">

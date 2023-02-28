@@ -40,7 +40,7 @@ public class LoginPageCommandPost implements ICommand {
                 }
             } else {
                 req.setAttribute("error", "true");
-                return req.getContextPath() + "/controller?command=error_page";
+                return req.getContextPath() + "/controller?command=login&err=";
             }
         } catch (DBException ex) {
             log.error("In Login servlet doPost() ", ex);

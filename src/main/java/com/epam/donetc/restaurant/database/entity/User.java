@@ -17,17 +17,20 @@ public class User implements Serializable  {
 
     private String email;
 
+    private boolean isLock;
+
     public User(){
 
     }
 
 
-    public User(int id, String login, String password, int roleId, String email) {
+    public User(int id, String login, String password, int roleId, String email, boolean isLock) {
         this.id = id;
         this.login = login;
         this.password = password;
         this.roleId = roleId;
         this.email = email;
+        this.isLock = isLock;
     }
 
     public User(int id, String login, String password, int roleId) {
@@ -87,5 +90,13 @@ public class User implements Serializable  {
     @Override
     public int hashCode() {
         return Objects.hash(id, login, password, roleId);
+    }
+
+    public boolean isLock() {
+        return isLock;
+    }
+
+    public void setLock(boolean lock) {
+        isLock = lock;
     }
 }

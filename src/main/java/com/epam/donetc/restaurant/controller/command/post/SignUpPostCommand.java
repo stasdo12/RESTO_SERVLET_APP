@@ -36,7 +36,7 @@ public class SignUpPostCommand implements ICommand {
         try{
             if(userService.getUserByLogin(login) != null){
                 req.setAttribute("err", "true");
-                return req.getContextPath() + "/controller?command=sign_up";
+                return req.getContextPath() + "/controller?command=sign_up&err=";
 
 
             }
