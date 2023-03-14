@@ -154,7 +154,7 @@ public class ReceiptDAO implements IReceiptDAO {
                 receipt = new Receipt();
                 receipt.setId(rs.getInt(1));
                 receipt.setUser(userService.getUserById(rs.getInt(2)));
-                receipt.setStatus(Status.getStatusById(3));
+                receipt.setStatus(Status.getStatusById(rs.getInt(3)));
                 receipt.setDishes(getDishesByReceiptId(receipt.getId()));
                 receipt.setAddress(receipt.getAddress());
                 receipt.countTotal();

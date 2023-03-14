@@ -1,165 +1,39 @@
-14:28:22.876 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\apache-tomcat-8.5.84\webapps\ROOT\WEB-INF\log4j2.log
-14:28:22.945 [RMI TCP Connection(2)-127.0.0.1] TRACE - null
-14:28:22.946 [RMI TCP Connection(2)-127.0.0.1] TRACE - null
-14:28:23.367 [http-nio-8080-exec-1] TRACE - null This is user id
-14:28:23.373 [http-nio-8080-exec-2] TRACE - This is command what we used now login this id usernull
-14:28:24.681 [http-nio-8080-exec-2] TRACE - UTF-8 get request
-14:28:24.687 [http-nio-8080-exec-3] TRACE - null This is user id
-14:28:24.693 [http-nio-8080-exec-4] TRACE - This is command what we used now login this id usernull
-14:28:24.695 [http-nio-8080-exec-4] TRACE - UTF-8 get request
-14:28:24.813 [http-nio-8080-exec-5] TRACE - null This is user id
-14:28:24.818 [http-nio-8080-exec-6] TRACE - This is command what we used now login this id usernull
-14:28:24.821 [http-nio-8080-exec-6] TRACE - UTF-8 get request
-14:28:33.276 [http-nio-8080-exec-7] TRACE - UTF-8 post request
-14:28:33.293 [http-nio-8080-exec-8] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
-14:28:33.558 [http-nio-8080-exec-8] TRACE - current page == 1
-14:28:33.576 [http-nio-8080-exec-8] TRACE - receipts == [Receipt{id=137, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=4}}, Receipt{id=136, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=144}}, Receipt{id=135, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=1}}, Receipt{id=134, user=User{id=2, login='user', roleId=1null}, status=NEW, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=133, user=User{id=2, login='user', roleId=1null}, status=RECEIVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=132, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=128, user=User{id=2, login='user', roleId=1null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=127, user=User{id=2, login='user', roleId=1null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=500}}, Receipt{id=126, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=14, name='Chicago Pizza', price=10, weight=420, category=Pizza, description='Delicious Chicago Pizza'}=5}}, Receipt{id=124, user=User{id=2, login='user', roleId=1null}, status=DELIVERING, dishes={Dish{id=21, name='Frozen', price=2, weight=120, category=Dessert, description='Delicious Frozen'}=1, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}]
-14:28:35.387 [http-nio-8080-exec-8] TRACE - UTF-8 get request
-14:28:37.942 [http-nio-8080-exec-9] TRACE - This is command what we used now login this id userUser{id=35, login='AdminNew', roleId=2null}
-14:28:37.974 [http-nio-8080-exec-9] TRACE - UTF-8 get request
-14:28:41.103 [http-nio-8080-exec-10] TRACE - UTF-8 post request
-14:28:41.110 [http-nio-8080-exec-1] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:41.118 [http-nio-8080-exec-1] DEBUG - dishes size before sorting == 10
-14:28:41.121 [http-nio-8080-exec-1] DEBUG - dishes were sorted
-14:28:41.122 [http-nio-8080-exec-1] TRACE - current page == 1
-14:28:41.123 [http-nio-8080-exec-1] DEBUG - dishes size before getDishOnPage == 10
-14:28:42.037 [http-nio-8080-exec-1] TRACE - UTF-8 get request
-14:28:44.035 [http-nio-8080-exec-2] TRACE - UTF-8 post request
-14:28:44.042 [http-nio-8080-exec-3] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:44.045 [http-nio-8080-exec-3] DEBUG - dishes size before sorting == 10
-14:28:44.045 [http-nio-8080-exec-3] DEBUG - dishes were sorted
-14:28:44.046 [http-nio-8080-exec-3] TRACE - current page == 1
-14:28:44.046 [http-nio-8080-exec-3] DEBUG - dishes size before getDishOnPage == 10
-14:28:44.063 [http-nio-8080-exec-3] TRACE - UTF-8 get request
-14:28:45.988 [http-nio-8080-exec-5] TRACE - UTF-8 post request
-14:28:45.995 [http-nio-8080-exec-6] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:45.998 [http-nio-8080-exec-6] DEBUG - dishes size before sorting == 10
-14:28:45.999 [http-nio-8080-exec-6] DEBUG - dishes were sorted
-14:28:45.999 [http-nio-8080-exec-6] TRACE - current page == 1
-14:28:45.999 [http-nio-8080-exec-6] DEBUG - dishes size before getDishOnPage == 10
-14:28:46.022 [http-nio-8080-exec-6] TRACE - UTF-8 get request
-14:28:48.862 [http-nio-8080-exec-7] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:48.883 [http-nio-8080-exec-7] DEBUG - dishes size before sorting == 4
-14:28:48.884 [http-nio-8080-exec-7] DEBUG - dishes were sorted
-14:28:48.884 [http-nio-8080-exec-7] TRACE - current page == 1
-14:28:48.884 [http-nio-8080-exec-7] DEBUG - dishes size before getDishOnPage == 4
-14:28:48.895 [http-nio-8080-exec-7] TRACE - UTF-8 get request
-14:28:50.240 [http-nio-8080-exec-8] TRACE - UTF-8 post request
-14:28:50.246 [http-nio-8080-exec-9] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:50.249 [http-nio-8080-exec-9] DEBUG - dishes size before sorting == 10
-14:28:50.250 [http-nio-8080-exec-9] DEBUG - dishes were sorted
-14:28:50.251 [http-nio-8080-exec-9] TRACE - current page == 1
-14:28:50.251 [http-nio-8080-exec-9] DEBUG - dishes size before getDishOnPage == 10
-14:28:50.281 [http-nio-8080-exec-9] TRACE - UTF-8 get request
-14:28:52.852 [http-nio-8080-exec-10] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:52.872 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 4
-14:28:52.873 [http-nio-8080-exec-10] DEBUG - dishes were sorted
-14:28:52.873 [http-nio-8080-exec-10] TRACE - current page == 1
-14:28:52.873 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 4
-14:28:52.881 [http-nio-8080-exec-10] TRACE - UTF-8 get request
-14:28:54.111 [http-nio-8080-exec-1] TRACE - UTF-8 post request
-14:28:54.165 [http-nio-8080-exec-2] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:54.168 [http-nio-8080-exec-2] DEBUG - dishes size before sorting == 10
-14:28:54.168 [http-nio-8080-exec-2] DEBUG - dishes were sorted
-14:28:54.168 [http-nio-8080-exec-2] TRACE - current page == 1
-14:28:54.168 [http-nio-8080-exec-2] DEBUG - dishes size before getDishOnPage == 10
-14:28:54.175 [http-nio-8080-exec-2] TRACE - UTF-8 get request
-14:28:55.069 [http-nio-8080-exec-3] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:55.796 [http-nio-8080-exec-3] TRACE - UTF-8 get request
-14:28:57.883 [http-nio-8080-exec-4] TRACE - dish id == 2 amount = 4
-14:28:57.895 [http-nio-8080-exec-4] TRACE - UTF-8 post request
-14:28:57.903 [http-nio-8080-exec-5] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:28:57.914 [http-nio-8080-exec-5] TRACE - UTF-8 get request
-14:29:00.937 [http-nio-8080-exec-6] TRACE - dish id == 9 amount = 2
-14:29:00.947 [http-nio-8080-exec-6] TRACE - UTF-8 post request
-14:29:00.953 [http-nio-8080-exec-7] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:00.986 [http-nio-8080-exec-7] TRACE - UTF-8 get request
-14:29:03.034 [http-nio-8080-exec-8] TRACE - dish id == 10 amount = 2
-14:29:03.044 [http-nio-8080-exec-8] TRACE - UTF-8 post request
-14:29:03.049 [http-nio-8080-exec-9] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:03.059 [http-nio-8080-exec-9] TRACE - UTF-8 get request
-14:29:05.402 [http-nio-8080-exec-10] TRACE - dish id == 15 amount = 2
-14:29:05.406 [http-nio-8080-exec-10] TRACE - UTF-8 post request
-14:29:05.413 [http-nio-8080-exec-1] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:05.435 [http-nio-8080-exec-1] TRACE - UTF-8 get request
-14:29:08.847 [http-nio-8080-exec-3] TRACE - dish id == 9 amount = 0
-14:29:08.857 [http-nio-8080-exec-3] TRACE - UTF-8 post request
-14:29:08.864 [http-nio-8080-exec-4] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:08.873 [http-nio-8080-exec-4] TRACE - UTF-8 get request
-14:29:12.025 [http-nio-8080-exec-5] TRACE - UTF-8 post request
-14:29:12.030 [http-nio-8080-exec-6] TRACE - This is command what we used now client_orders this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:12.039 [http-nio-8080-exec-6] TRACE - 1
-14:29:12.702 [http-nio-8080-exec-6] TRACE - UTF-8 get request
-14:29:19.439 [http-nio-8080-exec-7] TRACE - 138   Харьков ул Танкопия 12
-14:29:19.443 [http-nio-8080-exec-7] TRACE - UTF-8 post request
-14:29:19.450 [http-nio-8080-exec-8] TRACE - This is command what we used now client_orders this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:19.457 [http-nio-8080-exec-8] TRACE - 1
-14:29:19.481 [http-nio-8080-exec-8] TRACE - UTF-8 get request
-14:29:26.304 [http-nio-8080-exec-9] TRACE - This is command what we used now info this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:26.886 [http-nio-8080-exec-9] TRACE - UTF-8 get request
-14:29:27.636 [http-nio-8080-exec-10] TRACE - This is command what we used now acc_management this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:28.175 [http-nio-8080-exec-10] TRACE - UTF-8 get request
-14:29:30.440 [http-nio-8080-exec-2] TRACE - This is command what we used now login this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:29:30.448 [http-nio-8080-exec-2] TRACE - UTF-8 get request
-14:29:33.104 [http-nio-8080-exec-3] TRACE - UTF-8 post request
-14:29:33.110 [http-nio-8080-exec-4] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:33.141 [http-nio-8080-exec-4] TRACE - current page == 1
-14:29:33.142 [http-nio-8080-exec-4] TRACE - receipts == [Receipt{id=138, user=User{id=34, login='StanislavTest', roleId=1null}, status=null, dishes={Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=4, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=2, Dish{id=15, name='New York-Style Pizza', price=10, weight=420, category=Pizza, description='New York-Style Pizza'}=2}}, Receipt{id=137, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=4}}, Receipt{id=136, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=144}}, Receipt{id=135, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=1}}, Receipt{id=134, user=User{id=2, login='user', roleId=1null}, status=NEW, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=133, user=User{id=2, login='user', roleId=1null}, status=RECEIVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=132, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=128, user=User{id=2, login='user', roleId=1null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=127, user=User{id=2, login='user', roleId=1null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=500}}, Receipt{id=126, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=14, name='Chicago Pizza', price=10, weight=420, category=Pizza, description='Delicious Chicago Pizza'}=5}}]
-14:29:33.169 [http-nio-8080-exec-4] TRACE - UTF-8 get request
-14:29:39.496 [http-nio-8080-exec-5] TRACE - UTF-8 post request
-14:29:39.503 [http-nio-8080-exec-6] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:39.530 [http-nio-8080-exec-6] TRACE - current page == 1
-14:29:39.530 [http-nio-8080-exec-6] TRACE - receipts == [Receipt{id=138, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=4, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=2, Dish{id=15, name='New York-Style Pizza', price=10, weight=420, category=Pizza, description='New York-Style Pizza'}=2}}, Receipt{id=137, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=4}}, Receipt{id=136, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=144}}, Receipt{id=135, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=1}}, Receipt{id=134, user=User{id=2, login='user', roleId=1null}, status=NEW, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=133, user=User{id=2, login='user', roleId=1null}, status=RECEIVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=132, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=128, user=User{id=2, login='user', roleId=1null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=127, user=User{id=2, login='user', roleId=1null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=500}}, Receipt{id=126, user=User{id=2, login='user', roleId=1null}, status=APPROVED, dishes={Dish{id=14, name='Chicago Pizza', price=10, weight=420, category=Pizza, description='Delicious Chicago Pizza'}=5}}]
-14:29:39.564 [http-nio-8080-exec-6] TRACE - UTF-8 get request
-14:29:42.457 [http-nio-8080-exec-7] TRACE - This is command what we used now change_dish this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:42.470 [http-nio-8080-exec-7] TRACE - dishes == [Dish{id=1, name='Orange juice ', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=3, name='Peach juice', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}, Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}, Dish{id=7, name='Burger Beef with Onion', price=13, weight=440, category=Burger, description='Delicious burger with Onion'}, Dish{id=8, name='Burger Vegan', price=8, weight=180, category=Burger, description='Delicious burger with tomato'}, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}] noOfPages 3 currentPage 1
-14:29:43.193 [http-nio-8080-exec-7] TRACE - UTF-8 get request
-14:29:48.596 [http-nio-8080-exec-8] TRACE - dish id == 1 newPrise== 123 newWeight 120 newCategory 4
-14:29:48.600 [http-nio-8080-exec-8] TRACE - UTF-8 post request
-14:29:48.603 [http-nio-8080-exec-9] TRACE - This is command what we used now change_dish this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:48.605 [http-nio-8080-exec-9] TRACE - dishes == [Dish{id=1, name='Orange juice e', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=3, name='Peach juice', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}, Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}, Dish{id=7, name='Burger Beef with Onion', price=13, weight=440, category=Burger, description='Delicious burger with Onion'}, Dish{id=8, name='Burger Vegan', price=8, weight=180, category=Burger, description='Delicious burger with tomato'}, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}] noOfPages 3 currentPage 1
-14:29:48.622 [http-nio-8080-exec-9] TRACE - UTF-8 get request
-14:29:53.643 [http-nio-8080-exec-1] TRACE - dish id == 1 newPrise== 123 newWeight 120 newCategory 4
-14:29:53.647 [http-nio-8080-exec-1] TRACE - UTF-8 post request
-14:29:53.654 [http-nio-8080-exec-2] TRACE - This is command what we used now change_dish this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:53.657 [http-nio-8080-exec-2] TRACE - dishes == [Dish{id=1, name='Orange juice ', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=3, name='Peach juice', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}, Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}, Dish{id=7, name='Burger Beef with Onion', price=13, weight=440, category=Burger, description='Delicious burger with Onion'}, Dish{id=8, name='Burger Vegan', price=8, weight=180, category=Burger, description='Delicious burger with tomato'}, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}] noOfPages 3 currentPage 1
-14:29:53.682 [http-nio-8080-exec-2] TRACE - UTF-8 get request
-14:29:55.106 [http-nio-8080-exec-3] TRACE - This is command what we used now add_dish this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:55.655 [http-nio-8080-exec-3] TRACE - UTF-8 get request
-14:29:57.067 [http-nio-8080-exec-4] TRACE - This is command what we used now add_admin this id userUser{id=35, login='AdminNew', roleId=2null}
-14:29:57.069 [http-nio-8080-exec-4] TRACE - 3 all user who are not a admin
-14:29:57.656 [http-nio-8080-exec-4] TRACE - UTF-8 get request
-14:30:01.592 [http-nio-8080-exec-5] TRACE - 2 new user id
-14:30:01.592 [http-nio-8080-exec-5] TRACE - UTF-8 post request
-14:30:01.598 [http-nio-8080-exec-6] TRACE - This is command what we used now add_admin this id userUser{id=35, login='AdminNew', roleId=2null}
-14:30:01.600 [http-nio-8080-exec-6] TRACE - 2 all user who are not a admin
-14:30:01.621 [http-nio-8080-exec-6] TRACE - UTF-8 get request
-14:30:03.725 [http-nio-8080-exec-7] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
-14:30:03.742 [http-nio-8080-exec-7] TRACE - current page == 1
-14:30:03.743 [http-nio-8080-exec-7] TRACE - receipts == [Receipt{id=138, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=4, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=2, Dish{id=15, name='New York-Style Pizza', price=10, weight=420, category=Pizza, description='New York-Style Pizza'}=2}}, Receipt{id=137, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=4}}, Receipt{id=136, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=144}}, Receipt{id=135, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=1}}, Receipt{id=134, user=User{id=2, login='user', roleId=2null}, status=NEW, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=133, user=User{id=2, login='user', roleId=2null}, status=RECEIVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=132, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=128, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=127, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=500}}, Receipt{id=126, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=14, name='Chicago Pizza', price=10, weight=420, category=Pizza, description='Delicious Chicago Pizza'}=5}}]
-14:30:03.762 [http-nio-8080-exec-7] TRACE - UTF-8 get request
-14:30:04.670 [http-nio-8080-exec-8] TRACE - This is command what we used now login this id userUser{id=35, login='AdminNew', roleId=2null}
-14:30:04.682 [http-nio-8080-exec-8] TRACE - UTF-8 get request
-14:30:07.609 [http-nio-8080-exec-9] TRACE - UTF-8 post request
-14:30:07.616 [http-nio-8080-exec-10] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:30:07.618 [http-nio-8080-exec-10] DEBUG - dishes size before sorting == 10
-14:30:07.619 [http-nio-8080-exec-10] DEBUG - dishes were sorted
-14:30:07.619 [http-nio-8080-exec-10] TRACE - current page == 1
-14:30:07.619 [http-nio-8080-exec-10] DEBUG - dishes size before getDishOnPage == 10
-14:30:07.654 [http-nio-8080-exec-10] TRACE - UTF-8 get request
-14:30:09.766 [http-nio-8080-exec-1] TRACE - This is command what we used now client_orders this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:30:09.773 [http-nio-8080-exec-1] TRACE - 1
-14:30:09.789 [http-nio-8080-exec-1] TRACE - UTF-8 get request
-14:30:15.921 [http-nio-8080-exec-3] TRACE - This is command what we used now client_orders this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:30:15.929 [http-nio-8080-exec-3] TRACE - 1
-14:30:15.950 [http-nio-8080-exec-3] TRACE - UTF-8 get request
-14:30:16.451 [http-nio-8080-exec-4] TRACE - This is command what we used now cart this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:30:16.468 [http-nio-8080-exec-4] TRACE - UTF-8 get request
-14:30:17.392 [http-nio-8080-exec-5] TRACE - This is command what we used now client_menu this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:30:17.394 [http-nio-8080-exec-5] DEBUG - dishes size before sorting == 10
-14:30:17.395 [http-nio-8080-exec-5] DEBUG - dishes were sorted
-14:30:17.395 [http-nio-8080-exec-5] TRACE - current page == 1
-14:30:17.395 [http-nio-8080-exec-5] DEBUG - dishes size before getDishOnPage == 10
-14:30:17.414 [http-nio-8080-exec-5] TRACE - UTF-8 get request
-14:30:19.053 [http-nio-8080-exec-6] TRACE - This is command what we used now login this id userUser{id=34, login='StanislavTest', roleId=1null}
-14:30:19.065 [http-nio-8080-exec-6] TRACE - UTF-8 get request
+18:38:11.679 [RMI TCP Connection(2)-127.0.0.1] DEBUG - logPath = C:\Users\sante\IdeaProjects\restourant\apache-tomcat-8.5.84\webapps\ROOT\WEB-INF\log4j2.log
+18:38:11.739 [RMI TCP Connection(2)-127.0.0.1] TRACE - null
+18:38:11.740 [RMI TCP Connection(2)-127.0.0.1] TRACE - null
+18:38:11.927 [http-nio-8080-exec-1] TRACE - null This is user id
+18:38:11.933 [http-nio-8080-exec-2] TRACE - This is command what we used now login this id usernull
+18:38:13.121 [http-nio-8080-exec-2] TRACE - UTF-8 get request
+18:38:13.125 [http-nio-8080-exec-3] TRACE - null This is user id
+18:38:13.127 [http-nio-8080-exec-4] TRACE - This is command what we used now login this id usernull
+18:38:13.129 [http-nio-8080-exec-4] TRACE - UTF-8 get request
+18:38:13.249 [http-nio-8080-exec-5] TRACE - null This is user id
+18:38:13.261 [http-nio-8080-exec-6] TRACE - This is command what we used now login this id usernull
+18:38:13.263 [http-nio-8080-exec-6] TRACE - UTF-8 get request
+18:38:18.136 [http-nio-8080-exec-7] TRACE - UTF-8 post request
+18:38:18.143 [http-nio-8080-exec-8] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:18.280 [http-nio-8080-exec-8] TRACE - current page == 1
+18:38:18.289 [http-nio-8080-exec-8] TRACE - receipts == [Receipt{id=144, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}=24}}, Receipt{id=142, user=User{id=34, login='StanislavTest', roleId=1null}, status=CANCELLED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=5}}, Receipt{id=141, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=21, name='Frozen', price=2, weight=120, category=Dessert, description='Delicious Frozen'}=24}}, Receipt{id=140, user=User{id=34, login='StanislavTest', roleId=1null}, status=COOKING, dishes={Dish{id=1, name='Orange juice ', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=5, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=3}}, Receipt{id=139, user=User{id=34, login='StanislavTest', roleId=1null}, status=RECEIVED, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=138, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=4, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=2, Dish{id=15, name='New York-Style Pizza', price=10, weight=420, category=Pizza, description='New York-Style Pizza'}=2}}, Receipt{id=137, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=4}}, Receipt{id=136, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=144}}, Receipt{id=135, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=1}}, Receipt{id=134, user=User{id=2, login='user', roleId=2null}, status=NEW, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}]
+18:38:19.077 [http-nio-8080-exec-8] TRACE - UTF-8 get request
+18:38:19.973 [http-nio-8080-exec-9] TRACE - This is command what we used now add_admin this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:19.976 [http-nio-8080-exec-9] TRACE - 2 all user who are not a admin
+18:38:20.336 [http-nio-8080-exec-9] TRACE - UTF-8 get request
+18:38:21.680 [http-nio-8080-exec-10] TRACE - This is command what we used now add_dish this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:22.016 [http-nio-8080-exec-10] TRACE - UTF-8 get request
+18:38:23.223 [http-nio-8080-exec-1] TRACE - This is command what we used now change_dish this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:23.231 [http-nio-8080-exec-1] TRACE - dishes == [Dish{id=1, name='Orange juice ', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=3, name='Peach juice', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}, Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}, Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}, Dish{id=7, name='Burger Beef with Onion', price=13, weight=440, category=Burger, description='Delicious burger with Onion'}, Dish{id=8, name='Burger Vegan', price=8, weight=180, category=Burger, description='Delicious burger with tomato'}, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}] noOfPages 3 currentPage 1
+18:38:23.623 [http-nio-8080-exec-1] TRACE - UTF-8 get request
+18:38:24.081 [http-nio-8080-exec-2] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:24.098 [http-nio-8080-exec-2] TRACE - current page == 1
+18:38:24.099 [http-nio-8080-exec-2] TRACE - receipts == [Receipt{id=144, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}=24}}, Receipt{id=142, user=User{id=34, login='StanislavTest', roleId=1null}, status=CANCELLED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=5}}, Receipt{id=141, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=21, name='Frozen', price=2, weight=120, category=Dessert, description='Delicious Frozen'}=24}}, Receipt{id=140, user=User{id=34, login='StanislavTest', roleId=1null}, status=COOKING, dishes={Dish{id=1, name='Orange juice ', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=5, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=3}}, Receipt{id=139, user=User{id=34, login='StanislavTest', roleId=1null}, status=RECEIVED, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=138, user=User{id=34, login='StanislavTest', roleId=1null}, status=APPROVED, dishes={Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=4, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=2, Dish{id=15, name='New York-Style Pizza', price=10, weight=420, category=Pizza, description='New York-Style Pizza'}=2}}, Receipt{id=137, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=4}}, Receipt{id=136, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=144}}, Receipt{id=135, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=1}}, Receipt{id=134, user=User{id=2, login='user', roleId=2null}, status=NEW, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}]
+18:38:24.119 [http-nio-8080-exec-2] TRACE - UTF-8 get request
+18:38:25.705 [http-nio-8080-exec-3] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:25.722 [http-nio-8080-exec-3] TRACE - current page == 2
+18:38:25.723 [http-nio-8080-exec-3] TRACE - receipts == [Receipt{id=133, user=User{id=2, login='user', roleId=2null}, status=RECEIVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=132, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=128, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=127, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=500}}, Receipt{id=126, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=14, name='Chicago Pizza', price=10, weight=420, category=Pizza, description='Delicious Chicago Pizza'}=5}}, Receipt{id=124, user=User{id=2, login='user', roleId=2null}, status=DELIVERING, dishes={Dish{id=21, name='Frozen', price=2, weight=120, category=Dessert, description='Delicious Frozen'}=1, Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=1}}, Receipt{id=123, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=5}}, Receipt{id=121, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=120, user=User{id=2, login='user', roleId=2null}, status=DELIVERING, dishes={Dish{id=2, name='Orange juice With lime', price=123, weight=120, category=Drink, description='Fresh and so healthy juice'}=1, Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=119, user=User{id=2, login='user', roleId=2null}, status=CANCELLED, dishes={Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}=5}}]
+18:38:25.735 [http-nio-8080-exec-3] TRACE - UTF-8 get request
+18:38:27.037 [http-nio-8080-exec-4] TRACE - This is command what we used now manageOrders this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:27.054 [http-nio-8080-exec-4] TRACE - current page == 3
+18:38:27.054 [http-nio-8080-exec-4] TRACE - receipts == [Receipt{id=118, user=User{id=2, login='user', roleId=2null}, status=CANCELLED, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=1}}, Receipt{id=117, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=5, name='Burger Beef', price=7, weight=320, category=Burger, description='Delicious burger with beef'}=5}}, Receipt{id=92, user=User{id=2, login='user', roleId=2null}, status=COOKING, dishes={Dish{id=6, name='Burger Beef Original', price=2, weight=240, category=Burger, description='Delicious burger'}=5, Dish{id=14, name='Chicago Pizza', price=10, weight=420, category=Pizza, description='Delicious Chicago Pizza'}=1}}, Receipt{id=91, user=User{id=2, login='user', roleId=2null}, status=DELIVERING, dishes={Dish{id=13, name='Neapolitan Pizza', price=10, weight=420, category=Pizza, description='Delicious Neapolitan Pizza'}=4}}, Receipt{id=90, user=User{id=2, login='user', roleId=2null}, status=RECEIVED, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=4}}, Receipt{id=89, user=User{id=2, login='user', roleId=2null}, status=null, dishes={Dish{id=10, name='Nigiri1', price=1, weight=180, category=Sushi, description='So testy free'}=3}}, Receipt{id=88, user=User{id=2, login='user', roleId=2null}, status=null, dishes={Dish{id=9, name='Sashimi', price=2, weight=90, category=Sushi, description='Ice cream with berries'}=3}}, Receipt{id=87, user=User{id=2, login='user', roleId=2null}, status=DELIVERING, dishes={Dish{id=4, name='Apple Juice', price=1, weight=120, category=Drink, description='Fresh and so healthy juice'}=1}}, Receipt{id=86, user=User{id=2, login='user', roleId=2null}, status=CANCELLED, dishes={Dish{id=13, name='Neapolitan Pizza', price=10, weight=420, category=Pizza, description='Delicious Neapolitan Pizza'}=3}}, Receipt{id=85, user=User{id=2, login='user', roleId=2null}, status=APPROVED, dishes={Dish{id=13, name='Neapolitan Pizza', price=10, weight=420, category=Pizza, description='Delicious Neapolitan Pizza'}=5}}]
+18:38:27.067 [http-nio-8080-exec-4] TRACE - UTF-8 get request
+18:38:28.270 [http-nio-8080-exec-5] TRACE - This is command what we used now login this id userUser{id=35, login='AdminNew', roleId=2null}
+18:38:28.276 [http-nio-8080-exec-5] TRACE - UTF-8 get request
